@@ -15,6 +15,9 @@ var TRANSLATIONS={
     prod_label:'Catalog',
     prod_title:'Generator Sets',
     prod_desc:'Select the frequency and use the slider to filter by power range.',
+    prod_cta:'Request a Quote',
+    map_cta:'Contact Our Export Team',
+    about_cta:'Get in Touch',
     filter_title:'&#9881; Filters',
     filter_freq:'Frequency',
     filter_kva:'Max Standby kVA',
@@ -61,7 +64,8 @@ var TRANSLATIONS={
     results_found:'products found',
     results_found_s:'product found',
     no_match:'No products match the current filters.',
-    dial_search:'Search country...'
+    dial_search:'Search country...',
+    hero_scroll:'Scroll'
   },
   es:{
     nav_products:'Productos',
@@ -92,6 +96,9 @@ var TRANSLATIONS={
     map_label:'Presencia Global',
     map_title:'Dónde Operan Nuestros Grupos Electrógenos',
     map_desc:'De las Américas a Europa, África y Asia/Oceanía &mdash; nuestros grupos electrógenos impulsan operaciones críticas en todos los continentes habitados.',
+    prod_cta:'Solicitar Cotización',
+    map_cta:'Contactar al Equipo de Exportación',
+    about_cta:'Contáctenos',
     tip_cities:'Ciudades Activas',
     contact_label:'Contacto',
     contact_title:'Contactos de Exportación',
@@ -124,7 +131,8 @@ var TRANSLATIONS={
     results_found:'productos encontrados',
     results_found_s:'producto encontrado',
     no_match:'Ningún producto coincide con los filtros actuales.',
-    dial_search:'Buscar país...'
+    dial_search:'Buscar país...',
+    hero_scroll:'Desplazar'
   }
   ,pt:{
     nav_products:'Produtos',
@@ -155,6 +163,9 @@ var TRANSLATIONS={
     map_label:'Presença Global',
     map_title:'Onde Nossos Geradores Operam',
     map_desc:'Das Américas à Europa, África e Ásia/Oceania &mdash; nossos grupos geradores impulsionam operações críticas em todos os continentes habitados.',
+    prod_cta:'Solicitar Orçamento',
+    map_cta:'Falar com o Time de Exportação',
+    about_cta:'Entre em Contato',
     tip_cities:'Cidades Ativas',
     contact_label:'Contato',
     contact_title:'Contatos de Exportação',
@@ -187,7 +198,8 @@ var TRANSLATIONS={
     results_found:'produtos encontrados',
     results_found_s:'produto encontrado',
     no_match:'Nenhum produto corresponde aos filtros atuais.',
-    dial_search:'Buscar país...'
+    dial_search:'Buscar país...',
+    hero_scroll:'Rolar'
   }
 };
 

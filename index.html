@@ -21,7 +21,7 @@
 </div>
 
 <nav>
-  <a href="#hero" class="nav-logo-link"><img src="assets/img/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;"></a>
+  <a href="#hero" class="nav-logo-link"><img src="assets/logo/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;"></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#products" data-i18n="nav_products">Products</a></li>
     <li><a href="#map-section" data-i18n="nav_global">Global</a></li>
@@ -41,19 +41,30 @@
 <section id="hero">
   <div class="hero-bg"></div><div class="hero-lines"></div>
   <div class="hero-circle"></div><div class="hero-stripe"></div>
-  <div class="hero-content">
-    <h1 class="hero-title" data-i18n="hero_title">Reliable Power for Every Critical Operation Worldwide</h1>
-    <p class="hero-sub" data-i18n="hero_sub">Industrial generator sets built for demanding environments &mdash; powering data centres, telecoms, oil &amp; gas, and construction sites across five continents.</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn btn-primary" data-i18n="cta_quote">Request a Quote</a>
-      <a href="#products" class="btn btn-out" data-i18n="cta_products">View Products &#x2193;</a>
+  <div class="hero-layout">
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero_title">Reliable Power for Every Critical Operation Worldwide</h1>
+      <p class="hero-sub" data-i18n="hero_sub">Industrial generator sets built for demanding environments &mdash; powering data centres, telecoms, oil &amp; gas, and construction sites across five continents.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary" data-i18n="cta_quote">Request a Quote</a>
+        <a href="#products" class="btn btn-out" data-i18n="cta_products">View Products &#x2193;</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-n">6.000<span>+</span></div><div class="stat-l" data-i18n="stat_units">Units Exported</div></div>
+        <div class="stat"><div class="stat-n">30<span>+</span></div><div class="stat-l" data-i18n="stat_countries">Countries</div></div>
+        <div class="stat"><div class="stat-n">75</div><div class="stat-l" data-i18n="stat_exp">Years of Experience</div></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-n">6.000<span>+</span></div><div class="stat-l" data-i18n="stat_units">Units Exported</div></div>
-      <div class="stat"><div class="stat-n">30<span>+</span></div><div class="stat-l" data-i18n="stat_countries">Countries</div></div>
-      <div class="stat"><div class="stat-n">75</div><div class="stat-l" data-i18n="stat_exp">Years of Experience</div></div>
+    <div class="hero-img-wrap">
+      <!-- hero image placeholder -->
     </div>
   </div>
+  <a href="#products" class="hero-scroll" aria-label="Scroll down">
+    <span class="hero-scroll-label" data-i18n="hero_scroll">Scroll</span>
+    <svg class="hero-scroll-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </a>
 </section>
 
 <section id="products">
@@ -96,13 +107,17 @@
       </div>
     </div>
   </div>
+  <div class="s-cta reveal">
+    <a href="#contact" class="btn btn-primary" data-i18n="prod_cta">Request a Quote</a>
+  </div>
 </section>
 
 <section id="map-section">
-  <div class="reveal" style="position:relative;z-index:2">
+  <div class="map-header reveal" style="position:relative;z-index:2">
     <div class="s-label" data-i18n="map_label">Global Footprint</div>
     <h2 class="s-title" data-i18n="map_title">Where Our Generators Run</h2>
     <p class="s-desc" data-i18n="map_desc">From the Americas to Europe, Africa, and Asia/Oceania &mdash; our generator sets power critical operations on every inhabited continent.</p>
+    <a href="#contact" class="btn btn-primary" data-i18n="map_cta">Contact Our Export Team</a>
     <div class="continent-tabs" id="continentTabs"></div>
     <div class="chips" id="chips"></div>
   </div>
@@ -115,6 +130,7 @@
       <h2 class="s-title" data-i18n="about_title">Who We Are</h2>
       <p data-i18n="about_p1">When uptime is non-negotiable, STEMAC generator sets are the choice of operators across 30+ countries. With 75 years of manufacturing expertise and a dedicated export product line, we deliver reliable power to data centres, telecom networks, construction sites, and critical infrastructure worldwide.</p>
       <p data-i18n="about_p2">Every STEMAC unit for export is built with components from internationally recognised manufacturers — including Baudouin engines — ensuring that spare parts and technical support are always within reach, no matter where your operation is located.</p>
+      <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;" data-i18n="about_cta">Get in Touch</a>
     </div>
     <div class="about-photos reveal">
       <div class="about-photo">
@@ -413,7 +429,7 @@
 </section>
 
 <footer>
-  <a href="#hero" class="f-logo-link"><img src="img/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;"></a>
+  <a href="#hero" class="f-logo-link"><img src="assets/logo/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;"></a>
   </div>
   <div class="f-social">
     <a href="https://www.stemac.com.br" target="_blank" rel="noopener" title="Website" aria-label="Website">
