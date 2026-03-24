@@ -65,7 +65,18 @@ var TRANSLATIONS={
     results_found_s:'product found',
     no_match:'No products match the current filters.',
     dial_search:'Search country...',
-    hero_scroll:'Scroll'
+    hero_scroll:'Scroll',
+    seg_label:'Markets',
+    seg_title:'Powering <em>Critical</em> Industries',
+    seg_desc:'From construction sites to data centres &mdash; wherever reliable power is non-negotiable, STEMAC is there.',
+    seg_1_sub:'Infrastructure',  seg_1_title:'Construction',         seg_1_desc:'Powering heavy equipment and temporary facilities on the most demanding job sites worldwide.',
+    seg_2_sub:'Manufacturing',   seg_2_title:'Industry',             seg_2_desc:'Continuous power for production lines, process control, and critical industrial operations.',
+    seg_3_sub:'Technology',      seg_3_title:'Data Centers',         seg_3_desc:'Zero-downtime standby power for mission-critical IT infrastructure and cloud facilities.',
+    seg_4_sub:'Healthcare',      seg_4_title:'Hospitals',            seg_4_desc:'Life-critical backup power ensuring uninterrupted care for patients and medical equipment.',
+    seg_5_sub:'Energy',          seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Reliable prime and standby power for upstream, midstream, and downstream operations.',
+    seg_6_sub:'Agribusiness',    seg_6_title:'Agriculture',          seg_6_desc:'Dependable power for irrigation, cold storage, and processing operations across vast rural areas.',
+    seg_7_sub:'Real Estate',     seg_7_title:'Commercial &amp; Public', seg_7_desc:'Backup power for shopping centres, office towers, airports, and essential public infrastructure.',
+    seg_8_sub:'Connectivity',    seg_8_title:'Telecoms',             seg_8_desc:'Uninterrupted power for cell towers, network hubs, and global communication infrastructure.'
   },
   es:{
     nav_products:'Productos',
@@ -132,7 +143,18 @@ var TRANSLATIONS={
     results_found_s:'producto encontrado',
     no_match:'Ningún producto coincide con los filtros actuales.',
     dial_search:'Buscar país...',
-    hero_scroll:'Desplazar'
+    hero_scroll:'Desplazar',
+    seg_label:'Mercados',
+    seg_title:'Energía para <em>Sectores</em> Críticos',
+    seg_desc:'De obras de construcción a centros de datos &mdash; donde la energía confiable es innegociable, STEMAC está ahí.',
+    seg_1_sub:'Infraestructura', seg_1_title:'Construcción',         seg_1_desc:'Energía para equipos pesados e instalaciones temporales en los sitios de obra más exigentes del mundo.',
+    seg_2_sub:'Manufactura',     seg_2_title:'Industria',            seg_2_desc:'Energía continua para líneas de producción, control de procesos y operaciones industriales críticas.',
+    seg_3_sub:'Tecnología',      seg_3_title:'Data Centers',         seg_3_desc:'Energía de respaldo sin interrupciones para infraestructura de TI crítica e instalaciones en la nube.',
+    seg_4_sub:'Salud',           seg_4_title:'Hospitales',           seg_4_desc:'Energía de respaldo esencial para garantizar atención ininterrumpida a pacientes y equipos médicos.',
+    seg_5_sub:'Energía',         seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Energía prime y de respaldo confiable para operaciones upstream, midstream y downstream.',
+    seg_6_sub:'Agronegocio',     seg_6_title:'Agricultura',          seg_6_desc:'Energía confiable para riego, almacenamiento en frío y procesamiento en zonas rurales extensas.',
+    seg_7_sub:'Bienes Raíces',   seg_7_title:'Comercial &amp; Público', seg_7_desc:'Energía de respaldo para centros comerciales, torres de oficinas, aeropuertos e infraestructura pública.',
+    seg_8_sub:'Conectividad',    seg_8_title:'Telecomunicaciones',   seg_8_desc:'Energía ininterrumpida para torres celulares, nodos de red e infraestructura de comunicaciones global.'
   }
   ,pt:{
     nav_products:'Produtos',
@@ -199,7 +221,18 @@ var TRANSLATIONS={
     results_found_s:'produto encontrado',
     no_match:'Nenhum produto corresponde aos filtros atuais.',
     dial_search:'Buscar país...',
-    hero_scroll:'Rolar'
+    hero_scroll:'Rolar',
+    seg_label:'Mercados',
+    seg_title:'Energia para <em>Setores</em> Críticos',
+    seg_desc:'De obras de construção a data centers &mdash; onde energia confiável é inegociável, a STEMAC está lá.',
+    seg_1_sub:'Infraestrutura',  seg_1_title:'Construção',           seg_1_desc:'Energia para equipamentos pesados e instalações temporárias nos canteiros de obras mais exigentes do mundo.',
+    seg_2_sub:'Manufatura',      seg_2_title:'Indústria',            seg_2_desc:'Energia contínua para linhas de produção, controle de processos e operações industriais críticas.',
+    seg_3_sub:'Tecnologia',      seg_3_title:'Data Centers',         seg_3_desc:'Energia de backup ininterrupta para infraestrutura de TI crítica e instalações em nuvem.',
+    seg_4_sub:'Saúde',           seg_4_title:'Hospitais',            seg_4_desc:'Energia de backup essencial para garantir atendimento ininterrupto a pacientes e equipamentos médicos.',
+    seg_5_sub:'Energia',         seg_5_title:'Óleo &amp; Gás',       seg_5_desc:'Energia prime e standby confiável para operações upstream, midstream e downstream.',
+    seg_6_sub:'Agronegócio',     seg_6_title:'Agronegócio',          seg_6_desc:'Energia confiável para irrigação, armazenagem a frio e processamento em áreas rurais extensas.',
+    seg_7_sub:'Imóveis',         seg_7_title:'Comercial &amp; Público', seg_7_desc:'Energia de backup para shopping centers, torres comerciais, aeroportos e infraestrutura pública.',
+    seg_8_sub:'Conectividade',   seg_8_title:'Telecomunicações',     seg_8_desc:'Energia ininterrupta para torres de celular, hubs de rede e infraestrutura de comunicações global.'
   }
 };
 
