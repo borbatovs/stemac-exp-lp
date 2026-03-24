@@ -420,6 +420,181 @@ section { padding: 6rem 6%; }
 
 
 /* ============================================================
+   MARKET SEGMENTS
+   ============================================================ */
+
+#segments { background: #fff; }
+
+/* Header */
+.seg-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+.seg-header-left  { flex: 0 0 auto; }
+.seg-header-right { flex: 1 1 0; }
+.seg-header-right .s-desc { margin-bottom: 0; max-width: 480px; }
+
+/* Grid */
+.seg-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Card base */
+.seg-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 300px;
+  cursor: pointer;
+  outline: none;
+}
+.seg-card:focus-visible { box-shadow: 0 0 0 3px var(--red); }
+
+/* Wide cards */
+.seg-card:nth-child(1) { grid-column: span 2; min-height: 370px; }
+.seg-card:nth-child(5) { grid-column: span 2; }
+.seg-card:nth-child(7) { grid-column: span 2; }
+.seg-card:nth-child(8) { grid-column: span 2; }
+
+/* Background image layer */
+.seg-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.90);
+  transition: transform 0.5s ease-out, filter 0.4s ease-out;
+  z-index: 0;
+}
+.seg-card:hover .seg-card-bg,
+.seg-card:focus-visible .seg-card-bg {
+  transform: scale(1.06);
+  filter: brightness(0.4);
+}
+
+/* Gradient overlay for legibility */
+.seg-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.15) 55%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card body */
+.seg-card-body {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  padding: 1.5rem;
+  transition: transform 0.4s ease-out;
+}
+.seg-card:hover .seg-card-body,
+.seg-card:focus-visible .seg-card-body { transform: translateY(-6px); }
+
+/* Subtitle */
+.seg-sub {
+  display: block;
+  font-family: var(--fd);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: .5rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.seg-card:hover .seg-sub,
+.seg-card:focus-visible .seg-sub {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+/* Accent line */
+.seg-line {
+  height: 2px;
+  width: 0;
+  background: var(--red);
+  border-radius: 2px;
+  margin-bottom: .75rem;
+  transition: width 0.35s ease-out;
+}
+.seg-card:hover .seg-line,
+.seg-card:focus-visible .seg-line { width: 28px; }
+
+/* Title */
+.seg-card-title {
+  font-family: var(--fd);
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+}
+
+/* Description */
+.seg-card-desc {
+  font-size: .85rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgba(255,255,255,.8);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease-out 0.07s, transform 0.3s ease-out 0.07s;
+}
+.seg-card:hover .seg-card-desc,
+.seg-card:focus-visible .seg-card-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Segment placeholder backgrounds (replace with background-image when photos are ready) */
+.seg-card--construction .seg-card-bg { background-image: url('assets/img/construction_01.webp'); }
+.seg-card--industry     .seg-card-bg { background-image: url('assets/img/industry_02.webp'); }
+.seg-card--datacenters  .seg-card-bg { background-image: url('assets/img/datacenters_03.webp'); }
+.seg-card--hospitals    .seg-card-bg { background-image: url('assets/img/hospital_04.webp'); }
+.seg-card--oilgas       .seg-card-bg { background-image: url('assets/img/oilgas-05.webp'); }
+.seg-card--agriculture  .seg-card-bg { background-image: url('assets/img/agriculture_06.webp'); }
+.seg-card--commercial   .seg-card-bg { background-image: url('assets/img/commercialpublic_08.webp'); }
+.seg-card--telecoms     .seg-card-bg { background-image: url('assets/img/telecoms_07.webp'); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .seg-card-bg,
+  .seg-card-body,
+  .seg-sub,
+  .seg-line,
+  .seg-card-desc { transition: none !important; }
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1023px) {
+  .seg-grid { grid-template-columns: repeat(2, 1fr); }
+  .seg-card:nth-child(1),
+  .seg-card:nth-child(5),
+  .seg-card:nth-child(7),
+  .seg-card:nth-child(8) { grid-column: span 1; min-height: 300px; }
+  .seg-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 639px) {
+  .seg-grid { grid-template-columns: 1fr; }
+  .seg-card { min-height: 260px !important; }
+}
+
+
+/* ============================================================
    PRODUCTS
    ============================================================ */
 
