@@ -425,17 +425,6 @@ section { padding: 6rem 6%; }
 
 #segments { background: #fff; }
 
-/* Header */
-.seg-header {
-  display: flex;
-  align-items: flex-end;
-  gap: 3rem;
-  margin-bottom: 2.5rem;
-}
-.seg-header-left  { flex: 0 0 auto; }
-.seg-header-right { flex: 1 1 0; }
-.seg-header-right .s-desc { margin-bottom: 0; max-width: 480px; }
-
 /* Grid */
 .seg-grid {
   display: grid;
@@ -584,7 +573,7 @@ section { padding: 6rem 6%; }
   .seg-card:nth-child(5),
   .seg-card:nth-child(7),
   .seg-card:nth-child(8) { grid-column: span 1; min-height: 300px; }
-  .seg-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+
 }
 
 /* Mobile: 1 column */
@@ -1296,6 +1285,7 @@ footer {
 @media (max-width: 1024px) {
   .prod-layout     { grid-template-columns: 210px 1fr; }
   .contact-layout  { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-img-wrap   { display: none; }
 }
 
 
@@ -1328,16 +1318,29 @@ footer {
   .nav-links.open { display: flex; }
   .hamburger      { display: flex; }
 
+  section       { padding: 3.5rem 5%; }
+  #hero         { padding: 0 5%; }
+  footer        { flex-direction: column; align-items: flex-start; padding-left: 5%; padding-right: 5%; }
+
   .prod-layout  { grid-template-columns: 1fr; }
   .filters      { position: static; }
   .form-row     { grid-template-columns: 1fr; }
-  footer        { flex-direction: column; align-items: flex-start; }
 
   .hero-title   { font-size: 48px; }
   .hero-circle  { display: none; }
-  .hero-layout  { flex-direction: column; gap: 2rem; }
+  .hero-layout  { flex-direction: column; align-items: stretch; gap: 2rem; }
   .hero-img-wrap { display: none; }
   .hero-img      { width: 320px; }
+  .hero-stats   { flex-wrap: wrap; gap: 1.5rem; }
+
+  #world-map    { height: 300px; }
+
+  /* Segment cards: apply hover state permanently on touch devices */
+  .seg-card .seg-card-bg   { filter: brightness(0.4); }
+  .seg-card .seg-card-body { transform: translateY(-6px); }
+  .seg-sub       { opacity: 1; transform: translateY(0); }
+  .seg-line      { width: 28px; }
+  .seg-card-desc { opacity: 1; transform: translateY(0); }
 }
 
 
@@ -1347,4 +1350,13 @@ footer {
 
 @media (max-width: 540px) {
   .about-photos { grid-template-columns: 1fr; }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 480px
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 38px; }
 }
