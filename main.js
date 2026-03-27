@@ -1058,3 +1058,28 @@ function setLang(lang){
   renderTable();
 }
 
+/* ============================================================
+   HERO IMAGE — TILT ON HOVER (desktop only)
+   ============================================================ */
+(function(){
+  var wrap = document.querySelector('.hero-img-wrap');
+  var img  = wrap && wrap.querySelector('.hero-img');
+  if (!wrap || !img) return;
+
+  var MAX_TILT = 12; // degrees
+
+  wrap.addEventListener('mousemove', function(e){
+    if (window.innerWidth <= 1024) return;
+    var rect = wrap.getBoundingClientRect();
+    var x = (e.clientX - rect.left) / rect.width;   // 0‑1
+    var y = (e.clientY - rect.top)  / rect.height;   // 0‑1
+    var rotY =  (x - 0.5) * MAX_TILT * 2;  // left/right
+    var rotX = -(y - 0.5) * MAX_TILT * 2;  // up/down
+    img.style.transform = 'rotateX('+rotX+'deg) rotateY('+rotY+'deg) scale(1.03)';
+  });
+
+  wrap.addEventListener('mouseleave', function(){
+    img.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+  });
+})();
+
