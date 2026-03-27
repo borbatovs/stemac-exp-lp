@@ -1,6 +1,7 @@
 var LANG_CURR='en';
 var TRANSLATIONS={
   en:{
+    nav_markets:'Where We Operate',
     nav_products:'Products',
     nav_global:'Global',
     nav_about:'About',
@@ -56,6 +57,10 @@ var TRANSLATIONS={
     form_placeholder_email:'john@company.com',
     form_placeholder_country:'Select country…',
     form_placeholder_msg:'Describe your project, required power range, and specific requirements…',
+    footer_tagline:'Industrial generator sets built for the world\'s most demanding operations.',
+    footer_nav:'Navigation',
+    footer_contact:'Contact',
+    footer_address:'Porto Alegre, RS &mdash; Brazil',
     footer_copy:'&copy; 2026 Stemac SA Generator Sets. All rights reserved.',
     about_label:'About',
     about_title:'Who We Are',
@@ -66,7 +71,7 @@ var TRANSLATIONS={
     no_match:'No products match the current filters.',
     dial_search:'Search country...',
     hero_scroll:'Scroll',
-    seg_label:'Markets',
+    seg_label:'Where We Operate',
     seg_title:'Powering <em>Critical</em> Industries',
     seg_desc:'From construction sites to data centres &mdash; wherever reliable power is non-negotiable, STEMAC is there.',
     seg_1_sub:'Infrastructure',  seg_1_title:'Construction',         seg_1_desc:'Powering heavy equipment and temporary facilities on the most demanding job sites worldwide.',
@@ -79,6 +84,7 @@ var TRANSLATIONS={
     seg_8_sub:'Connectivity',    seg_8_title:'Telecoms',             seg_8_desc:'Uninterrupted power for cell towers, network hubs, and global communication infrastructure.'
   },
   es:{
+    nav_markets:'Donde Actuamos',
     nav_products:'Productos',
     nav_global:'Global',
     nav_about:'Sobre Nosotros',
@@ -134,6 +140,10 @@ var TRANSLATIONS={
     form_placeholder_email:'juan@empresa.com',
     form_placeholder_country:'Seleccione país…',
     form_placeholder_msg:'Describa su proyecto, rango de potencia requerido y requisitos específicos…',
+    footer_tagline:'Grupos electrógenos industriales diseñados para las operaciones más exigentes del mundo.',
+    footer_nav:'Navegación',
+    footer_contact:'Contacto',
+    footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Electrógenos. Todos los derechos reservados.',
     about_label:'Sobre Nosotros',
     about_title:'Quiénes Somos',
@@ -144,7 +154,7 @@ var TRANSLATIONS={
     no_match:'Ningún producto coincide con los filtros actuales.',
     dial_search:'Buscar país...',
     hero_scroll:'Desplazar',
-    seg_label:'Mercados',
+    seg_label:'Donde Actuamos',
     seg_title:'Energía para Sectores Críticos',
     seg_desc:'De obras de construcción a centros de datos &mdash; donde la energía confiable es innegociable, STEMAC está ahí.',
     seg_1_sub:'Infraestructura', seg_1_title:'Construcción',         seg_1_desc:'Energía para equipos pesados e instalaciones temporales en los sitios de obra más exigentes del mundo.',
@@ -157,6 +167,7 @@ var TRANSLATIONS={
     seg_8_sub:'Conectividad',    seg_8_title:'Telecomunicaciones',   seg_8_desc:'Energía ininterrumpida para torres celulares, nodos de red e infraestructura de comunicaciones global.'
   }
   ,pt:{
+    nav_markets:'Onde Atuamos',
     nav_products:'Produtos',
     nav_global:'Global',
     nav_about:'Sobre Nós',
@@ -212,6 +223,10 @@ var TRANSLATIONS={
     form_placeholder_email:'joao@empresa.com.br',
     form_placeholder_country:'Selecione o país…',
     form_placeholder_msg:'Descreva seu projeto, faixa de potência necessária e requisitos específicos…',
+    footer_tagline:'Grupos geradores industriais projetados para as operações mais exigentes do mundo.',
+    footer_nav:'Navegação',
+    footer_contact:'Contato',
+    footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.',
     about_label:'Sobre Nós',
     about_title:'Quem Somos',
@@ -222,7 +237,7 @@ var TRANSLATIONS={
     no_match:'Nenhum produto corresponde aos filtros atuais.',
     dial_search:'Buscar país...',
     hero_scroll:'Rolar',
-    seg_label:'Mercados',
+    seg_label:'Onde Atuamos',
     seg_title:'Energia para Setores Críticos',
     seg_desc:'De obras de construção a data centers &mdash; onde energia confiável é inegociável, a STEMAC está lá.',
     seg_1_sub:'Infraestrutura',  seg_1_title:'Construção',           seg_1_desc:'Energia para equipamentos pesados e instalações temporárias nos canteiros de obras mais exigentes do mundo.',
@@ -1010,6 +1025,25 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
   a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
 });
 
+/* Language dropdown */
+(function(){
+  var dd=document.getElementById('langDropdown');
+  var btn=document.getElementById('langGlobeBtn');
+  if(!dd||!btn) return;
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    dd.classList.toggle('open');
+  });
+  document.addEventListener('click',function(e){
+    if(!dd.contains(e.target)) dd.classList.remove('open');
+  });
+  dd.querySelectorAll('.lang-option').forEach(function(opt){
+    opt.addEventListener('click',function(){
+      setLang(opt.getAttribute('data-lang'));
+    });
+  });
+})();
+
 
 // Static continent label maps (hoisted out of setLang for clarity)
 var CONT_LABELS_EN={Americas:'Americas',Africa:'Africa','Europe/UK':'Europe/UK','Asia/Oceania':'Asia/Oceania'};
@@ -1018,9 +1052,11 @@ var CONT_LABELS_PT={Americas:'Américas',Africa:'África','Europe/UK':'Europa/RU
 
 function setLang(lang){
   LANG_CURR=lang;
-  document.getElementById('btnEN').classList.toggle('active',lang==='en');
-  document.getElementById('btnES').classList.toggle('active',lang==='es');
-  document.getElementById('btnPT').classList.toggle('active',lang==='pt');
+  document.querySelectorAll('.lang-option').forEach(function(btn){
+    btn.classList.toggle('active',btn.getAttribute('data-lang')===lang);
+  });
+  var dd=document.getElementById('langDropdown');
+  if(dd) dd.classList.remove('open');
   var T=TRANSLATIONS[lang]||TRANSLATIONS.en; // fallback to EN if lang invalid
 
   // Update all data-i18n elements
