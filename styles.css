@@ -668,7 +668,7 @@ section { padding: 6rem 6%; }
    PRODUCTS
    ============================================================ */
 
-#products { background: #fff; }
+#products { background: #E6EBF1; }
 
 .prod-layout {
   display: grid;
@@ -679,7 +679,7 @@ section { padding: 6rem 6%; }
 
 /* Filters sidebar */
 .filters {
-  background: #EDEDEE;
+  background: #F7F8FC;
   border-radius: 8px;
   padding: 1.8rem 1.4rem;
   position: sticky;
@@ -990,7 +990,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 #world-map {
   width: 100%;
   height: 620px;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid rgba(255,255,255,.07);
   background: #0a1628;
   position: relative;
@@ -1088,7 +1088,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
    CONTACT
    ============================================================ */
 
-#contact { background: var(--gbg); }
+#contact { background: #E6EBF1; }
 
 .contact-layout {
   display: grid;
