@@ -280,6 +280,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   perspective: 800px;
+  position: relative;
 }
 .hero-img {
   width: 100%;
@@ -421,7 +422,7 @@ nav {
   letter-spacing: .1em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: .8rem 2rem;
+  padding: .8rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -471,7 +472,6 @@ section { padding: 6rem 6%; }
   color: var(--red);
   margin-bottom: .7rem;
 }
-.s-label::before { content: ''; display: block; width: 26px; height: 2px; background: var(--red); }
 
 .s-title {
   font-family: var(--fd);
@@ -938,7 +938,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 .map-header .s-desc  { max-width: 600px; }
 .map-header .btn     { margin-bottom: 2.5rem; }
 
-.continent-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.continent-tabs { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1rem; }
 .ctab {
   font-family: var(--fd);
   font-size: .75rem;
@@ -955,8 +955,12 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 }
 .ctab:hover { color: #fff; border-color: rgba(255,255,255,.5); }
 .ctab.active { background: var(--red); border-color: var(--red); color: #fff; }
+.ctab { display: inline-flex; align-items: center; gap: .35rem; }
+.ctab-chevron { flex-shrink: 0; transition: transform .2s; }
+.ctab.active .ctab-chevron { transform: rotate(180deg); }
 
-.chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: 1.6rem; }
+.chips { display: none; flex-wrap: wrap; gap: .45rem; justify-content: center; margin-bottom: 1.6rem; }
+.chips.open { display: flex; }
 .chip {
   font-family: var(--fd);
   font-size: .72rem;
@@ -1045,6 +1049,9 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 .about-text .s-desc     { max-width: 100%; margin-bottom: 1.5rem; }
 .about-text p           { font-size: .97rem; font-weight: 400; line-height: 1.9; color: #444; margin-bottom: 1.4rem; }
 .about-text p:last-child { margin-bottom: 0; }
+.about-cert-title { font-size: 1rem; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .08em; margin: 2rem 0 .6rem; }
+.about-cert-link  { font-size: .9rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+.about-cert-link:hover { text-decoration: underline; }
 
 .about-photos { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .about-photo {

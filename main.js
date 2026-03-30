@@ -1,7 +1,7 @@
 var LANG_CURR='en';
 var TRANSLATIONS={
   en:{
-    nav_markets:'Where We Operate',
+    nav_markets:'Industries',
     nav_products:'Products',
     nav_global:'Global',
     nav_about:'About',
@@ -37,9 +37,8 @@ var TRANSLATIONS={
     contact_label:'Contact',
     contact_title:'Export Contacts',
     contact_desc:'Tell us about your project. Our export team will respond within 24 business hours with a tailored proposal for your power requirements.',
-    contact_equip:'Equipment',
-    contact_serv:'Services',
-    contact_parts:'Parts',
+    contact_expo:'Export',
+    contact_tech:'Technical Support, Services &amp; Parts',
     form_title:'Get in Touch',
     form_name:'Full Name *',
     form_email:'E-mail *',
@@ -66,25 +65,27 @@ var TRANSLATIONS={
     about_title:'Who We Are',
     about_p1:'When uptime is non-negotiable, STEMAC generator sets are the choice of operators across 30+ countries. With 75 years of manufacturing expertise and a dedicated export product line, we deliver reliable power to data centres, telecom networks, construction sites, and critical infrastructure worldwide.',
     about_p2:'Every STEMAC unit for export is built with components from internationally recognised manufacturers — including Baudouin engines — ensuring that spare parts and technical support are always within reach, no matter where your operation is located.',
+    about_cert_title:'Certifications',
+    about_cert_p:'Quality has been part of our DNA since 1998 — when STEMAC became the first Brazilian company in the sector to earn ISO 9001 certification. Today, we operate under the ISO 9001:2015 standard, a commitment that governs every process, from engineering to after-sales support. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">View our certificate →</a>',
     results_found:'products found',
     results_found_s:'product found',
     no_match:'No products match the current filters.',
     dial_search:'Search country...',
     hero_scroll:'Scroll',
-    seg_label:'Where We Operate',
-    seg_title:'Powering <em>Critical</em> Industries',
-    seg_desc:'From construction sites to data centres &mdash; wherever reliable power is non-negotiable, STEMAC is there.',
-    seg_1_sub:'Infrastructure',  seg_1_title:'Construction',         seg_1_desc:'Powering heavy equipment and temporary facilities on the most demanding job sites worldwide.',
-    seg_2_sub:'Manufacturing',   seg_2_title:'Industry',             seg_2_desc:'Continuous power for production lines, process control, and critical industrial operations.',
-    seg_3_sub:'Technology',      seg_3_title:'Data Centers',         seg_3_desc:'Zero-downtime standby power for mission-critical IT infrastructure and cloud facilities.',
-    seg_4_sub:'Healthcare',      seg_4_title:'Hospitals',            seg_4_desc:'Life-critical backup power ensuring uninterrupted care for patients and medical equipment.',
-    seg_5_sub:'Energy',          seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Reliable prime and standby power for upstream, midstream, and downstream operations.',
-    seg_6_sub:'Agribusiness',    seg_6_title:'Agriculture',          seg_6_desc:'Dependable power for irrigation, cold storage, and processing operations across vast rural areas.',
-    seg_7_sub:'Real Estate',     seg_7_title:'Commercial &amp; Public', seg_7_desc:'Backup power for shopping centres, office towers, airports, and essential public infrastructure.',
-    seg_8_sub:'Connectivity',    seg_8_title:'Telecoms',             seg_8_desc:'Uninterrupted power for cell towers, network hubs, and global communication infrastructure.'
+    seg_label:'Industries',
+    seg_title:'Built for the Industries That Can\'t Stop',
+    seg_desc:'From construction sites to data centres &mdash; wherever reliable power is non-negotiable, STEMAC delivers.',
+    seg_1_sub:'Temporary &amp; permanent power',  seg_1_title:'Construction',         seg_1_desc:'Reliable energy for every phase of your project &mdash; from groundbreaking to handover.',
+    seg_2_sub:'Built for continuous operation',   seg_2_title:'Industry',             seg_2_desc:'Robust solutions designed to keep production running in the most demanding industrial environments.',
+    seg_3_sub:'Mission-critical uptime',          seg_3_title:'Data Centers',         seg_3_desc:'Uninterrupted power for the infrastructure that keeps the digital world running.',
+    seg_4_sub:'Where failure is not an option',   seg_4_title:'Hospitals',            seg_4_desc:'Emergency and backup power systems built to the exacting standards of healthcare environments.',
+    seg_5_sub:'Certified for hazardous areas',    seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Power equipment engineered for the toughest extraction and refining environments on the planet.',
+    seg_6_sub:'Power where the grid ends',        seg_6_title:'Agriculture',          seg_6_desc:'Dependable energy for irrigation, cold storage, and processing &mdash; wherever your operation is.',
+    seg_7_sub:'Scalable infrastructure, any scale', seg_7_title:'Commercial &amp; Public', seg_7_desc:'Efficient and sustainable power systems for offices, shopping centers, and public facilities of all sizes.',
+    seg_8_sub:'Backup power for critical towers', seg_8_title:'Telecoms',             seg_8_desc:'When the grid goes down, communication cannot. Generator sets built to protect cell towers and telecom infrastructure around the clock.'
   },
   es:{
-    nav_markets:'Donde Actuamos',
+    nav_markets:'Sectores',
     nav_products:'Productos',
     nav_global:'Global',
     nav_about:'Sobre Nosotros',
@@ -120,9 +121,8 @@ var TRANSLATIONS={
     contact_label:'Contacto',
     contact_title:'Contactos de Exportación',
     contact_desc:'Póngase en contacto con nuestro equipo de exportación. Le responderemos en 24 horas hábiles.',
-    contact_equip:'Equipos',
-    contact_serv:'Servicios',
-    contact_parts:'Repuestos',
+    contact_expo:'Exportación',
+    contact_tech:'Asistencia Técnica, Servicios y Repuestos',
     form_title:'Contáctanos',
     form_name:'Nombre Completo *',
     form_email:'E-mail *',
@@ -149,25 +149,27 @@ var TRANSLATIONS={
     about_title:'Quiénes Somos',
     about_p1:'Cuando la continuidad operativa es crítica, los operadores de más de 30 países confían en STEMAC. Con 75 años de experiencia en fabricación y una línea dedicada a la exportación, entregamos energía confiable a centros de datos, redes de telecomunicaciones, proyectos de construcción e infraestructura crítica en toda la región y el mundo.',
     about_p2:'Cada grupo electrógeno STEMAC para exportación incorpora componentes de fabricantes de reconocimiento mundial — incluidos motores Baudouin — garantizando acceso ágil a repuestos y soporte técnico en cualquier país donde opere.',
+    about_cert_title:'Certificaciones',
+    about_cert_p:'La calidad forma parte de nuestra historia desde 1998, cuando STEMAC se convirtió en la primera empresa brasileña del sector en obtener la certificación ISO 9001. Hoy operamos bajo la norma ISO 9001:2015, un compromiso que rige cada etapa de nuestros procesos, desde la ingeniería hasta el soporte posventa. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Ver certificado →</a>',
     results_found:'productos encontrados',
     results_found_s:'producto encontrado',
     no_match:'Ningún producto coincide con los filtros actuales.',
     dial_search:'Buscar país...',
     hero_scroll:'Desplazar',
-    seg_label:'Donde Actuamos',
-    seg_title:'Energía para Sectores Críticos',
-    seg_desc:'De obras de construcción a centros de datos &mdash; donde la energía confiable es innegociable, STEMAC está ahí.',
-    seg_1_sub:'Infraestructura', seg_1_title:'Construcción',         seg_1_desc:'Energía para equipos pesados e instalaciones temporales en los sitios de obra más exigentes del mundo.',
-    seg_2_sub:'Manufactura',     seg_2_title:'Industria',            seg_2_desc:'Energía continua para líneas de producción, control de procesos y operaciones industriales críticas.',
-    seg_3_sub:'Tecnología',      seg_3_title:'Data Centers',         seg_3_desc:'Energía de respaldo sin interrupciones para infraestructura de TI crítica e instalaciones en la nube.',
-    seg_4_sub:'Salud',           seg_4_title:'Hospitales',           seg_4_desc:'Energía de respaldo esencial para garantizar atención ininterrumpida a pacientes y equipos médicos.',
-    seg_5_sub:'Energía',         seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Energía prime y de respaldo confiable para operaciones upstream, midstream y downstream.',
-    seg_6_sub:'Agronegocio',     seg_6_title:'Agricultura',          seg_6_desc:'Energía confiable para riego, almacenamiento en frío y procesamiento en zonas rurales extensas.',
-    seg_7_sub:'Bienes Raíces',   seg_7_title:'Comercial &amp; Público', seg_7_desc:'Energía de respaldo para centros comerciales, torres de oficinas, aeropuertos e infraestructura pública.',
-    seg_8_sub:'Conectividad',    seg_8_title:'Telecomunicaciones',   seg_8_desc:'Energía ininterrumpida para torres celulares, nodos de red e infraestructura de comunicaciones global.'
+    seg_label:'Sectores',
+    seg_title:'Soluciones para las industrias que no se detienen',
+    seg_desc:'De obras en construcción a centros de datos &mdash; donde la energía confiable no admite excepciones, STEMAC está presente.',
+    seg_1_sub:'Energía para cada etapa de obra',        seg_1_title:'Construcción',         seg_1_desc:'Soluciones que acompañan su proyecto desde el primer movimiento de tierra hasta la entrega de llaves.',
+    seg_2_sub:'Producción que no se detiene',           seg_2_title:'Industria',            seg_2_desc:'Equipos diseñados para mantener sus procesos en marcha, sin importar las exigencias del entorno.',
+    seg_3_sub:'Disponibilidad sin compromiso',          seg_3_title:'Data Centers',         seg_3_desc:'Infraestructura eléctrica que garantiza la continuidad operativa de sus activos digitales, las 24 horas.',
+    seg_4_sub:'Continuidad en entornos de vida crítica', seg_4_title:'Hospitales',          seg_4_desc:'Sistemas de respaldo diseñados para cumplir con las normativas más exigentes del sector salud.',
+    seg_5_sub:'Certificado para zonas de alta peligrosidad', seg_5_title:'Oil &amp; Gas',  seg_5_desc:'Soluciones eléctricas homologadas para operar con seguridad en los entornos más exigentes del sector.',
+    seg_6_sub:'Energía donde el campo lo exige',        seg_6_title:'Agricultura',          seg_6_desc:'Potencia confiable para riego, almacenamiento y procesamiento, sin importar dónde esté su operación.',
+    seg_7_sub:'Eficiencia para proyectos de gran escala', seg_7_title:'Comercial &amp; Público', seg_7_desc:'Sistemas eficientes y sostenibles para oficinas, centros comerciales e instalaciones públicas de cualquier envergadura.',
+    seg_8_sub:'Respaldo para torres y nodos críticos',  seg_8_title:'Telecomunicaciones',   seg_8_desc:'Ante un corte de suministro, la comunicación no puede fallar. Grupos electrógenos diseñados para proteger torres celulares e infraestructura de telecomunicaciones las 24 horas.'
   }
   ,pt:{
-    nav_markets:'Onde Atuamos',
+    nav_markets:'Setores',
     nav_products:'Produtos',
     nav_global:'Global',
     nav_about:'Sobre Nós',
@@ -192,7 +194,7 @@ var TRANSLATIONS={
     th_brand:'Marca',
     th_model:'Modelo',
     th_open:'Aberto',
-    th_enclosed:'Cabinado',
+    th_enclosed:'Carenado',
     map_label:'Presença Global',
     map_title:'Onde Nossos Geradores Operam',
     map_desc:'Das Américas à Europa, África e Ásia/Oceania &mdash; nossos grupos geradores impulsionam operações críticas em todos os continentes habitados.',
@@ -203,9 +205,8 @@ var TRANSLATIONS={
     contact_label:'Contato',
     contact_title:'Contatos de Exportação',
     contact_desc:'Entre em contato com nossa equipe de exportação. Responderemos em até 24 horas úteis.',
-    contact_equip:'Equipamentos',
-    contact_serv:'Serviços',
-    contact_parts:'Peças',
+    contact_expo:'Exportação',
+    contact_tech:'Assistência Técnica, Serviços e Peças',
     form_title:'Entre em Contato',
     form_name:'Nome Completo *',
     form_email:'E-mail *',
@@ -232,22 +233,24 @@ var TRANSLATIONS={
     about_title:'Quem Somos',
     about_p1:'Nascemos no Brasil. Operamos no mundo. Com 75 anos de expertise em fabricação de grupos geradores e presença em mais de 30 países, a STEMAC leva energia confiável a data centers, redes de telecom, obras de grande porte e infraestruturas críticas nos cinco continentes.',
     about_p2:'Cada equipamento STEMAC para exportação é produzido com componentes de fabricantes que são referênciais mundiais — incluindo motores Baudouin — garantindo acesso ágil a peças de reposição e suporte técnico em qualquer país onde sua operação esteja.',
+    about_cert_title:'Certificações',
+    about_cert_p:'A qualidade faz parte da nossa história desde 1998 — quando a STEMAC se tornou a primeira empresa brasileira do setor a conquistar a certificação ISO 9001. Hoje operamos sob a norma ISO 9001:2015, um compromisso que orienta cada etapa dos nossos processos, da engenharia ao pós-venda. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Visualizar certificado →</a>',
     results_found:'produtos encontrados',
     results_found_s:'produto encontrado',
     no_match:'Nenhum produto corresponde aos filtros atuais.',
     dial_search:'Buscar país...',
     hero_scroll:'Rolar',
-    seg_label:'Onde Atuamos',
-    seg_title:'Energia para Setores Críticos',
-    seg_desc:'De obras de construção a data centers &mdash; onde energia confiável é inegociável, a STEMAC está lá.',
-    seg_1_sub:'Infraestrutura',  seg_1_title:'Construção',           seg_1_desc:'Energia para equipamentos pesados e instalações temporárias nos canteiros de obras mais exigentes do mundo.',
-    seg_2_sub:'Manufatura',      seg_2_title:'Indústria',            seg_2_desc:'Energia contínua para linhas de produção, controle de processos e operações industriais críticas.',
-    seg_3_sub:'Tecnologia',      seg_3_title:'Data Centers',         seg_3_desc:'Energia de backup ininterrupta para infraestrutura de TI crítica e instalações em nuvem.',
-    seg_4_sub:'Saúde',           seg_4_title:'Hospitais',            seg_4_desc:'Energia de backup essencial para garantir atendimento ininterrupto a pacientes e equipamentos médicos.',
-    seg_5_sub:'Energia',         seg_5_title:'Óleo &amp; Gás',       seg_5_desc:'Energia prime e standby confiável para operações upstream, midstream e downstream.',
-    seg_6_sub:'Agronegócio',     seg_6_title:'Agronegócio',          seg_6_desc:'Energia confiável para irrigação, armazenagem a frio e processamento em áreas rurais extensas.',
-    seg_7_sub:'Imóveis',         seg_7_title:'Comercial &amp; Público', seg_7_desc:'Energia de backup para shopping centers, torres comerciais, aeroportos e infraestrutura pública.',
-    seg_8_sub:'Conectividade',   seg_8_title:'Telecomunicações',     seg_8_desc:'Energia ininterrupta para torres de celular, hubs de rede e infraestrutura de comunicações global.'
+    seg_label:'Setores',
+    seg_title:'Feito para as indústrias que não podem parar',
+    seg_desc:'De canteiros de obras a data centers &mdash; onde energia confiável não é opcional, a STEMAC entrega.',
+    seg_1_sub:'Da fundação à entrega das chaves',       seg_1_title:'Construção',           seg_1_desc:'Energia confiável em todas as fases do canteiro &mdash; do início da obra até a entrega do empreendimento.',
+    seg_2_sub:'Operação contínua, sem concessões',      seg_2_title:'Indústria',            seg_2_desc:'Equipamentos projetados para sustentar a produção ininterrupta nos ambientes industriais mais severos.',
+    seg_3_sub:'Disponibilidade total, sem margem para falhas', seg_3_title:'Data Centers',  seg_3_desc:'Infraestrutura elétrica que garante a continuidade operacional dos seus ativos digitais, a qualquer hora.',
+    seg_4_sub:'Confiabilidade onde mais importa',       seg_4_title:'Hospitais',            seg_4_desc:'Sistemas de emergência e backup dimensionados para os padrões mais rigorosos da área da saúde.',
+    seg_5_sub:'Certificado para áreas classificadas',   seg_5_title:'Óleo &amp; Gás',       seg_5_desc:'Soluções elétricas homologadas para operar com segurança nas condições mais adversas do setor.',
+    seg_6_sub:'Energia onde a rede não chega',          seg_6_title:'Agricultura',          seg_6_desc:'Energia confiável para irrigação, armazenamento e beneficiamento &mdash; independente da localização da sua operação.',
+    seg_7_sub:'Infraestrutura para projetos de grande porte', seg_7_title:'Comercial &amp; Público', seg_7_desc:'Sistemas eficientes e sustentáveis para escritórios, shoppings e instalações públicas em qualquer escala.',
+    seg_8_sub:'Backup para torres e infraestrutura crítica', seg_8_title:'Telecomunicações', seg_8_desc:'Quando a rede elétrica falha, a comunicação não pode parar. Geradores projetados para proteger torres de celular e infraestruturas de telecomunicações a qualquer hora.'
   }
 };
 
@@ -588,7 +591,7 @@ var CONTINENTS={
 };
 
 var CONT_ORDER=['Americas','Africa','Europe/UK','Asia/Oceania'];
-var activeContinent='Americas';
+var activeContinent=null;
 
 function buildChips(continent){
   var chipsEl=document.getElementById('chips');
@@ -608,21 +611,28 @@ function buildTabs(){
   CONT_ORDER.forEach(function(cont){
     var count=CDATA.filter(function(x){return CONTINENTS[x.iso]===cont;}).length;
     var btn=document.createElement('button');
-    btn.className='ctab'+(cont===activeContinent?' active':'');
+    btn.className='ctab';
     btn.setAttribute('data-cont',cont);
-    btn.textContent=cont+' ('+count+')';
+    btn.innerHTML=cont+' ('+count+') <svg class="ctab-chevron" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,1 5,5 9,1"/></svg>';
     btn.addEventListener('click',function(){
-      activeContinent=cont;
-      document.querySelectorAll('.ctab').forEach(function(b){b.classList.remove('active');});
-      btn.classList.add('active');
-      buildChips(cont);
+      var chipsEl=document.getElementById('chips');
+      if(activeContinent===cont){
+        activeContinent=null;
+        btn.classList.remove('active');
+        chipsEl.classList.remove('open');
+      } else {
+        activeContinent=cont;
+        document.querySelectorAll('.ctab').forEach(function(b){b.classList.remove('active');});
+        btn.classList.add('active');
+        buildChips(cont);
+        chipsEl.classList.add('open');
+      }
     });
     tabsEl.appendChild(btn);
   });
 }
 
 buildTabs();
-buildChips(activeContinent);
 
 var tipEl=document.getElementById('map-tip');
 function showTip(e,c){
@@ -1095,22 +1105,22 @@ function setLang(lang){
 }
 
 /* ============================================================
-   HERO IMAGE — TILT ON HOVER (desktop only)
+   HERO IMAGE — FADE SLIDESHOW + TILT ON HOVER (desktop only)
    ============================================================ */
 (function(){
   var wrap = document.querySelector('.hero-img-wrap');
   var img  = wrap && wrap.querySelector('.hero-img');
   if (!wrap || !img) return;
 
-  var MAX_TILT = 12; // degrees
+  var MAX_TILT = 12;
 
   wrap.addEventListener('mousemove', function(e){
     if (window.innerWidth <= 1024) return;
     var rect = wrap.getBoundingClientRect();
-    var x = (e.clientX - rect.left) / rect.width;   // 0‑1
-    var y = (e.clientY - rect.top)  / rect.height;   // 0‑1
-    var rotY =  (x - 0.5) * MAX_TILT * 2;  // left/right
-    var rotX = -(y - 0.5) * MAX_TILT * 2;  // up/down
+    var x = (e.clientX - rect.left) / rect.width;
+    var y = (e.clientY - rect.top)  / rect.height;
+    var rotY =  (x - 0.5) * MAX_TILT * 2;
+    var rotX = -(y - 0.5) * MAX_TILT * 2;
     img.style.transform = 'rotateX('+rotX+'deg) rotateY('+rotY+'deg) scale(1.03)';
   });
 
