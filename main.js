@@ -13,10 +13,11 @@ var TRANSLATIONS={
     stat_units:'Units Exported',
     stat_countries:'Countries',
     stat_exp:'Years of Experience',
-    prod_label:'Catalog',
-    prod_title:'Generator Sets',
-    prod_desc:'Select the frequency and use the slider to filter by power range.',
-    prod_cta:'Request a Quote',
+    prod_label:'Product Catalog',
+    prod_title:'Learn more about our generator sets.',
+    prod_desc:'We offer a wide range of models and power outputs to meet all your business needs.',
+    prod_cta_title:'Didn\'t find what you were looking for?',
+    prod_cta:'Get in Touch',
     map_cta:'Contact Our Export Team',
     about_cta:'Get in Touch',
     filter_title:'&#9881; Filters',
@@ -31,8 +32,8 @@ var TRANSLATIONS={
     th_open:'Open Frame',
     th_enclosed:'Enclosed',
     map_label:'Global Footprint',
-    map_title:'Where Our Generators Run',
-    map_desc:'From the Americas to Europe, Africa, and Asia/Oceania &mdash; our generator sets power critical operations on every inhabited continent.',
+    map_title:'Companies from every continent trust Stemac generator sets.',
+    map_desc:'From the Americas to Europe, Africa, Asia and Oceania. Our generator sets power businesses in more than 30 countries.',
     tip_cities:'Active Cities',
     contact_label:'Contact',
     contact_title:'Export Contacts',
@@ -74,7 +75,7 @@ var TRANSLATIONS={
     hero_scroll:'Scroll',
     seg_label:'Industries',
     seg_title:'Built for the Industries That Can\'t Stop',
-    seg_desc:'From construction sites to data centres &mdash; wherever reliable power is non-negotiable, STEMAC delivers.',
+    seg_desc:'Every industry has its own demands — its own risks, regulations, and tolerance for downtime. Our power solutions are engineered in-house to meet each of them. From the complexity of a data centre to the remoteness of an agricultural operation, our technology is designed from the ground up to perform where it matters most — with the precision your operation demands.',
     seg_1_sub:'Temporary &amp; permanent power',  seg_1_title:'Construction',         seg_1_desc:'Reliable energy for every phase of your project &mdash; from groundbreaking to handover.',
     seg_2_sub:'Built for continuous operation',   seg_2_title:'Industry',             seg_2_desc:'Robust solutions designed to keep production running in the most demanding industrial environments.',
     seg_3_sub:'Mission-critical uptime',          seg_3_title:'Data Centers',         seg_3_desc:'Uninterrupted power for the infrastructure that keeps the digital world running.',
@@ -97,9 +98,9 @@ var TRANSLATIONS={
     stat_units:'Unidades Exportadas',
     stat_countries:'Países',
     stat_exp:'Años de Experiencia',
-    prod_label:'Catálogo',
-    prod_title:'Grupos Electrógenos',
-    prod_desc:'Seleccione la frecuencia y use el slider para filtrar por rango de potencia.',
+    prod_label:'Catálogo de productos',
+    prod_title:'Conozca más sobre nuestros grupos electrógenos.',
+    prod_desc:'Ofrecemos diversos modelos y potencias para satisfacer todas las necesidades de su empresa.',
     filter_title:'&#9881; Filtros',
     filter_freq:'Frecuencia',
     filter_kva:'kVA Máx. en Espera',
@@ -112,9 +113,10 @@ var TRANSLATIONS={
     th_open:'Abierto',
     th_enclosed:'Insonorizado',
     map_label:'Presencia Global',
-    map_title:'Dónde Operan Nuestros Grupos Electrógenos',
-    map_desc:'De las Américas a Europa, África y Asia/Oceanía &mdash; nuestros grupos electrógenos impulsan operaciones críticas en todos los continentes habitados.',
-    prod_cta:'Solicitar Cotización',
+    map_title:'Empresas de todos los continentes confían en los grupos electrógenos Stemac.',
+    map_desc:'De las Américas a Europa, de África hasta Asia y Oceanía. Nuestros grupos electrógenos impulsan empresas en más de 30 países.',
+    prod_cta_title:'¿No encontró el producto que buscaba?',
+    prod_cta:'Contáctenos',
     map_cta:'Contactar al Equipo de Exportación',
     about_cta:'Contáctenos',
     tip_cities:'Ciudades Activas',
@@ -158,7 +160,7 @@ var TRANSLATIONS={
     hero_scroll:'Desplazar',
     seg_label:'Sectores',
     seg_title:'Soluciones para las industrias que no se detienen',
-    seg_desc:'De obras en construcción a centros de datos &mdash; donde la energía confiable no admite excepciones, STEMAC está presente.',
+    seg_desc:'Cada sector tiene sus propias exigencias, sus propios riesgos y su propio nivel de tolerancia ante una falla. Las soluciones de STEMAC son desarrolladas con ingeniería propia para responder a cada uno de ellos. Desde la complejidad de un centro de datos hasta la distancia de una operación agrícola, nuestra tecnología está diseñada desde su origen para rendir donde más se necesita — con la precisión que su operación exige.',
     seg_1_sub:'Energía para cada etapa de obra',        seg_1_title:'Construcción',         seg_1_desc:'Soluciones que acompañan su proyecto desde el primer movimiento de tierra hasta la entrega de llaves.',
     seg_2_sub:'Producción que no se detiene',           seg_2_title:'Industria',            seg_2_desc:'Equipos diseñados para mantener sus procesos en marcha, sin importar las exigencias del entorno.',
     seg_3_sub:'Disponibilidad sin compromiso',          seg_3_title:'Data Centers',         seg_3_desc:'Infraestructura eléctrica que garantiza la continuidad operativa de sus activos digitales, las 24 horas.',
@@ -181,9 +183,9 @@ var TRANSLATIONS={
     stat_units:'Unidades Exportadas',
     stat_countries:'Países',
     stat_exp:'Anos de Experiência',
-    prod_label:'Catálogo',
-    prod_title:'Grupos Geradores',
-    prod_desc:'Selecione a frequência e use o slider para filtrar por faixa de potência.',
+    prod_label:'Catálogo de produtos',
+    prod_title:'Saiba mais sobre os nossos grupos geradores.',
+    prod_desc:'Oferecemos diversos modelos e potências para atender todas as necessidades da sua empresa.',
     filter_title:'&#9881; Filtros',
     filter_freq:'Frequência',
     filter_kva:'kVA Máx. em Espera',
@@ -196,9 +198,10 @@ var TRANSLATIONS={
     th_open:'Aberto',
     th_enclosed:'Carenado',
     map_label:'Presença Global',
-    map_title:'Onde Nossos Geradores Operam',
-    map_desc:'Das Américas à Europa, África e Ásia/Oceania &mdash; nossos grupos geradores impulsionam operações críticas em todos os continentes habitados.',
-    prod_cta:'Solicitar Orçamento',
+    map_title:'Empresas de todos os continentes confiam nos grupos geradores Stemac.',
+    map_desc:'Das Américas à Europa, da África até a Ásia e Oceania. Nossos grupos geradores impulsionam empresas em mais de 30 países.',
+    prod_cta_title:'Não encontrou o produto que queria?',
+    prod_cta:'Entre em contato',
     map_cta:'Falar com o Time de Exportação',
     about_cta:'Entre em Contato',
     tip_cities:'Cidades Ativas',
@@ -241,8 +244,8 @@ var TRANSLATIONS={
     dial_search:'Buscar país...',
     hero_scroll:'Rolar',
     seg_label:'Setores',
-    seg_title:'Feito para as indústrias que não podem parar',
-    seg_desc:'De canteiros de obras a data centers &mdash; onde energia confiável não é opcional, a STEMAC entrega.',
+    seg_title:'Feito para empresas que não podem parar',
+    seg_desc:'Cada setor tem suas próprias exigências, seus próprios riscos e seu próprio limite de tolerância a falhas. Nossas soluções são desenvolvidas com engenharia própria para responder a cada um deles. Da complexidade de um data center à distância de uma operação agrícola, nossa tecnologia é projetada desde a origem para funcionar onde mais importa — com a precisão que a sua operação exige.',
     seg_1_sub:'Da fundação à entrega das chaves',       seg_1_title:'Construção',           seg_1_desc:'Energia confiável em todas as fases do canteiro &mdash; do início da obra até a entrega do empreendimento.',
     seg_2_sub:'Operação contínua, sem concessões',      seg_2_title:'Indústria',            seg_2_desc:'Equipamentos projetados para sustentar a produção ininterrupta nos ambientes industriais mais severos.',
     seg_3_sub:'Disponibilidade total, sem margem para falhas', seg_3_title:'Data Centers',  seg_3_desc:'Infraestrutura elétrica que garante a continuidade operacional dos seus ativos digitais, a qualquer hora.',
@@ -460,54 +463,29 @@ var FLAG_ASSETS={
 
 /* PRODUCTS */
 var PRODS=[
-  // 60 Hz
-  {s:55,  p:50,  b:'Baudouin',m:'4M06G50/6', hz:'60'},
-  {s:63,  p:57,  b:'Baudouin',m:'4M06G50/6', hz:'60'},
-  {s:85,  p:78,  b:'Baudouin',m:'4M10G83/6', hz:'60'},
-  {s:104, p:93,  b:'Baudouin',m:'4M10G83/6', hz:'60'},
-  {s:125, p:112, b:'Baudouin',m:'4M10G100/6',hz:'60'},
-  {s:150, p:141, b:'Baudouin',m:'6M11G135/6',hz:'60'},
-  {s:170, p:150, b:'Baudouin',m:'6M11G135/6',hz:'60'},
-  {s:180, p:164, b:'Baudouin',m:'6M11G160/6',hz:'60'},
-  {s:200, p:181, b:'Baudouin',m:'6M11G160/6',hz:'60'},
-  {s:260, p:235, b:'Baudouin',m:'6M16G200/6',hz:'60'},
-  {s:315, p:284, b:'Baudouin',m:'6M16G250/6',hz:'60'},
-  {s:330, p:300, b:'Baudouin',m:'6M16G308/6',hz:'60'},
-  {s:375, p:340, b:'Baudouin',m:'6M16G308/6',hz:'60'},
-  {s:400, p:370, b:'Baudouin',m:'6M21G330/6',hz:'60'},
-  {s:460, p:424, b:'Baudouin',m:'6M21G400/6',hz:'60'},
-  {s:500, p:455, b:'Baudouin',m:'6M21G400/6',hz:'60'},
-  {s:550, p:500, b:'Baudouin',m:'6M21G460/6',hz:'60'},
-  {s:575, p:506, b:'Baudouin',m:'6M21G460/6',hz:'60'},
-  {s:650, p:600, b:'Baudouin',m:'8M21G525/6',hz:'60'},
-  {s:700, p:635, b:'Baudouin',m:'6M33G600/6',hz:'60'},
-  {s:750, p:688, b:'Baudouin',m:'6M33G600/6',hz:'60'},
-  {s:800, p:719, b:'Baudouin',m:'6M33G633/6',hz:'60'},
-  {s:840, p:750, b:'Baudouin',m:'6M33G660/6',hz:'60'},
-  {s:1000,p:900, b:'Baudouin',m:'8M33G800/6',hz:'60'},
   // 50 Hz
-  {s:25,  p:22,  b:'Baudouin',m:'4M06G25/5', hz:'50'},
-  {s:50,  p:45,  b:'Baudouin',m:'4M06G50/5', hz:'50'},
-  {s:70,  p:65,  b:'Baudouin',m:'4M10G70/5', hz:'50'},
-  {s:85,  p:80,  b:'Baudouin',m:'4M10G88/5', hz:'50'},
-  {s:110, p:100, b:'Baudouin',m:'4M10G110/5',hz:'50'},
-  {s:150, p:135, b:'Baudouin',m:'6M11G150/5',hz:'50'},
-  {s:200, p:181, b:'Baudouin',m:'6M16G220/5',hz:'50'},
-  {s:250, p:230, b:'Baudouin',m:'6M16G275/5',hz:'50'},
-  {s:300, p:275, b:'Baudouin',m:'6M16G350/5',hz:'50'},
-  {s:350, p:320, b:'Baudouin',m:'6M16G350/5',hz:'50'},
-  {s:440, p:400, b:'Baudouin',m:'6M21G500/5',hz:'50'},
-  {s:500, p:450, b:'Baudouin',m:'6M21G500/5',hz:'50'},
-  {s:550, p:500, b:'Baudouin',m:'6M21G550/5',hz:'50'},
-  {s:650, p:600, b:'Baudouin',m:'6M33G660/5',hz:'50'},
-  {s:750, p:680, b:'Baudouin',m:'6M33G750/5',hz:'50'},
-  {s:1000,p:900, b:'Baudouin',m:'8M33G1000/5',hz:'50'}
+  {s:25,  p:23,  b:'Baudouin',m:'4M06G25/6'},
+  {s:35,  p:33,  b:'Baudouin',m:'4M06G33/6'},
+  {s:50,  p:46,  b:'Baudouin',m:'4M06G50/6'},
+  {s:85,  p:75,  b:'Baudouin',m:'4M10G83/6'},
+  {s:100, p:90,  b:'Baudouin',m:'4M10G100/6'},
+  {s:140, p:123, b:'Baudouin',m:'6M11G135/6'},
+  {s:165, p:148, b:'Baudouin',m:'6M11G160/6'},
+  {s:210, p:186, b:'Baudouin',m:'6M16G200/6'},
+  {s:255, p:230, b:'Baudouin',m:'6M16G250/6'},
+  {s:320, p:288, b:'Baudouin',m:'6M16G308/6'},
+  {s:335, p:298, b:'Baudouin',m:'6M21G330/6'},
+  {s:440, p:400, b:'Baudouin',m:'6M21G440/5'},
+  {s:500, p:450, b:'Baudouin',m:'6M21G500/5'},
+  {s:550, p:500, b:'Baudouin',m:'6M21G550/5'},
+  {s:600, p:551, b:'Baudouin',m:'6M33G600/6'},
+  {s:700, p:635, b:'Baudouin',m:'6M33G715/5'},
+  {s:800, p:738, b:'Baudouin',m:'8M33G800/6'}
 ];
 function renderTable(){
-  var hz=document.querySelector('input[name="freq"]:checked').value;
   var kva=+document.getElementById('kvaS').value;
   var rows=PRODS.filter(function(p){
-    return p.hz===hz && p.s<=kva;
+    return p.s<=kva;
   });
   var T=TRANSLATIONS[LANG_CURR]||TRANSLATIONS.en;
   document.getElementById('resCnt').innerHTML='<strong>'+rows.length+'</strong> '+(rows.length!==1?T.results_found:T.results_found_s);
@@ -519,7 +497,6 @@ function renderTable(){
       +'<td><a href="#" class="pdf-btn" onclick="return false" title="Download PDF"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 256 256\"><path d=\"M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z\"></path></svg></a></td></tr>';
   }).join('');
 }
-document.querySelectorAll('input[name="freq"]').forEach(function(r){r.addEventListener('change',renderTable);});
 var slider=document.getElementById('kvaS');
 function updateSlider(){
   var val=((slider.value-slider.min)/(slider.max-slider.min))*100;
@@ -528,8 +505,7 @@ function updateSlider(){
 }
 slider.addEventListener('input',function(){updateSlider();renderTable();});
 document.getElementById('resetBtn').addEventListener('click',function(){
-  document.querySelector('input[name="freq"][value="60"]').checked=true;
-  slider.value=1000;updateSlider();
+  slider.value=800;updateSlider();
   renderTable();
 });
 updateSlider();
@@ -1129,3 +1105,5 @@ function setLang(lang){
   });
 })();
 
+// Apply default language on page load so HTML content matches the translations
+setLang(LANG_CURR);
