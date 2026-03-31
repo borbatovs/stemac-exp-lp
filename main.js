@@ -6,8 +6,8 @@ var TRANSLATIONS={
     nav_global:'Global',
     nav_about:'About',
     nav_contact:'Contact',
-    hero_title:'Reliable Power for Every Critical Operation Worldwide',
-    hero_sub:'Industrial generator sets built for demanding environments &mdash; powering data centres, telecoms, oil &amp; gas, and construction sites across five continents.',
+    hero_title:'Brazilian Engineering. Global Standard.',
+    hero_sub:'For over seven decades, STEMAC has been delivering power generation solutions that industries across the world trust.',
     cta_quote:'Request a Quote',
     cta_products:'View Products &#x2193;',
     stat_units:'Units Exported',
@@ -91,8 +91,8 @@ var TRANSLATIONS={
     nav_global:'Global',
     nav_about:'Sobre Nosotros',
     nav_contact:'Contacto',
-    hero_title:'Potencia Confiable en los 5 Continentes',
-    hero_sub:'Grupos electrógenos industriales diseñados para los entornos más exigentes &mdash; alimentando centros de datos, telecomunicaciones, oil &amp; gas y proyectos de construcción en los cinco continentes.',
+    hero_title:'Ingeniería brasileña. Estándar global.',
+    hero_sub:'Durante más de siete décadas, STEMAC ha suministrado soluciones de generación de energía en las que confían industrias de todo el mundo.',
     cta_quote:'Solicitar Cotización',
     cta_products:'Ver Productos &#x2193;',
     stat_units:'Unidades Exportadas',
@@ -122,7 +122,7 @@ var TRANSLATIONS={
     tip_cities:'Ciudades Activas',
     contact_label:'Contacto',
     contact_title:'Contactos de Exportación',
-    contact_desc:'Póngase en contacto con nuestro equipo de exportación. Le responderemos en 24 horas hábiles.',
+    contact_desc:'Cuéntenos sobre su proyecto. Nuestro equipo de exportación responderá en 24 horas hábiles con una propuesta personalizada para sus necesidades de energía.',
     contact_expo:'Exportación',
     contact_tech:'Asistencia Técnica, Servicios y Repuestos',
     form_title:'Contáctanos',
@@ -176,8 +176,8 @@ var TRANSLATIONS={
     nav_global:'Global',
     nav_about:'Sobre Nós',
     nav_contact:'Contato',
-    hero_title:'Confiabilidade Energética Onde Você Precisar',
-    hero_sub:'Grupos geradores industriais projetados para os ambientes mais exigentes &mdash; alimentando data centers, redes de telecomunicações, oil &amp; gas e canteiros de obra nos cinco continentes.',
+    hero_title:'Engenharia brasileira. Padrão global.',
+    hero_sub:'Há mais de sete décadas, a STEMAC fornece soluções confiáveis de energia para milhares de empresas ao redor do mundo.',
     cta_quote:'Solicitar Cotação',
     cta_products:'Ver Produtos &#x2193;',
     stat_units:'Unidades Exportadas',
@@ -207,7 +207,7 @@ var TRANSLATIONS={
     tip_cities:'Cidades Ativas',
     contact_label:'Contato',
     contact_title:'Contatos de Exportação',
-    contact_desc:'Entre em contato com nossa equipe de exportação. Responderemos em até 24 horas úteis.',
+    contact_desc:'Conte-nos sobre o seu projeto. Nossa equipe de exportação responderá em até 24 horas úteis com uma proposta personalizada para as suas necessidades de energia.',
     contact_expo:'Exportação',
     contact_tech:'Assistência Técnica, Serviços e Peças',
     form_title:'Entre em Contato',
@@ -1004,12 +1004,22 @@ document.querySelectorAll('.reveal').forEach(function(el){
 });
 
 /* NAV */
+var navLinks  = document.getElementById('navLinks');
+var navOverlay = document.getElementById('navOverlay');
+
+function closeNav(){
+  navLinks.classList.remove('open');
+  navOverlay.classList.remove('open');
+}
+
 document.getElementById('hamburger').addEventListener('click',function(){
-  document.getElementById('navLinks').classList.toggle('open');
+  var isOpen = navLinks.classList.toggle('open');
+  navOverlay.classList.toggle('open', isOpen);
 });
 document.querySelectorAll('.nav-links a').forEach(function(a){
-  a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+  a.addEventListener('click', closeNav);
 });
+navOverlay.addEventListener('click', closeNav);
 
 /* Language dropdown */
 (function(){
@@ -1103,6 +1113,47 @@ function setLang(lang){
   wrap.addEventListener('mouseleave', function(){
     img.style.transform = 'rotateX(0) rotateY(0) scale(1)';
   });
+})();
+
+/* ============================================================
+   HERO STATS — COUNT-UP ANIMATION ON PAGE LOAD
+   ============================================================ */
+(function(){
+  var DURATION = 2800; // ms
+  var DELAY    = 400;  // ms before starting
+
+  function easeOutQuart(t){ return 1 - Math.pow(1 - t, 4); }
+
+  function formatNum(n, target){
+    if (target >= 1000) return n.toLocaleString('pt-BR').replace(/\u00a0/g, '.');
+    return String(n);
+  }
+
+  setTimeout(function(){
+    var stats = Array.from(document.querySelectorAll('.stat-n[data-count]')).map(function(el){
+      return { el: el, target: parseInt(el.getAttribute('data-count'), 10), valEl: el.querySelector('.stat-val') };
+    }).filter(function(s){ return s.valEl && !isNaN(s.target); });
+
+    if (!stats.length) return;
+
+    var startTs = null;
+
+    function step(ts){
+      if (!startTs) startTs = ts;
+      var progress = Math.min((ts - startTs) / DURATION, 1);
+      var ease     = easeOutQuart(progress);
+
+      stats.forEach(function(s){
+        s.valEl.textContent = progress < 1
+          ? formatNum(Math.round(ease * s.target), s.target)
+          : formatNum(s.target, s.target);
+      });
+
+      if (progress < 1) requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }, DELAY);
 })();
 
 // Apply default language on page load so HTML content matches the translations
