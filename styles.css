@@ -1510,7 +1510,8 @@ footer {
   .f-copy       { text-align: center; }
 
   .prod-layout  { grid-template-columns: 1fr; }
-  .filters      { position: static; }
+  .filters      { position: static; width: 100%; box-sizing: border-box; }
+  .col-specs    { display: none; }
   .form-row     { grid-template-columns: 1fr; }
 
   .hero-title   { font-size: 48px; }
