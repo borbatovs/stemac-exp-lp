@@ -1,4 +1,4 @@
-var LANG_CURR='en';
+var LANG_CURR='es';
 var TRANSLATIONS={
   en:{
     nav_markets:'Industries',
@@ -43,6 +43,7 @@ var TRANSLATIONS={
     form_title:'Get in Touch',
     form_name:'Full Name *',
     form_email:'E-mail *',
+    form_company:'Company',
     form_country:'Country *',
     form_phone:'Phone',
     form_msg:'Message *',
@@ -55,6 +56,7 @@ var TRANSLATIONS={
     form_err_msg:'Please write a message',
     form_placeholder_name:'John Smith',
     form_placeholder_email:'john@company.com',
+    form_placeholder_company:'Your company',
     form_placeholder_country:'Select country…',
     form_placeholder_msg:'Describe your project, required power range, and specific requirements…',
     footer_tagline:'Industrial generator sets built for the world\'s most demanding operations.',
@@ -133,6 +135,7 @@ var TRANSLATIONS={
     form_title:'Contáctanos',
     form_name:'Nombre Completo *',
     form_email:'E-mail *',
+    form_company:'Empresa',
     form_country:'País *',
     form_phone:'Teléfono',
     form_msg:'Mensaje *',
@@ -145,6 +148,7 @@ var TRANSLATIONS={
     form_err_msg:'Por favor, escriba un mensaje',
     form_placeholder_name:'Juan Pérez',
     form_placeholder_email:'juan@empresa.com',
+    form_placeholder_company:'Su empresa',
     form_placeholder_country:'Seleccione país…',
     form_placeholder_msg:'Describa su proyecto, rango de potencia requerido y requisitos específicos…',
     footer_tagline:'Grupos electrógenos industriales diseñados para las operaciones más exigentes del mundo.',
@@ -223,6 +227,7 @@ var TRANSLATIONS={
     form_title:'Entre em Contato',
     form_name:'Nome Completo *',
     form_email:'E-mail *',
+    form_company:'Empresa',
     form_country:'País *',
     form_phone:'Telefone',
     form_msg:'Mensagem *',
@@ -235,6 +240,7 @@ var TRANSLATIONS={
     form_err_msg:'Por favor escreva uma mensagem',
     form_placeholder_name:'João Silva',
     form_placeholder_email:'joao@empresa.com.br',
+    form_placeholder_company:'Sua empresa',
     form_placeholder_country:'Selecione o país…',
     form_placeholder_msg:'Descreva seu projeto, faixa de potência necessária e requisitos específicos…',
     footer_tagline:'Grupos geradores industriais projetados para as operações mais exigentes do mundo.',
@@ -1081,6 +1087,7 @@ function setLang(lang){
   document.getElementById('fe').placeholder=T.form_placeholder_email;
   document.getElementById('fc').options[0].text=T.form_placeholder_country;
   document.getElementById('fm').placeholder=T.form_placeholder_msg;
+  var fco=document.getElementById('fco');if(fco)fco.placeholder=T.form_placeholder_company||'Sua empresa';
 
   // Error messages (re-tag them)
   var errs=document.querySelectorAll('.emsg');
