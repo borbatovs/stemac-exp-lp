@@ -20,7 +20,7 @@ var TRANSLATIONS={
     prod_cta:'Get in Touch',
     map_cta:'Contact Our Export Team',
     about_cta:'Get in Touch',
-    filter_title:'&#9881; Filters',
+    filter_title:'Filters',
     filter_freq:'Frequency',
     filter_kva:'Max Standby kVA',
     filter_reset:'Reset Filters',
@@ -62,6 +62,11 @@ var TRANSLATIONS={
     footer_contact:'Contact',
     footer_address:'Porto Alegre, RS &mdash; Brazil',
     footer_copy:'&copy; 2026 Stemac SA Generator Sets. All rights reserved.',
+    footer_privacy:'Privacy Policy',
+    cookie_msg:'We use cookies to analyse traffic and improve your experience.',
+    cookie_accept:'Accept All',
+    cookie_decline:'Decline',
+    cookie_policy:'Privacy Policy',
     about_label:'About',
     about_title:'Who We Are',
     about_p1:'When uptime is non-negotiable, STEMAC generator sets are the choice of operators across 30+ countries. With 75 years of manufacturing expertise and a dedicated export product line, we deliver reliable power to data centres, telecom networks, construction sites, and critical infrastructure worldwide.',
@@ -101,7 +106,7 @@ var TRANSLATIONS={
     prod_label:'Catálogo de productos',
     prod_title:'Conozca más sobre nuestros grupos electrógenos.',
     prod_desc:'Ofrecemos diversos modelos y potencias para satisfacer todas las necesidades de su empresa.',
-    filter_title:'&#9881; Filtros',
+    filter_title:'Filtros',
     filter_freq:'Frecuencia',
     filter_kva:'kVA Máx. en Espera',
     filter_reset:'Limpiar Filtros',
@@ -147,6 +152,11 @@ var TRANSLATIONS={
     footer_contact:'Contacto',
     footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Electrógenos. Todos los derechos reservados.',
+    footer_privacy:'Política de Privacidad',
+    cookie_msg:'Utilizamos cookies para analizar el tráfico y mejorar su experiencia.',
+    cookie_accept:'Aceptar Todo',
+    cookie_decline:'Rechazar',
+    cookie_policy:'Política de Privacidad',
     about_label:'Sobre Nosotros',
     about_title:'Quiénes Somos',
     about_p1:'Cuando la continuidad operativa es crítica, los operadores de más de 30 países confían en STEMAC. Con 75 años de experiencia en fabricación y una línea dedicada a la exportación, entregamos energía confiable a centros de datos, redes de telecomunicaciones, proyectos de construcción e infraestructura crítica en toda la región y el mundo.',
@@ -186,7 +196,7 @@ var TRANSLATIONS={
     prod_label:'Catálogo de produtos',
     prod_title:'Saiba mais sobre os nossos grupos geradores.',
     prod_desc:'Oferecemos diversos modelos e potências para atender todas as necessidades da sua empresa.',
-    filter_title:'&#9881; Filtros',
+    filter_title:'Filtros',
     filter_freq:'Frequência',
     filter_kva:'kVA Máx. em Espera',
     filter_reset:'Limpar Filtros',
@@ -232,6 +242,11 @@ var TRANSLATIONS={
     footer_contact:'Contato',
     footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.',
+    footer_privacy:'Política de Privacidade',
+    cookie_msg:'Utilizamos cookies para analisar o tráfego e melhorar a sua experiência.',
+    cookie_accept:'Aceitar Tudo',
+    cookie_decline:'Recusar',
+    cookie_policy:'Política de Privacidade',
     about_label:'Sobre Nós',
     about_title:'Quem Somos',
     about_p1:'Nascemos no Brasil. Operamos no mundo. Com 75 anos de expertise em fabricação de grupos geradores e presença em mais de 30 países, a STEMAC leva energia confiável a data centers, redes de telecom, obras de grande porte e infraestruturas críticas nos cinco continentes.',
@@ -250,7 +265,7 @@ var TRANSLATIONS={
     seg_2_sub:'Operação contínua, sem concessões',      seg_2_title:'Indústria',            seg_2_desc:'Equipamentos projetados para sustentar a produção ininterrupta nos ambientes industriais mais severos.',
     seg_3_sub:'Disponibilidade total, sem margem para falhas', seg_3_title:'Data Centers',  seg_3_desc:'Infraestrutura elétrica que garante a continuidade operacional dos seus ativos digitais, a qualquer hora.',
     seg_4_sub:'Confiabilidade onde mais importa',       seg_4_title:'Hospitais',            seg_4_desc:'Sistemas de emergência e backup dimensionados para os padrões mais rigorosos da área da saúde.',
-    seg_5_sub:'Certificado para áreas classificadas',   seg_5_title:'Óleo &amp; Gás',       seg_5_desc:'Soluções elétricas homologadas para operar com segurança nas condições mais adversas do setor.',
+    seg_5_sub:'Certificado para áreas classificadas',   seg_5_title:'Petróleo &amp; Gás',       seg_5_desc:'Soluções elétricas homologadas para operar com segurança nas condições mais adversas do setor.',
     seg_6_sub:'Energia onde a rede não chega',          seg_6_title:'Agricultura',          seg_6_desc:'Energia confiável para irrigação, armazenamento e beneficiamento &mdash; independente da localização da sua operação.',
     seg_7_sub:'Infraestrutura para projetos de grande porte', seg_7_title:'Comercial &amp; Público', seg_7_desc:'Sistemas eficientes e sustentáveis para escritórios, shoppings e instalações públicas em qualquer escala.',
     seg_8_sub:'Backup para torres e infraestrutura crítica', seg_8_title:'Telecomunicações', seg_8_desc:'Quando a rede elétrica falha, a comunicação não pode parar. Geradores projetados para proteger torres de celular e infraestruturas de telecomunicações a qualquer hora.'
@@ -1158,3 +1173,47 @@ function setLang(lang){
 
 // Apply default language on page load so HTML content matches the translations
 setLang(LANG_CURR);
+
+/* ============================================================
+   COOKIE CONSENT
+   ============================================================ */
+(function(){
+  var STORAGE_KEY = 'stemac_cookie_consent';
+  var banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+
+  // --- Tracker placeholders (fill in when setting up analytics/pixel) ---
+  function loadAnalytics() {
+    // TODO: inject Google Analytics 4 script here
+    // e.g. load gtag.js and call gtag('config', 'G-XXXXXXXX')
+  }
+  function loadPixel() {
+    // TODO: inject Meta Pixel (and/or LinkedIn Insight) here
+  }
+  function loadTrackers() {
+    loadAnalytics();
+    loadPixel();
+  }
+
+  // --- State helpers ---
+  function getConsent() { return localStorage.getItem(STORAGE_KEY); }
+  function hideBanner() { banner.classList.add('cookie-banner--hidden'); }
+  function accept() {
+    localStorage.setItem(STORAGE_KEY, 'accepted');
+    hideBanner();
+    loadTrackers();
+  }
+  function decline() {
+    localStorage.setItem(STORAGE_KEY, 'declined');
+    hideBanner();
+  }
+
+  // Already decided — no banner needed
+  var existing = getConsent();
+  if (existing === 'accepted') { hideBanner(); loadTrackers(); return; }
+  if (existing === 'declined') { hideBanner(); return; }
+
+  // Show banner and wire up buttons
+  document.getElementById('cookieAccept').addEventListener('click', accept);
+  document.getElementById('cookieDecline').addEventListener('click', decline);
+})();
