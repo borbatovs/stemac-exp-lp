@@ -14,7 +14,7 @@ var TRANSLATIONS={
     stat_countries:'Countries',
     stat_exp:'Years of Experience',
     prod_label:'Product Catalog',
-    prod_title:'Learn more about our generator sets.',
+    prod_title:'Explore our generator sets',
     prod_desc:'We offer a wide range of models and power outputs to meet all your business needs.',
     prod_cta_title:'Didn\'t find what you were looking for?',
     prod_cta:'Get in Touch',
