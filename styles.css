@@ -363,6 +363,10 @@ nav {
   opacity: 0;
   animation: fadeUp .6s .9s forwards;
 }
+.hero-btns .btn {
+  white-space: nowrap;
+  justify-content: center;
+}
 
 .hero-stats {
   display: flex;
@@ -1547,6 +1551,8 @@ footer {
 
 @media (max-width: 480px) {
   .hero-title { font-size: 38px; }
+  .hero-btns { flex-direction: column; }
+  .hero-btns .btn { width: 100%; }
 }
 
 /* ============================================================

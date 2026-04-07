@@ -187,6 +187,21 @@
     <aside class="filters">
       <div class="f-title" data-i18n="filter_title">&#9881; Filters</div>
       <div class="f-group">
+        <div class="f-glabel" data-i18n="filter_freq">Frequency</div>
+        <div class="radio-row">
+          <label class="rlabel">
+            <input type="radio" name="freqR" value="50" checked onchange="renderTable()">
+            <span class="rcircle"></span>
+            <span>50 Hz</span>
+          </label>
+          <label class="rlabel">
+            <input type="radio" name="freqR" value="60" onchange="renderTable()">
+            <span class="rcircle"></span>
+            <span>60 Hz</span>
+          </label>
+        </div>
+      </div>
+      <div class="f-group">
         <div class="f-glabel" data-i18n="filter_kva">Max Standby kVA</div>
         <div class="slider-vals"><span>0 kVA</span><span id="sval">1000 kVA</span></div>
         <input type="range" id="kvaS" min="0" max="800" step="25" value="800">
@@ -239,7 +254,7 @@
       <p data-i18n="about_p1">When uptime is non-negotiable, STEMAC generator sets are the choice of operators across 30+ countries. With 75 years of manufacturing expertise and a dedicated export product line, we deliver reliable power to data centres, telecom networks, construction sites, and critical infrastructure worldwide.</p>
       <p data-i18n="about_p2">Every STEMAC unit for export is built with components from internationally recognised manufacturers — including Baudouin engines — ensuring that spare parts and technical support are always within reach, no matter where your operation is located.</p>
       <h3 class="about-cert-title" data-i18n="about_cert_title">Certifications</h3>
-      <p data-i18n="about_cert_p">Quality has been part of our DNA since 1998 — when STEMAC became the first Brazilian company in the sector to earn ISO 9001 certification. Today, we operate under the ISO 9001:2015 standard, a commitment that governs every process, from engineering to after-sales support. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">View our certificate →</a></p>
+      <p data-i18n="about_cert_p">Quality has been part of our DNA since 1998 — when STEMAC became the first Brazilian company in the sector to earn ISO 9001 certification. Today, we operate under the ISO 9001:2015 standard, a commitment that governs every process, from engineering to after-sales support. <a href="/assets/docs/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">View our certificate →</a></p>
       <a href="https://wa.me/555193795301" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;" data-i18n="about_cta">Get in Touch</a>
     </div>
     <div class="about-photos reveal">

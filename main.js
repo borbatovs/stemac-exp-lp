@@ -60,7 +60,7 @@ var TRANSLATIONS={
     form_placeholder_country:'Select country…',
     form_placeholder_msg:'Describe your project, required power range, and specific requirements…',
     footer_tagline:'Industrial generator sets built for the world\'s most demanding operations.',
-    footer_nav:'Navigation',
+    footer_nav:'The Company',
     footer_contact:'Contact',
     footer_address:'Porto Alegre, RS &mdash; Brazil',
     footer_copy:'&copy; 2026 Stemac SA Generator Sets. All rights reserved.',
@@ -74,7 +74,7 @@ var TRANSLATIONS={
     about_p1:'When uptime is non-negotiable, STEMAC generator sets are the choice of operators across 30+ countries. With 75 years of manufacturing expertise and a dedicated export product line, we deliver reliable power to data centres, telecom networks, construction sites, and critical infrastructure worldwide.',
     about_p2:'Every STEMAC unit for export is built with components from internationally recognised manufacturers — including Baudouin engines — ensuring that spare parts and technical support are always within reach, no matter where your operation is located.',
     about_cert_title:'Certifications',
-    about_cert_p:'Quality has been part of our DNA since 1998 — when STEMAC became the first Brazilian company in the sector to earn ISO 9001 certification. Today, we operate under the ISO 9001:2015 standard, a commitment that governs every process, from engineering to after-sales support. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">View our certificate →</a>',
+    about_cert_p:'Quality has been part of our DNA since 1998 — when STEMAC became the first Brazilian company in the sector to earn ISO 9001 certification. Today, we operate under the ISO 9001:2015 standard, a commitment that governs every process, from engineering to after-sales support.<br><br><a href="assets/docs/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">View our certificate →</a>',
     results_found:'products found',
     results_found_s:'product found',
     no_match:'No products match the current filters.',
@@ -152,7 +152,7 @@ var TRANSLATIONS={
     form_placeholder_country:'Seleccione país…',
     form_placeholder_msg:'Describa su proyecto, rango de potencia requerido y requisitos específicos…',
     footer_tagline:'Grupos electrógenos industriales diseñados para las operaciones más exigentes del mundo.',
-    footer_nav:'Navegación',
+    footer_nav:'La Empresa',
     footer_contact:'Contacto',
     footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Electrógenos. Todos los derechos reservados.',
@@ -166,7 +166,7 @@ var TRANSLATIONS={
     about_p1:'Cuando la continuidad operativa es crítica, los operadores de más de 30 países confían en STEMAC. Con 75 años de experiencia en fabricación y una línea dedicada a la exportación, entregamos energía confiable a centros de datos, redes de telecomunicaciones, proyectos de construcción e infraestructura crítica en toda la región y el mundo.',
     about_p2:'Cada grupo electrógeno STEMAC para exportación incorpora componentes de fabricantes de reconocimiento mundial — incluidos motores Baudouin — garantizando acceso ágil a repuestos y soporte técnico en cualquier país donde opere.',
     about_cert_title:'Certificaciones',
-    about_cert_p:'La calidad forma parte de nuestra historia desde 1998, cuando STEMAC se convirtió en la primera empresa brasileña del sector en obtener la certificación ISO 9001. Hoy operamos bajo la norma ISO 9001:2015, un compromiso que rige cada etapa de nuestros procesos, desde la ingeniería hasta el soporte posventa. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Ver certificado →</a>',
+    about_cert_p:'La calidad forma parte de nuestra historia desde 1998, cuando STEMAC se convirtió en la primera empresa brasileña del sector en obtener la certificación ISO 9001. Hoy operamos bajo la norma ISO 9001:2015, un compromiso que rige cada etapa de nuestros procesos, desde la ingeniería hasta el soporte posventa.<br><br><a href="assets/docs/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Ver certificado →</a>',
     results_found:'productos encontrados',
     results_found_s:'producto encontrado',
     no_match:'Ningún producto coincide con los filtros actuales.',
@@ -244,7 +244,7 @@ var TRANSLATIONS={
     form_placeholder_country:'Selecione o país…',
     form_placeholder_msg:'Descreva seu projeto, faixa de potência necessária e requisitos específicos…',
     footer_tagline:'Grupos geradores industriais projetados para as operações mais exigentes do mundo.',
-    footer_nav:'Navegação',
+    footer_nav:'A Empresa',
     footer_contact:'Contato',
     footer_address:'Porto Alegre, RS &mdash; Brasil',
     footer_copy:'&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.',
@@ -258,7 +258,7 @@ var TRANSLATIONS={
     about_p1:'Nascemos no Brasil. Operamos no mundo. Com 75 anos de expertise em fabricação de grupos geradores e presença em mais de 30 países, a STEMAC leva energia confiável a data centers, redes de telecom, obras de grande porte e infraestruturas críticas nos cinco continentes.',
     about_p2:'Cada equipamento STEMAC para exportação é produzido com componentes de fabricantes que são referênciais mundiais — incluindo motores Baudouin — garantindo acesso ágil a peças de reposição e suporte técnico em qualquer país onde sua operação esteja.',
     about_cert_title:'Certificações',
-    about_cert_p:'A qualidade faz parte da nossa história desde 1998 — quando a STEMAC se tornou a primeira empresa brasileira do setor a conquistar a certificação ISO 9001. Hoje operamos sob a norma ISO 9001:2015, um compromisso que orienta cada etapa dos nossos processos, da engenharia ao pós-venda. <a href="assets/doc/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Visualizar certificado →</a>',
+    about_cert_p:'A qualidade faz parte da nossa história desde 1998 — quando a STEMAC se tornou a primeira empresa brasileira do setor a conquistar a certificação ISO 9001. Hoje operamos sob a norma ISO 9001:2015, um compromisso que orienta cada etapa dos nossos processos, da engenharia ao pós-venda.<br><br><a href="assets/docs/UKAS-Certificate-BR043465.pdf" target="_blank" rel="noopener" class="about-cert-link">Visualizar certificado →</a>',
     results_found:'produtos encontrados',
     results_found_s:'produto encontrado',
     no_match:'Nenhum produto corresponde aos filtros atuais.',
@@ -485,28 +485,31 @@ var FLAG_ASSETS={
 /* PRODUCTS */
 var PRODS=[
   // 50 Hz
-  {s:25,  p:23,  b:'Baudouin',m:'4M06G25/6'},
-  {s:35,  p:33,  b:'Baudouin',m:'4M06G33/6'},
-  {s:50,  p:46,  b:'Baudouin',m:'4M06G50/6'},
-  {s:85,  p:75,  b:'Baudouin',m:'4M10G83/6'},
-  {s:100, p:90,  b:'Baudouin',m:'4M10G100/6'},
-  {s:140, p:123, b:'Baudouin',m:'6M11G135/6'},
-  {s:165, p:148, b:'Baudouin',m:'6M11G160/6'},
-  {s:210, p:186, b:'Baudouin',m:'6M16G200/6'},
-  {s:255, p:230, b:'Baudouin',m:'6M16G250/6'},
-  {s:320, p:288, b:'Baudouin',m:'6M16G308/6'},
-  {s:335, p:298, b:'Baudouin',m:'6M21G330/6'},
-  {s:440, p:400, b:'Baudouin',m:'6M21G440/5'},
-  {s:500, p:450, b:'Baudouin',m:'6M21G500/5'},
-  {s:550, p:500, b:'Baudouin',m:'6M21G550/5'},
-  {s:600, p:551, b:'Baudouin',m:'6M33G600/6'},
-  {s:700, p:635, b:'Baudouin',m:'6M33G715/5'},
-  {s:800, p:738, b:'Baudouin',m:'8M33G800/6'}
+  {hz:50, s:25,  p:23,  b:'Baudouin',m:'4M06G25/6'},
+  {hz:50, s:35,  p:33,  b:'Baudouin',m:'4M06G33/6'},
+  {hz:50, s:50,  p:46,  b:'Baudouin',m:'4M06G50/6'},
+  {hz:50, s:85,  p:75,  b:'Baudouin',m:'4M10G83/6'},
+  {hz:50, s:100, p:90,  b:'Baudouin',m:'4M10G100/6'},
+  {hz:50, s:140, p:123, b:'Baudouin',m:'6M11G135/6'},
+  {hz:50, s:165, p:148, b:'Baudouin',m:'6M11G160/6'},
+  {hz:50, s:210, p:186, b:'Baudouin',m:'6M16G200/6'},
+  {hz:50, s:255, p:230, b:'Baudouin',m:'6M16G250/6'},
+  {hz:50, s:320, p:288, b:'Baudouin',m:'6M16G308/6'},
+  {hz:50, s:335, p:298, b:'Baudouin',m:'6M21G330/6'},
+  {hz:50, s:440, p:400, b:'Baudouin',m:'6M21G440/5'},
+  {hz:50, s:500, p:450, b:'Baudouin',m:'6M21G500/5'},
+  {hz:50, s:550, p:500, b:'Baudouin',m:'6M21G550/5'},
+  {hz:50, s:600, p:551, b:'Baudouin',m:'6M33G600/6'},
+  {hz:50, s:700, p:635, b:'Baudouin',m:'6M33G715/5'},
+  {hz:50, s:800, p:738, b:'Baudouin',m:'8M33G800/6'}
+  // 60 Hz — products to be added
 ];
 function renderTable(){
   var kva=+document.getElementById('kvaS').value;
+  var freqEl=document.querySelector('input[name="freqR"]:checked');
+  var freq=freqEl?+freqEl.value:50;
   var rows=PRODS.filter(function(p){
-    return p.s<=kva;
+    return p.hz===freq && p.s<=kva;
   });
   var T=TRANSLATIONS[LANG_CURR]||TRANSLATIONS.en;
   document.getElementById('resCnt').innerHTML='<strong>'+rows.length+'</strong> '+(rows.length!==1?T.results_found:T.results_found_s);
@@ -527,6 +530,8 @@ function updateSlider(){
 slider.addEventListener('input',function(){updateSlider();renderTable();});
 document.getElementById('resetBtn').addEventListener('click',function(){
   slider.value=800;updateSlider();
+  var def=document.querySelector('input[name="freqR"][value="50"]');
+  if(def)def.checked=true;
   renderTable();
 });
 updateSlider();
