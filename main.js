@@ -23,6 +23,9 @@ var TRANSLATIONS={
     filter_title:'Filters',
     filter_freq:'Frequency',
     filter_kva:'Max Standby kVA',
+    filter_sort:'Sort by kVA',
+    filter_sort_asc:'Ascending',
+    filter_sort_desc:'Descending',
     filter_reset:'Reset Filters',
     th_power:'Power kVA',
     th_engine:'Engine',
@@ -111,6 +114,9 @@ var TRANSLATIONS={
     filter_title:'Filtros',
     filter_freq:'Frecuencia',
     filter_kva:'kVA Máx. en Espera',
+    filter_sort:'Ordenar por kVA',
+    filter_sort_asc:'Ascendente',
+    filter_sort_desc:'Descendente',
     filter_reset:'Limpiar Filtros',
     th_power:'Potencia kVA',
     th_engine:'Motor',
@@ -203,6 +209,9 @@ var TRANSLATIONS={
     filter_title:'Filtros',
     filter_freq:'Frequência',
     filter_kva:'kVA Máx. em Espera',
+    filter_sort:'Ordenar por kVA',
+    filter_sort_asc:'Crescente',
+    filter_sort_desc:'Decrescente',
     filter_reset:'Limpar Filtros',
     th_power:'Potência kVA',
     th_engine:'Motor',
@@ -535,9 +544,10 @@ function renderTable(){
   var kva=+document.getElementById('kvaS').value;
   var freqEl=document.querySelector('input[name="freqR"]:checked');
   var freq=freqEl?+freqEl.value:50;
+  var sort=document.getElementById('sortS').value||'asc';
   var rows=PRODS.filter(function(p){
     return p.hz===freq && p.s<=kva;
-  });
+  }).sort(function(a,b){return sort==='asc'?a.s-b.s:b.s-a.s;});
   var T=TRANSLATIONS[LANG_CURR]||TRANSLATIONS.en;
   document.getElementById('resCnt').innerHTML='<strong>'+rows.length+'</strong> '+(rows.length!==1?T.results_found:T.results_found_s);
   var body=document.getElementById('tBody');
@@ -555,10 +565,12 @@ function updateSlider(){
   document.getElementById('sval').textContent=slider.value+' kVA';
 }
 slider.addEventListener('input',function(){updateSlider();renderTable();});
+document.getElementById('sortS').addEventListener('change',renderTable);
 document.getElementById('resetBtn').addEventListener('click',function(){
   slider.value=slider.max;updateSlider();
   var def=document.querySelector('input[name="freqR"][value="50"]');
   if(def)def.checked=true;
+  document.getElementById('sortS').value='asc';
   renderTable();
 });
 updateSlider();
@@ -719,37 +731,6 @@ function initMap(){
         .on('mouseout',function(){hideTip();});
       svg.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r','6').attr('fill','#E30614').attr('stroke','#fff').attr('stroke-width','1.5').style('pointer-events','none');
     });
-
-    // Brazil HQ marker (Goiânia) — factory icon in pin
-    (function(){
-      var brPt=proj([-49.3,-16.7]);
-      if(!brPt) return;
-
-      var pinW=34, pinH=46, cx=pinW/2;
-      var g=svg.append('g').attr('transform','translate('+(brPt[0]-cx)+','+(brPt[1]-pinH)+')');
-
-      // Drop shadow filter
-      var defs=svg.select('defs');
-      if(defs.empty()) defs=svg.append('defs');
-      var filt=defs.append('filter').attr('id','pin-shadow').attr('x','-40%').attr('y','-20%').attr('width','180%').attr('height','160%');
-      filt.append('feDropShadow').attr('dx','0').attr('dy','3').attr('stdDeviation','3').attr('flood-color','rgba(0,0,0,0.45)');
-
-      g.append('path')
-        .attr('d','M17,0 C7.6,0 0,7.6 0,17 C0,29.8 17,46 17,46 C17,46 34,29.8 34,17 C34,7.6 26.4,0 17,0 Z')
-        .attr('fill','#8B0000')
-        .attr('stroke','#fff')
-        .attr('stroke-width','1.5')
-        .attr('stroke-linejoin','round')
-        .attr('filter','url(#pin-shadow)');
-
-      var iconSize=18, scale=iconSize/256;
-      var ix=cx-iconSize/2, iy=cx-iconSize/2;
-      g.append('g')
-        .attr('transform','translate('+ix+','+iy+')scale('+scale+')')
-        .append('path')
-        .attr('d','M116,176a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h28A8,8,0,0,1,116,176Zm60-8H148a8,8,0,0,0,0,16h28a8,8,0,0,0,0-16Zm64,48a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16h8V88a8,8,0,0,1,12.8-6.4L96,120V88a8,8,0,0,1,12.8-6.4l38.74,29.05L159.1,29.74A16.08,16.08,0,0,1,174.94,16h18.12A16.08,16.08,0,0,1,208.9,29.74l15,105.13s.08.78.08,1.13v72h8A8,8,0,0,1,240,216Zm-77.86-94.4,8.53,6.4h36.11L193.06,32H174.94ZM48,208H208V144H168a8,8,0,0,1-4.8-1.6l-14.4-10.8,0,0L112,104v32a8,8,0,0,1-12.8,6.4L48,104Z')
-        .attr('fill','#fff');
-    })();
   }).catch(function(){
     svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
       .attr('fill','rgba(255,255,255,.4)').attr('font-size','14').attr('font-family','sans-serif')
