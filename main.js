@@ -501,8 +501,35 @@ var PRODS=[
   {hz:50, s:550, p:500, b:'Baudouin',m:'6M21G550/5'},
   {hz:50, s:600, p:551, b:'Baudouin',m:'6M33G600/6'},
   {hz:50, s:700, p:635, b:'Baudouin',m:'6M33G715/5'},
-  {hz:50, s:800, p:738, b:'Baudouin',m:'8M33G800/6'}
-  // 60 Hz — products to be added
+  {hz:50, s:800, p:738, b:'Baudouin',m:'8M33G800/6'},
+  // 60 Hz
+  {hz:60, s:25,  p:22,  b:'Baudouin',m:'4M06G25/6'},
+  {hz:60, s:32,  p:29,  b:'Baudouin',m:'4M06G25/6'},
+  {hz:60, s:42,  p:37,  b:'Baudouin',m:'4M06G33/6'},
+  {hz:60, s:55,  p:50,  b:'Baudouin',m:'4M06G50/6'},
+  {hz:60, s:63,  p:57,  b:'Baudouin',m:'4M06G50/6'},
+  {hz:60, s:85,  p:78,  b:'Baudouin',m:'4M10G83/6'},
+  {hz:60, s:104, p:93,  b:'Baudouin',m:'4M10G83/6'},
+  {hz:60, s:125, p:112, b:'Baudouin',m:'4M10G100/6'},
+  {hz:60, s:150, p:141, b:'Baudouin',m:'6M11G135/6'},
+  {hz:60, s:170, p:150, b:'Baudouin',m:'6M11G135/6'},
+  {hz:60, s:180, p:164, b:'Baudouin',m:'6M11G160/6'},
+  {hz:60, s:200, p:181, b:'Baudouin',m:'6M11G160/6'},
+  {hz:60, s:260, p:235, b:'Baudouin',m:'6M16G200/6'},
+  {hz:60, s:315, p:284, b:'Baudouin',m:'6M16G250/6'},
+  {hz:60, s:330, p:300, b:'Baudouin',m:'6M16G308/6'},
+  {hz:60, s:375, p:340, b:'Baudouin',m:'6M16G308/6'},
+  {hz:60, s:400, p:370, b:'Baudouin',m:'6M21G330/6'},
+  {hz:60, s:460, p:424, b:'Baudouin',m:'6M21G400/6'},
+  {hz:60, s:500, p:455, b:'Baudouin',m:'6M21G400/6'},
+  {hz:60, s:550, p:500, b:'Baudouin',m:'6M21G460/6'},
+  {hz:60, s:575, p:506, b:'Baudouin',m:'6M21G460/6'},
+  {hz:60, s:650, p:600, b:'Baudouin',m:'8M21G525/6'},
+  {hz:60, s:700, p:635, b:'Baudouin',m:'6M33G600/6'},
+  {hz:60, s:750, p:688, b:'Baudouin',m:'6M33G600/6'},
+  {hz:60, s:800, p:719, b:'Baudouin',m:'6M33G633/6'},
+  {hz:60, s:840, p:750, b:'Baudouin',m:'6M33G660/6'},
+  {hz:60, s:1000,p:900, b:'Baudouin',m:'8M33G800/6'}
 ];
 function renderTable(){
   var kva=+document.getElementById('kvaS').value;
@@ -529,7 +556,7 @@ function updateSlider(){
 }
 slider.addEventListener('input',function(){updateSlider();renderTable();});
 document.getElementById('resetBtn').addEventListener('click',function(){
-  slider.value=800;updateSlider();
+  slider.value=slider.max;updateSlider();
   var def=document.querySelector('input[name="freqR"][value="50"]');
   if(def)def.checked=true;
   renderTable();
