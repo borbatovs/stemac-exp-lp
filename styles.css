@@ -1066,6 +1066,73 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 .country.active { fill: var(--red); cursor: pointer; }
 .country.active:hover { fill: #ff2235; }
 
+/* Map interactive controls */
+.map-controls {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+.map-btn {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .18s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.map-btn i { font-size: 17px; display: flex; }
+.map-btn:hover { background: rgba(255,255,255,.22); }
+
+.map-hint {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.35);
+  font-size: .72rem;
+  font-family: var(--fb);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+.map-hint i { font-size: 13px; }
+.map-hint kbd {
+  font-family: var(--fb);
+  font-size: .68rem;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+/* Fullscreen mode */
+#world-map:fullscreen,
+#world-map:-webkit-full-screen {
+  border-radius: 0;
+  height: 100dvh;
+  background: #0a1628;
+}
+#world-map:fullscreen svg,
+#world-map:-webkit-full-screen svg {
+  height: 100dvh;
+}
+
 #map-tip {
   position: fixed;
   pointer-events: none;

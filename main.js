@@ -38,6 +38,14 @@ var TRANSLATIONS={
     map_title:'Companies from every continent trust Stemac generator sets.',
     map_desc:'From the Americas to Europe, Africa, Asia and Oceania. Our generator sets power businesses in more than 30 countries.',
     tip_cities:'Active Cities',
+    map_hint_drag:'Drag to pan',
+    map_hint_scroll:'Scroll to zoom',
+    map_hint_esc:'Esc to exit',
+    map_btn_fullscreen:'Fullscreen',
+    map_btn_exit_fs:'Exit fullscreen',
+    map_btn_zoom_in:'Zoom in',
+    map_btn_zoom_out:'Zoom out',
+    map_btn_reset:'Reset view',
     contact_label:'Contact',
     contact_title:'Export Contacts',
     contact_desc:'Tell us about your project. Our export team will respond within 24 business hours with a tailored proposal for your power requirements.',
@@ -133,6 +141,14 @@ var TRANSLATIONS={
     map_cta:'Contactar al Equipo de Exportación',
     about_cta:'Contáctenos',
     tip_cities:'Ciudades Activas',
+    map_hint_drag:'Arrastrar para mover',
+    map_hint_scroll:'Scroll para zoom',
+    map_hint_esc:'Esc para salir',
+    map_btn_fullscreen:'Pantalla completa',
+    map_btn_exit_fs:'Salir de pantalla completa',
+    map_btn_zoom_in:'Acercar',
+    map_btn_zoom_out:'Alejar',
+    map_btn_reset:'Restablecer vista',
     contact_label:'Contacto',
     contact_title:'Contactos de Exportación',
     contact_desc:'Cuéntenos sobre su proyecto. Nuestro equipo de exportación responderá en 24 horas hábiles con una propuesta personalizada para sus necesidades de energía.',
@@ -228,6 +244,14 @@ var TRANSLATIONS={
     map_cta:'Falar com o Time de Exportação',
     about_cta:'Entre em Contato',
     tip_cities:'Cidades Ativas',
+    map_hint_drag:'Arraste para mover',
+    map_hint_scroll:'Role para zoom',
+    map_hint_esc:'Esc para sair',
+    map_btn_fullscreen:'Tela cheia',
+    map_btn_exit_fs:'Sair da tela cheia',
+    map_btn_zoom_in:'Ampliar',
+    map_btn_zoom_out:'Reduzir',
+    map_btn_reset:'Redefinir vista',
     contact_label:'Contato',
     contact_title:'Contatos de Exportação',
     contact_desc:'Conte-nos sobre o seu projeto. Nossa equipe de exportação responderá em até 24 horas úteis com uma proposta personalizada para as suas necessidades de energia.',
@@ -579,42 +603,42 @@ renderTable();
 /* MAP */
 
 var CDATA=[
-  {id:'024',name:'Angola',             iso:'ao',cities:['Luanda','Talatona'],                                                              lng:13.2,  lat:-8.8},
-  {id:'032',name:'Argentina',          iso:'ar',cities:['Buenos Aires','Córdoba','Corrientes','Formosa','Rosario','San Miguel de Tucumán'], lng:-58.4, lat:-34.6},
-  {id:'036',name:'Australia',          iso:'au',cities:['Sydney'],                                                                      lng:151.2, lat:-33.9},
-  {id:'068',name:'Bolivia',            iso:'bo',cities:['Santa Cruz de la Sierra','Cochabamba','Cobija','Cotoca'],                         lng:-63.2, lat:-17.8},
-  {id:'124',name:'Canada',             iso:'ca',cities:['Toronto'],                                                                        lng:-79.4, lat:43.7},
-  {id:'152',name:'Chile',              iso:'cl',cities:['Santiago','Puerto Varas'],                                                        lng:-70.6, lat:-33.4},
-  {id:'170',name:'Colombia',           iso:'co',cities:['Cartagena','Bogotá','Bucaramanga','Tocancipá'],                                   lng:-74.0, lat:4.7},
-  {id:'188',name:'Costa Rica',         iso:'cr',cities:['San José'],                                                                       lng:-84.1, lat:9.9},
-  {id:'192',name:'Cuba',               iso:'cu',cities:['Havana'],                                                                         lng:-82.4, lat:23.1},
-  {id:'276',name:'Germany',            iso:'de',cities:['Kitzingen'],                                                                      lng:10.2,  lat:49.7},
-  {id:'214',name:'Dominican Republic', iso:'do',cities:['Santo Domingo'],                                                                  lng:-69.9, lat:18.5},
-  {id:'012',name:'Algeria',            iso:'dz',cities:['Algiers'],                                                                        lng:3.1,   lat:36.7},
-  {id:'218',name:'Ecuador',            iso:'ec',cities:['Guayaquil'],                                                                      lng:-79.9, lat:-2.2},
-  {id:'818',name:'Egypt',              iso:'eg',cities:['New Salhia City'],                                                                lng:31.2,  lat:30.1},
-  {id:'231',name:'Ethiopia',           iso:'et',cities:['Addis Ababa'],                                                                    lng:38.7,  lat:9.0},
-  {id:'826',name:'United Kingdom',     iso:'gb',cities:['London'],                                                                         lng:-0.1,  lat:51.5},
-  {id:'320',name:'Guatemala',          iso:'gt',cities:['Guatemala City'],                                                                 lng:-90.5, lat:14.6},
-  {id:'624',name:'Guinea-Bissau',      iso:'gw',cities:['Região de Tombali'],                                                              lng:-15.6, lat:11.9},
-  {id:'340',name:'Honduras',           iso:'hn',cities:['Tegucigalpa'],                                                                    lng:-87.2, lat:14.1},
-  {id:'372',name:'Ireland',            iso:'ie',cities:['Dublin'],                                                                         lng:-6.3,  lat:53.3},
-  {id:'356',name:'India',              iso:'in',cities:['New Delhi'],                                                                      lng:77.2,  lat:28.6},
-  {id:'392',name:'Japan',              iso:'jp',cities:['Tokyo'],                                                                          lng:139.7, lat:35.7},
-  {id:'562',name:'Niger',              iso:'ne',cities:['Niamey'],                                                                         lng:2.1,   lat:13.5},
-  {id:'566',name:'Nigeria',            iso:'ng',cities:['Lagos'],                                                                          lng:3.4,   lat:6.5},
-  {id:'558',name:'Nicaragua',          iso:'ni',cities:['Managua'],                                                                        lng:-86.3, lat:12.1},
-  {id:'591',name:'Panama',             iso:'pa',cities:['Panama City'],                                                                    lng:-79.5, lat:9.0},
-  {id:'604',name:'Peru',               iso:'pe',cities:['Lima','Arequipa','Callao','Puerto Maldonado','San Isidro'],                       lng:-77.0, lat:-12.0},
-  {id:'586',name:'Pakistan',           iso:'pk',cities:['Karachi'],                                                                        lng:67.0,  lat:24.9},
-  {id:'620',name:'Portugal',           iso:'pt',cities:['Madeira','Bobadela','Figueira da Foz'],                                           lng:-9.1,  lat:38.7},
-  {id:'600',name:'Paraguay',           iso:'py',cities:['Minga Guazú','Asunción','Ciudad del Este','San Lorenzo'],                        lng:-55.7, lat:-25.6},
-  {id:'780',name:'Trinidad & Tobago',  iso:'tt',cities:['Arima','Waterloo'],                                                               lng:-61.5, lat:10.7},
-  {id:'840',name:'United States',      iso:'us',cities:['Miami','Fort Lauderdale','Greenville','Highlands','Lewes','Oakland Park','Rosharon'], lng:-80.2, lat:25.8},
-  {id:'858',name:'Uruguay',            iso:'uy',cities:['Montevideo','Artigas','Cerro Largo','Flores'],                                    lng:-56.2, lat:-34.9},
-  {id:'862',name:'Venezuela',          iso:'ve',cities:['Caracas','Barquisimeto','Valencia','Aragua','Maracaibo','Santa Teresa del Tuy'],  lng:-66.9, lat:10.5},
-  {id:'887',name:'Yemen',              iso:'ye',cities:["Sana'a"],                                                                         lng:44.2,  lat:15.4},
-  {id:'710',name:'South Africa',       iso:'za',cities:['Johannesburg','Germiston'],                                                       lng:28.0,  lat:-26.2}
+  {id:'024',name:'Angola',             names:{es:'Angola',            pt:'Angola'},            iso:'ao',cities:['Luanda','Talatona'],                                                                                                                                     lng:13.2,  lat:-8.8},
+  {id:'032',name:'Argentina',          names:{es:'Argentina',         pt:'Argentina'},         iso:'ar',cities:['Buenos Aires','Córdoba','Corrientes','Formosa','Rosario','San Miguel de Tucumán'],                                                                        lng:-58.4, lat:-34.6},
+  {id:'036',name:'Australia',          names:{es:'Australia',         pt:'Austrália'},         iso:'au',cities:['Sydney'],                                                                                                                                                lng:151.2, lat:-33.9},
+  {id:'068',name:'Bolivia',            names:{es:'Bolivia',           pt:'Bolívia'},           iso:'bo',cities:['Santa Cruz de la Sierra','Cochabamba','Cobija','Cotoca'],                                                                                                 lng:-63.2, lat:-17.8},
+  {id:'124',name:'Canada',             names:{es:'Canadá',            pt:'Canadá'},            iso:'ca',cities:['Toronto'],                                                                                                                                                lng:-79.4, lat:43.7},
+  {id:'152',name:'Chile',              names:{es:'Chile',             pt:'Chile'},             iso:'cl',cities:['Santiago','Puerto Varas'],                                                                                                                                lng:-70.6, lat:-33.4},
+  {id:'170',name:'Colombia',           names:{es:'Colombia',          pt:'Colômbia'},          iso:'co',cities:['Cartagena','Bogotá','Bucaramanga','Tocancipá'],                                                                                                           lng:-74.0, lat:4.7},
+  {id:'188',name:'Costa Rica',         names:{es:'Costa Rica',        pt:'Costa Rica'},        iso:'cr',cities:['San José'],                                                                                                                                               lng:-84.1, lat:9.9},
+  {id:'192',name:'Cuba',               names:{es:'Cuba',              pt:'Cuba'},              iso:'cu',cities:['Havana'],                                           cities_es:['La Habana'],           cities_pt:['Havana'],                                              lng:-82.4, lat:23.1},
+  {id:'276',name:'Germany',            names:{es:'Alemania',          pt:'Alemanha'},          iso:'de',cities:['Kitzingen'],                                                                                                                                              lng:10.2,  lat:49.7},
+  {id:'214',name:'Dominican Republic', names:{es:'República Dominicana',pt:'República Dominicana'},iso:'do',cities:['Santo Domingo'],                                                                                                                                     lng:-69.9, lat:18.5},
+  {id:'012',name:'Algeria',            names:{es:'Argelia',           pt:'Argélia'},           iso:'dz',cities:['Algiers'],                                          cities_es:['Argel'],               cities_pt:['Argel'],                                               lng:3.1,   lat:36.7},
+  {id:'218',name:'Ecuador',            names:{es:'Ecuador',           pt:'Equador'},           iso:'ec',cities:['Guayaquil'],                                                                                                                                              lng:-79.9, lat:-2.2},
+  {id:'818',name:'Egypt',              names:{es:'Egipto',            pt:'Egito'},             iso:'eg',cities:['New Salhia City'],                                                                                                                                        lng:31.2,  lat:30.1},
+  {id:'231',name:'Ethiopia',           names:{es:'Etiopía',           pt:'Etiópia'},           iso:'et',cities:['Addis Ababa'],                                      cities_es:['Adís Abeba'],          cities_pt:['Adis Abeba'],                                          lng:38.7,  lat:9.0},
+  {id:'826',name:'United Kingdom',     names:{es:'Reino Unido',       pt:'Reino Unido'},       iso:'gb',cities:['London'],                                           cities_es:['Londres'],             cities_pt:['Londres'],                                             lng:-0.1,  lat:51.5},
+  {id:'320',name:'Guatemala',          names:{es:'Guatemala',         pt:'Guatemala'},         iso:'gt',cities:['Guatemala City'],                                   cities_es:['Ciudad de Guatemala'], cities_pt:['Cidade da Guatemala'],                                  lng:-90.5, lat:14.6},
+  {id:'624',name:'Guinea-Bissau',      names:{es:'Guinea-Bisáu',      pt:'Guiné-Bissau'},      iso:'gw',cities:['Região de Tombali'],                                                                                                                                      lng:-15.6, lat:11.9},
+  {id:'340',name:'Honduras',           names:{es:'Honduras',          pt:'Honduras'},          iso:'hn',cities:['Tegucigalpa'],                                                                                                                                            lng:-87.2, lat:14.1},
+  {id:'372',name:'Ireland',            names:{es:'Irlanda',           pt:'Irlanda'},           iso:'ie',cities:['Dublin'],                                                                                                                                                 lng:-6.3,  lat:53.3},
+  {id:'356',name:'India',              names:{es:'India',             pt:'Índia'},             iso:'in',cities:['New Delhi'],                                        cities_es:['Nueva Delhi'],         cities_pt:['Nova Déli'],                                            lng:77.2,  lat:28.6},
+  {id:'392',name:'Japan',              names:{es:'Japón',             pt:'Japão'},             iso:'jp',cities:['Tokyo'],                                            cities_es:['Tokio'],               cities_pt:['Tóquio'],                                              lng:139.7, lat:35.7},
+  {id:'562',name:'Niger',              names:{es:'Níger',             pt:'Níger'},             iso:'ne',cities:['Niamey'],                                                                                                                                                 lng:2.1,   lat:13.5},
+  {id:'566',name:'Nigeria',            names:{es:'Nigeria',           pt:'Nigéria'},           iso:'ng',cities:['Lagos'],                                                                                                                                                  lng:3.4,   lat:6.5},
+  {id:'558',name:'Nicaragua',          names:{es:'Nicaragua',         pt:'Nicarágua'},         iso:'ni',cities:['Managua'],                                                                                                                                                lng:-86.3, lat:12.1},
+  {id:'591',name:'Panama',             names:{es:'Panamá',            pt:'Panamá'},            iso:'pa',cities:['Panama City'],                                      cities_es:['Ciudad de Panamá'],    cities_pt:['Cidade do Panamá'],                                     lng:-79.5, lat:9.0},
+  {id:'604',name:'Peru',               names:{es:'Perú',              pt:'Peru'},              iso:'pe',cities:['Lima','Arequipa','Callao','Puerto Maldonado','San Isidro'],                                                                                               lng:-77.0, lat:-12.0},
+  {id:'586',name:'Pakistan',           names:{es:'Pakistán',          pt:'Paquistão'},         iso:'pk',cities:['Karachi'],                                                                                                                                                lng:67.0,  lat:24.9},
+  {id:'620',name:'Portugal',           names:{es:'Portugal',          pt:'Portugal'},          iso:'pt',cities:['Madeira','Bobadela','Figueira da Foz'],                                                                                                                   lng:-9.1,  lat:38.7},
+  {id:'600',name:'Paraguay',           names:{es:'Paraguay',          pt:'Paraguai'},          iso:'py',cities:['Minga Guazú','Asunción','Ciudad del Este','San Lorenzo'],                                                                                                 lng:-55.7, lat:-25.6},
+  {id:'780',name:'Trinidad & Tobago',  names:{es:'Trinidad y Tobago', pt:'Trinidad e Tobago'}, iso:'tt',cities:['Arima','Waterloo'],                                                                                                                                      lng:-61.5, lat:10.7},
+  {id:'840',name:'United States',      names:{es:'Estados Unidos',    pt:'Estados Unidos'},    iso:'us',cities:['Miami','Fort Lauderdale','Greenville','Highlands','Lewes','Oakland Park','Rosharon'],                                                                     lng:-80.2, lat:25.8},
+  {id:'858',name:'Uruguay',            names:{es:'Uruguay',           pt:'Uruguai'},           iso:'uy',cities:['Montevideo','Artigas','Cerro Largo','Flores'],                                                                                                            lng:-56.2, lat:-34.9},
+  {id:'862',name:'Venezuela',          names:{es:'Venezuela',         pt:'Venezuela'},         iso:'ve',cities:['Caracas','Barquisimeto','Valencia','Aragua','Maracaibo','Santa Teresa del Tuy'],                                                                          lng:-66.9, lat:10.5},
+  {id:'887',name:'Yemen',              names:{es:'Yemen',             pt:'Iêmen'},             iso:'ye',cities:["Sana'a"],                                           cities_es:['Saná'],                cities_pt:['Sanaa'],                                               lng:44.2,  lat:15.4},
+  {id:'710',name:'South Africa',       names:{es:'Sudáfrica',         pt:'África do Sul'},     iso:'za',cities:['Johannesburg','Germiston'],                         cities_es:['Johannesburgo','Germiston'], cities_pt:['Joanesburgo','Germiston'],                       lng:28.0,  lat:-26.2}
 ];
 var AMAP={};
 CDATA.forEach(function(c){AMAP[c.id]=c;});
@@ -634,14 +658,18 @@ var CONTINENTS={
 var CONT_ORDER=['Americas','Africa','Europe/UK','Asia/Oceania'];
 var activeContinent=null;
 
+function getCountryName(x){
+  return (LANG_CURR!=='en'&&x.names&&x.names[LANG_CURR])?x.names[LANG_CURR]:x.name;
+}
+
 function buildChips(continent){
   var chipsEl=document.getElementById('chips');
   chipsEl.innerHTML='';
   var filtered=CDATA.filter(function(x){return CONTINENTS[x.iso]===continent;});
-  filtered.sort(function(a,b){return a.name.localeCompare(b.name);});
+  filtered.sort(function(a,b){return getCountryName(a).localeCompare(getCountryName(b));});
   filtered.forEach(function(x){
     var d=document.createElement('div');d.className='chip';
-    d.innerHTML='<span class="cdot"></span>'+getFlag(x.iso)+'&nbsp;'+x.name;
+    d.innerHTML='<span class="cdot"></span>'+getFlag(x.iso)+'&nbsp;'+getCountryName(x);
     chipsEl.appendChild(d);
   });
 }
@@ -677,9 +705,12 @@ buildTabs();
 
 var tipEl=document.getElementById('map-tip');
 function showTip(e,c){
+  var lang=LANG_CURR;
+  var name=(lang!=='en'&&c.names&&c.names[lang])?c.names[lang]:c.name;
+  var cities=(lang!=='en'&&c['cities_'+lang])?c['cities_'+lang]:c.cities;
   document.getElementById('tip-flag').innerHTML=getFlag(c.iso,44,30).replace('border-radius:2px','border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.3)');
-  document.getElementById('tip-name').textContent=c.name;
-  document.getElementById('tip-cities').innerHTML=c.cities.map(function(x){return '<span class="tip-city">'+x+'</span>';}).join('');
+  document.getElementById('tip-name').textContent=name;
+  document.getElementById('tip-cities').innerHTML=cities.map(function(x){return '<span class="tip-city">'+x+'</span>';}).join('');
   tipEl.style.opacity='1';
   posTip(e);
 }
@@ -697,23 +728,51 @@ function initMap(){
   var svg=d3.select('#world-map').append('svg')
     .attr('viewBox','0 0 '+W+' '+H)
     .attr('preserveAspectRatio','xMidYMid meet')
-    .style('width','100%').style('height','100%');
+    .style('width','100%').style('height','100%')
+    .style('cursor','grab');
+
+  // Background rect catches pointer events for drag/zoom outside land areas
   svg.append('rect').attr('width',W).attr('height',H).attr('fill','#0a1628');
+
+  // Single group that receives zoom/pan transforms
+  var g=svg.append('g').attr('class','map-g');
+
   var proj=d3.geoNaturalEarth1().scale(W/5.2).translate([W/2,H/2]);
   var pg=d3.geoPath().projection(proj);
+
+  // Track drag state to suppress tooltip while panning
+  var dragging=false;
+  var fullscreen=false;
+
+  var zoom=d3.zoom()
+    .scaleExtent([1,8])
+    .translateExtent([[-(W*0.5),-(H*0.5)],[(W*1.5),(H*1.5)]])
+    .filter(function(event){
+      // Block wheel zoom unless in fullscreen
+      if(event.type==='wheel') return fullscreen;
+      return !event.ctrlKey&&!event.button;
+    })
+    .on('start',function(event){if(event.sourceEvent&&event.sourceEvent.type!=='wheel'){dragging=true;svg.style('cursor','grabbing');}})
+    .on('zoom',function(event){g.attr('transform',event.transform);})
+    .on('end',function(){dragging=false;svg.style('cursor','grab');hideTip();});
+
+  svg.call(zoom).on('dblclick.zoom',null);
+
   d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(function(world){
-    svg.append('path').datum(d3.geoGraticule()())
+    g.append('path').datum(d3.geoGraticule()())
       .attr('fill','none').attr('stroke','rgba(255,255,255,.05)').attr('stroke-width','.4').attr('d',pg);
-    svg.append('g').selectAll('path')
+    g.append('g').selectAll('path')
       .data(topojson.feature(world,world.objects.countries).features)
       .enter().append('path')
       .attr('class',function(d){var id=String(d.id).padStart(3,'0');return id==='076'?'country origin':AMAP[id]?'country active':'country';})
       .attr('d',pg)
       .on('mouseover',function(event,d){
+        if(dragging)return;
         var c=AMAP[String(d.id).padStart(3,'0')];
         if(c){showTip(event,c);d3.select(this).style('fill','#ff2235');}
       })
       .on('mousemove',function(event,d){
+        if(dragging)return;
         if(AMAP[String(d.id).padStart(3,'0')])posTip(event);
       })
       .on('mouseout',function(event,d){
@@ -721,21 +780,72 @@ function initMap(){
       });
     CDATA.forEach(function(c){
       var pt=proj([c.lng,c.lat]);if(!pt)return;
-      var pulse=svg.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',5)
+      var pulse=g.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r',5)
         .attr('fill','none').attr('stroke','#E30614').attr('stroke-width','1.8');
       pulse.append('animate').attr('attributeName','r').attr('from','5').attr('to','22').attr('dur','2s').attr('repeatCount','indefinite');
       pulse.append('animate').attr('attributeName','stroke-opacity').attr('from','1').attr('to','0').attr('dur','2s').attr('repeatCount','indefinite');
-      svg.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r','14').attr('fill','transparent').attr('stroke','none').style('cursor','pointer')
-        .on('mouseover',function(event){showTip(event,c);})
-        .on('mousemove',function(event){posTip(event);})
+      g.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r','14').attr('fill','transparent').attr('stroke','none').style('cursor','pointer')
+        .on('mouseover',function(event){if(!dragging)showTip(event,c);})
+        .on('mousemove',function(event){if(!dragging)posTip(event);})
         .on('mouseout',function(){hideTip();});
-      svg.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r','6').attr('fill','#E30614').attr('stroke','#fff').attr('stroke-width','1.5').style('pointer-events','none');
+      g.append('circle').attr('cx',pt[0]).attr('cy',pt[1]).attr('r','6').attr('fill','#E30614').attr('stroke','#fff').attr('stroke-width','1.5').style('pointer-events','none');
     });
   }).catch(function(){
     svg.append('text').attr('x',W/2).attr('y',H/2).attr('text-anchor','middle')
       .attr('fill','rgba(255,255,255,.4)').attr('font-size','14').attr('font-family','sans-serif')
       .text('Map requires internet connection.');
   });
+
+  // Zoom controls overlay
+  var ctrl=document.createElement('div');
+  ctrl.className='map-controls';
+  ctrl.innerHTML=
+    '<button class="map-btn" id="mapFullscreen" title="Fullscreen"><i class="ph ph-arrows-out"></i></button>'+
+    '<button class="map-btn" id="mapZoomIn" title="Zoom in"><i class="ph ph-magnifying-glass-plus"></i></button>'+
+    '<button class="map-btn" id="mapZoomOut" title="Zoom out"><i class="ph ph-magnifying-glass-minus"></i></button>'+
+    '<button class="map-btn" id="mapReset" title="Reset view"><i class="ph ph-arrows-counter-clockwise"></i></button>';
+  el.appendChild(ctrl);
+
+  document.getElementById('mapZoomIn').addEventListener('click',function(){svg.transition().duration(300).call(zoom.scaleBy,1.6);});
+  document.getElementById('mapZoomOut').addEventListener('click',function(){svg.transition().duration(300).call(zoom.scaleBy,1/1.6);});
+  document.getElementById('mapReset').addEventListener('click',function(){svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity);});
+
+  // Fullscreen toggle
+  var fsBtn=document.getElementById('mapFullscreen');
+  function updateMapControls(){
+    var T=TRANSLATIONS[LANG_CURR]||TRANSLATIONS.en;
+    // Hint
+    if(fullscreen){
+      hint.innerHTML='<i class="ph ph-mouse-scroll"></i> '+T.map_hint_scroll+' &nbsp;·&nbsp; <i class="ph ph-hand-grabbing"></i> '+T.map_hint_drag+' &nbsp;·&nbsp; <kbd>Esc</kbd> '+T.map_hint_esc;
+    } else {
+      hint.innerHTML='<i class="ph ph-hand-grabbing"></i> '+T.map_hint_drag;
+    }
+    // Button titles
+    fsBtn.title=fullscreen?T.map_btn_exit_fs:T.map_btn_fullscreen;
+    document.getElementById('mapZoomIn').title=T.map_btn_zoom_in;
+    document.getElementById('mapZoomOut').title=T.map_btn_zoom_out;
+    document.getElementById('mapReset').title=T.map_btn_reset;
+  }
+  fsBtn.addEventListener('click',function(){
+    if(!document.fullscreenElement){
+      el.requestFullscreen&&el.requestFullscreen();
+    } else {
+      document.exitFullscreen&&document.exitFullscreen();
+    }
+  });
+  document.addEventListener('fullscreenchange',function(){
+    fullscreen=!!document.fullscreenElement;
+    fsBtn.querySelector('i').className=fullscreen?'ph ph-arrows-in':'ph ph-arrows-out';
+    if(!fullscreen){svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity);}
+    updateMapControls();
+  });
+  window._updateMapControls=updateMapControls;
+
+  // Interaction hint
+  var hint=document.createElement('div');
+  hint.className='map-hint';
+  el.appendChild(hint);
+  updateMapControls();
 }
 initMap();
 
@@ -1111,18 +1221,25 @@ function setLang(lang){
   var ds=document.getElementById('dialSearch');
   if(ds) ds.placeholder=T.dial_search;
 
-  // Continent tab labels (rebuild)
+  // Continent tab labels (rebuild, preserving chevron SVG)
   var CONT_LABELS=lang==='en'?CONT_LABELS_EN:lang==='es'?CONT_LABELS_ES:CONT_LABELS_PT;
+  var chevronSVG='<svg class="ctab-chevron" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,1 5,5 9,1"/></svg>';
   document.querySelectorAll('.ctab').forEach(function(btn){
     var cont=btn.getAttribute('data-cont');
     if(cont){
       var count=CDATA.filter(function(x){return CONTINENTS[x.iso]===cont;}).length;
-      btn.textContent=CONT_LABELS[cont]+' ('+count+')';
+      btn.innerHTML=CONT_LABELS[cont]+' ('+count+') '+chevronSVG;
     }
   });
 
+  // Re-render open chips with translated country names
+  if(activeContinent) buildChips(activeContinent);
+
   // Re-render table to update "products found" and "no match" text
   renderTable();
+
+  // Update map hint and button titles
+  if(window._updateMapControls) window._updateMapControls();
 }
 
 /* ============================================================
