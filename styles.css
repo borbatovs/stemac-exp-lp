@@ -1059,7 +1059,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
   position: relative;
   z-index: 1;
 }
-#world-map svg { width: 100%; height: 100%; display: block; }
+#world-map > svg { width: 100%; height: 100%; display: block; }
 
 .country        { fill: #1a3a6e; stroke: #0d2550; stroke-width: .4px; }
 .country.origin { fill: #8B0000; stroke: #0d2550; stroke-width: .4px; cursor: default; }
@@ -1128,8 +1128,8 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
   height: 100dvh;
   background: #0a1628;
 }
-#world-map:fullscreen svg,
-#world-map:-webkit-full-screen svg {
+#world-map:fullscreen > svg,
+#world-map:-webkit-full-screen > svg {
   height: 100dvh;
 }
 
