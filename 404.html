@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Página não encontrada — Stemac SA Grupos Geradores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 6% 6rem;
+    text-align: center;
+    background: #fff;
+  }
+
+  .error-code {
+    font-family: var(--fd);
+    font-size: clamp(7rem, 20vw, 14rem);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--navy);
+    letter-spacing: -.02em;
+    position: relative;
+    display: inline-block;
+  }
+
+  .error-code::after {
+    content: '';
+    display: block;
+    height: 6px;
+    background: var(--red);
+    border-radius: 3px;
+    margin-top: .5rem;
+  }
+
+  .error-label {
+    font-family: var(--fd);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 2rem 0 .75rem;
+  }
+
+  .error-title {
+    font-family: var(--fd);
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    max-width: 540px;
+  }
+
+  .error-desc {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #666;
+    max-width: 460px;
+    margin-bottom: 2.5rem;
+  }
+
+  .error-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    font-family: var(--fd);
+    font-size: .88rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--navy);
+    text-decoration: none;
+    border: 2px solid var(--navy);
+    border-radius: 4px;
+    padding: .65rem 1.4rem;
+    transition: background .2s, color .2s;
+  }
+  .btn-ghost:hover {
+    background: var(--navy);
+    color: #fff;
+  }
+
+  @media (max-width: 480px) {
+    .error-actions { flex-direction: column; }
+    .error-actions a { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo-link">
+    <img src="assets/logo/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;">
+  </a>
+  <a href="index.html" class="btn btn-primary" style="font-size:.83rem;padding:.5rem 1.25rem;">
+    ← Voltar ao Site
+  </a>
+</nav>
+
+<!-- ERROR CONTENT -->
+<main class="error-page">
+  <div class="error-code">404</div>
+
+  <p class="error-label">Página não encontrada</p>
+
+  <h1 class="error-title">Ops! Esta página não existe.</h1>
+
+  <p class="error-desc">
+    O endereço que você acessou pode ter sido removido, renomeado ou estar temporariamente indisponível.
+  </p>
+
+  <div class="error-actions">
+    <a href="index.html" class="btn btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true">
+        <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48a16,16,0,0,1,21.66,0l80,75.48A16,16,0,0,1,224,115.55Z"/>
+      </svg>
+      Ir para a Home
+    </a>
+    <a href="index.html#contact" class="btn-ghost">Falar com a STEMAC</a>
+  </div>
+</main>
+
+</body>
+</html>

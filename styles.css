@@ -286,7 +286,7 @@ nav {
   align-items: center;
   gap: 3rem;
   width: 100%;
-  padding-top: 76px;
+  padding-top: 36px;
 }
 
 .hero-content { flex: 1 1 0; min-width: 0; }
@@ -1613,7 +1613,11 @@ footer {
   .hero-layout  { flex-direction: column; align-items: stretch; gap: 2rem; }
   .hero-img-wrap { display: none; }
   .hero-img      { width: 320px; }
-  .hero-stats   { flex-wrap: wrap; gap: 1.5rem; }
+  .hero-stats   { flex-wrap: nowrap; gap: 1rem; }
+  .stat         { flex: 1; }
+  .stat::before { left: -0.5rem; }
+  .stat-n       { font-size: 1.8rem; }
+  .stat-l       { white-space: normal; word-break: break-word; }
 
   #world-map    { height: 300px; }
 
@@ -1640,9 +1644,11 @@ footer {
    ============================================================ */
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 38px; }
+  .hero-title { font-size: 48px; }
   .hero-btns { flex-direction: column; }
   .hero-btns .btn { width: 100%; }
+  .stat-n     { font-size: 1.5rem; }
+  .stat::before { left: -0.5rem; }
 }
 
 /* ============================================================
