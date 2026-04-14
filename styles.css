@@ -1215,6 +1215,103 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 
 
 /* ============================================================
+   FAQ
+   ============================================================ */
+
+#faq { background: #fff; }
+
+.faq-header { max-width: 720px; margin-bottom: 3rem; }
+
+.faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-group { margin-bottom: 2.8rem; }
+
+.faq-group-title {
+  font-family: var(--fd);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid rgba(2,29,73,.1);
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+}
+.faq-group-title::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(2,29,73,.08);
+}
+.faq-item:last-child { border-bottom: none; }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.15rem 0;
+  text-align: left;
+  font-family: var(--fb);
+  font-size: .97rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.5;
+  transition: color .2s;
+}
+.faq-q:hover { color: var(--red); }
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(2,29,73,.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, transform .3s;
+}
+.faq-item.open .faq-icon {
+  background: var(--red);
+  transform: rotate(45deg);
+}
+.faq-icon svg { pointer-events: none; }
+.faq-item.open .faq-q { color: var(--red); }
+
+.faq-a {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .35s ease, padding .35s ease;
+}
+.faq-item.open .faq-a { max-height: 600px; }
+
+.faq-a p {
+  font-size: .93rem;
+  line-height: 1.85;
+  color: #555;
+  padding-bottom: 1.15rem;
+  margin: 0;
+}
+
+
+/* ============================================================
    CONTACT
    ============================================================ */
 
@@ -1649,6 +1746,8 @@ footer {
   .hero-btns .btn { width: 100%; }
   .stat-n     { font-size: 1.5rem; }
   .stat::before { left: -0.5rem; }
+
+  .faq-q { font-size: .9rem; }
 }
 
 /* ============================================================

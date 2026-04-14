@@ -101,7 +101,34 @@ var TRANSLATIONS={
     seg_5_sub:'Certified for hazardous areas',    seg_5_title:'Oil &amp; Gas',        seg_5_desc:'Power equipment engineered for the toughest extraction and refining environments on the planet.',
     seg_6_sub:'Power where the grid ends',        seg_6_title:'Agriculture',          seg_6_desc:'Dependable energy for irrigation, cold storage, and processing &mdash; wherever your operation is.',
     seg_7_sub:'Scalable infrastructure, any scale', seg_7_title:'Commercial &amp; Public', seg_7_desc:'Efficient and sustainable power systems for offices, shopping centers, and public facilities of all sizes.',
-    seg_8_sub:'Backup power for critical towers', seg_8_title:'Telecoms',             seg_8_desc:'When the grid goes down, communication cannot. Generator sets built to protect cell towers and telecom infrastructure around the clock.'
+    seg_8_sub:'Backup power for critical towers', seg_8_title:'Telecoms',             seg_8_desc:'When the grid goes down, communication cannot. Generator sets built to protect cell towers and telecom infrastructure around the clock.',
+    nav_faq:'FAQ',
+    faq_label:'FAQ',
+    faq_title:'Frequently Asked Questions',
+    faq_cat1:'Product &amp; Technical Specifications',
+    faq_cat2:'Logistics &amp; Delivery',
+    faq_cat3:'After-Sales &amp; Support',
+    faq_cat4:'Commercial',
+    faq_q1:'Are your generator sets available in both 50 Hz and 60 Hz configurations?',
+    faq_a1:'Yes. All STEMAC export units are available in 50 Hz and 60 Hz versions to meet the grid standards of your country.',
+    faq_q2:'Which engine brands are used in export models?',
+    faq_a2:'Our export units are primarily built with Baudouin engines, an internationally recognised brand with authorised service centres in over 100 countries. We also work with Scania, Perkins, Volvo, and FPT, giving us the flexibility to match the right powertrain to your project requirements and local support network.',
+    faq_q3:'Can generator sets be customised for specific environments (tropical, desert, offshore)?',
+    faq_a3:'Yes. We offer configuration options including tropical derating, IP-rated enclosures, and special cooling systems for extreme climates.',
+    faq_q4:'What are the typical lead times for export orders?',
+    faq_a4:'Lead times range from 30 to 150 days depending on the engine brand, frequency configuration (50 Hz / 60 Hz), and enclosure type. Our export team will provide a precise delivery schedule alongside your quote.',
+    faq_q5:'Which Incoterms do you work with?',
+    faq_a5:'We are highly flexible on trade terms and have closed deals under EXW, FCA, FOB, CPT, CIF, CIP, and DAP. Our export team will recommend the most suitable option based on your country, logistics setup, and preferences.',
+    faq_q6:'Do you handle export documentation and customs paperwork?',
+    faq_a6:'Yes. STEMAC\'s export team manages all required documentation, including commercial invoices, packing lists, certificates of origin, and technical compliance documents.',
+    faq_q7:'What warranty is provided for exported units?',
+    faq_a7:'All export generator sets come with a standard 12-month warranty covering manufacturing defects, with remote technical support included. Extended warranty options are available and can be tailored to each client\'s needs and market requirements.',
+    faq_q8:'How do I access spare parts and technical support after delivery?',
+    faq_a8:'STEMAC provides end-to-end support, from project scope definition through to spare parts supply. Since our units are built with engines from internationally recognised manufacturers (Baudouin, Scania, Perkins, Volvo, and FPT), spare parts are available through each brand\'s global network. Whether you need a local partner, remote troubleshooting, or a long-term service agreement, our team is ready to support your operation at every stage.',
+    faq_q9:'What are the accepted payment methods for international orders?',
+    faq_a9:'We accept multiple payment methods depending on the country and client needs, including wire transfer (T/T), PayPal, and Letters of Credit (L/C). Payment terms are discussed and agreed upon at the time of quotation.',
+    faq_q10:'Is there a minimum order quantity for export?',
+    faq_a10:'There is no minimum order quantity. We supply single units as well as large fleet orders, and the larger the volume, the better the unit price. Each project gets a dedicated export specialist assigned from day one.'
   },
   es:{
     nav_markets:'Sectores',
@@ -204,7 +231,34 @@ var TRANSLATIONS={
     seg_5_sub:'Certificado para zonas de alta peligrosidad', seg_5_title:'Oil &amp; Gas',  seg_5_desc:'Soluciones eléctricas homologadas para operar con seguridad en los entornos más exigentes del sector.',
     seg_6_sub:'Energía donde el campo lo exige',        seg_6_title:'Agricultura',          seg_6_desc:'Potencia confiable para riego, almacenamiento y procesamiento, sin importar dónde esté su operación.',
     seg_7_sub:'Eficiencia para proyectos de gran escala', seg_7_title:'Comercial &amp; Público', seg_7_desc:'Sistemas eficientes y sostenibles para oficinas, centros comerciales e instalaciones públicas de cualquier envergadura.',
-    seg_8_sub:'Respaldo para torres y nodos críticos',  seg_8_title:'Telecomunicaciones',   seg_8_desc:'Ante un corte de suministro, la comunicación no puede fallar. Grupos electrógenos diseñados para proteger torres celulares e infraestructura de telecomunicaciones las 24 horas.'
+    seg_8_sub:'Respaldo para torres y nodos críticos',  seg_8_title:'Telecomunicaciones',   seg_8_desc:'Ante un corte de suministro, la comunicación no puede fallar. Grupos electrógenos diseñados para proteger torres celulares e infraestructura de telecomunicaciones las 24 horas.',
+    nav_faq:'FAQ',
+    faq_label:'FAQ',
+    faq_title:'Preguntas Frecuentes',
+    faq_cat1:'Especificaciones del Producto',
+    faq_cat2:'Logística y Entrega',
+    faq_cat3:'Posventa y Soporte',
+    faq_cat4:'Comercial',
+    faq_q1:'¿Sus grupos electrógenos están disponibles en configuraciones de 50 Hz y 60 Hz?',
+    faq_a1:'Sí. Todas las unidades de exportación STEMAC están disponibles en versiones de 50 Hz y 60 Hz para adaptarse a los estándares de red eléctrica de su país.',
+    faq_q2:'¿Qué marcas de motores se utilizan en los modelos de exportación?',
+    faq_a2:'Nuestras unidades de exportación se construyen principalmente con motores Baudouin, una marca de reconocimiento internacional con centros de servicio autorizados en más de 100 países. También trabajamos con Scania, Perkins, Volvo y FPT, lo que nos permite seleccionar el motor más adecuado para los requisitos de su proyecto y la red de soporte local.',
+    faq_q3:'¿Se pueden personalizar los grupos electrógenos para entornos específicos (tropical, desierto, offshore)?',
+    faq_a3:'Sí. Ofrecemos opciones de configuración que incluyen deslastre tropical, carcasas con grado de protección IP y sistemas de refrigeración especiales para climas extremos.',
+    faq_q4:'¿Cuáles son los plazos de entrega habituales para pedidos de exportación?',
+    faq_a4:'Los plazos de entrega oscilan entre 30 y 150 días, dependiendo de la marca del motor, la configuración de frecuencia (50 Hz / 60 Hz) y el tipo de cabina. Nuestro equipo de exportación le proporcionará un cronograma de entrega preciso junto con su cotización.',
+    faq_q5:'¿Con qué Incoterms trabajan?',
+    faq_a5:'Somos muy flexibles en cuanto a términos comerciales y hemos cerrado operaciones bajo EXW, FCA, FOB, CPT, CIF, CIP y DAP. Nuestro equipo de exportación le recomendará la opción más adecuada según su país, configuración logística y preferencias.',
+    faq_q6:'¿Gestionan la documentación de exportación y los trámites aduaneros?',
+    faq_a6:'Sí. El equipo de exportación de STEMAC gestiona toda la documentación necesaria, incluidas facturas comerciales, listas de empaque, certificados de origen y documentos de conformidad técnica.',
+    faq_q7:'¿Qué garantía se ofrece para las unidades exportadas?',
+    faq_a7:'Todos los grupos electrógenos de exportación incluyen una garantía estándar de 12 meses por defectos de fabricación, con soporte técnico remoto incluido. También están disponibles opciones de garantía extendida adaptadas a las necesidades de cada cliente y a los requisitos del mercado.',
+    faq_q8:'¿Cómo accedo a repuestos y soporte técnico tras la entrega?',
+    faq_a8:'STEMAC ofrece soporte integral, desde la definición del alcance del proyecto hasta el suministro de repuestos. Dado que nuestras unidades utilizan motores de fabricantes de reconocimiento mundial (Baudouin, Scania, Perkins, Volvo y FPT), los repuestos están disponibles a través de la red global de cada marca. Ya sea que necesite un socio local, asistencia remota o un acuerdo de servicio a largo plazo, nuestro equipo está listo para apoyar su operación en cada etapa.',
+    faq_q9:'¿Qué métodos de pago se aceptan para pedidos internacionales?',
+    faq_a9:'Aceptamos múltiples métodos de pago según el país y las necesidades del cliente, incluyendo transferencia bancaria (T/T), PayPal y Cartas de Crédito (L/C). Los términos de pago se acuerdan al momento de la cotización.',
+    faq_q10:'¿Existe una cantidad mínima de pedido para exportación?',
+    faq_a10:'No existe cantidad mínima de pedido. Suministramos desde una sola unidad hasta grandes flotas, y a mayor volumen, mejor precio unitario. Cada proyecto cuenta con un especialista de exportación dedicado desde el primer día.'
   }
   ,pt:{
     nav_markets:'Setores',
@@ -307,7 +361,34 @@ var TRANSLATIONS={
     seg_5_sub:'Certificado para áreas classificadas',   seg_5_title:'Petróleo &amp; Gás',       seg_5_desc:'Soluções elétricas homologadas para operar com segurança nas condições mais adversas do setor.',
     seg_6_sub:'Energia onde a rede não chega',          seg_6_title:'Agricultura',          seg_6_desc:'Energia confiável para irrigação, armazenamento e beneficiamento &mdash; independente da localização da sua operação.',
     seg_7_sub:'Infraestrutura para projetos de grande porte', seg_7_title:'Comercial &amp; Público', seg_7_desc:'Sistemas eficientes e sustentáveis para escritórios, shoppings e instalações públicas em qualquer escala.',
-    seg_8_sub:'Backup para torres e infraestrutura crítica', seg_8_title:'Telecomunicações', seg_8_desc:'Quando a rede elétrica falha, a comunicação não pode parar. Geradores projetados para proteger torres de celular e infraestruturas de telecomunicações a qualquer hora.'
+    seg_8_sub:'Backup para torres e infraestrutura crítica', seg_8_title:'Telecomunicações', seg_8_desc:'Quando a rede elétrica falha, a comunicação não pode parar. Geradores projetados para proteger torres de celular e infraestruturas de telecomunicações a qualquer hora.',
+    nav_faq:'FAQ',
+    faq_label:'FAQ',
+    faq_title:'Perguntas Frequentes',
+    faq_cat1:'Especificações do Produto',
+    faq_cat2:'Logística e Entrega',
+    faq_cat3:'Pós-Venda e Suporte',
+    faq_cat4:'Comercial',
+    faq_q1:'Os grupos geradores estão disponíveis nas configurações de 50 Hz e 60 Hz?',
+    faq_a1:'Sim. Todas as unidades de exportação STEMAC estão disponíveis nas versões de 50 Hz e 60 Hz, para atender aos padrões da rede elétrica do seu país.',
+    faq_q2:'Quais marcas de motores são utilizadas nos modelos de exportação?',
+    faq_a2:'Nossas unidades de exportação são fabricadas principalmente com motores Baudouin, marca de reconhecimento internacional com centros de serviço autorizados em mais de 100 países. Também trabalhamos com Scania, Perkins, Volvo e FPT, o que nos permite selecionar o motor ideal para os requisitos do seu projeto e da rede de suporte local.',
+    faq_q3:'Os grupos geradores podem ser customizados para ambientes específicos (tropical, deserto, offshore)?',
+    faq_a3:'Sim. Oferecemos opções de configuração que incluem derate tropical, gabinetes com grau de proteção IP e sistemas de refrigeração especiais para climas extremos.',
+    faq_q4:'Quais são os prazos típicos de entrega para pedidos de exportação?',
+    faq_a4:'Os prazos de entrega variam de 30 a 150 dias, dependendo da marca do motor, da configuração de frequência (50 Hz / 60 Hz) e do tipo de cabine. Nossa equipe de exportação fornecerá um cronograma de entrega preciso junto com o seu orçamento.',
+    faq_q5:'Com quais Incoterms vocês trabalham?',
+    faq_a5:'Somos altamente flexíveis em termos comerciais e já fechamos negócios sob EXW, FCA, FOB, CPT, CIF, CIP e DAP. Nossa equipe de exportação recomendará a opção mais adequada com base no seu país, configuração logística e preferências.',
+    faq_q6:'Vocês cuidam da documentação de exportação e dos trâmites alfandegários?',
+    faq_a6:'Sim. A equipe de exportação da STEMAC gerencia toda a documentação necessária, incluindo faturas comerciais, listas de embalagem, certificados de origem e documentos de conformidade técnica.',
+    faq_q7:'Qual garantia é oferecida para as unidades exportadas?',
+    faq_a7:'Todos os grupos geradores de exportação incluem garantia padrão de 12 meses contra defeitos de fabricação, com suporte técnico remoto incluso. Opções de garantia estendida estão disponíveis e podem ser adaptadas às necessidades de cada cliente e aos requisitos do mercado.',
+    faq_q8:'Como acesso peças de reposição e suporte técnico após a entrega?',
+    faq_a8:'A STEMAC oferece suporte completo, desde a definição do escopo do projeto até o fornecimento de peças. Como nossas unidades utilizam motores de fabricantes reconhecidos mundialmente (Baudouin, Scania, Perkins, Volvo e FPT), as peças de reposição estão disponíveis por meio da rede global de cada marca. Seja para um parceiro local, suporte remoto ou um contrato de serviço de longo prazo, nossa equipe está pronta para apoiar sua operação em cada etapa.',
+    faq_q9:'Quais métodos de pagamento são aceitos para pedidos internacionais?',
+    faq_a9:'Aceitamos múltiplos métodos de pagamento conforme o país e as necessidades do cliente, incluindo transferência bancária (T/T), PayPal e Cartas de Crédito (L/C). Os termos de pagamento são acordados no momento da cotação.',
+    faq_q10:'Existe quantidade mínima de pedido para exportação?',
+    faq_a10:'Não há quantidade mínima de pedido. Fornecemos desde uma única unidade até grandes frotas, e quanto maior o volume, melhor o preço unitário. Cada projeto conta com um especialista de exportação dedicado desde o primeiro dia.'
   }
 };
 
@@ -1310,6 +1391,22 @@ function setLang(lang){
 
 // Apply default language on page load so HTML content matches the translations
 setLang(LANG_CURR);
+
+/* ============================================================
+   FAQ ACCORDION
+   ============================================================ */
+(function(){
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); el.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      // Open clicked unless it was already open
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+})();
 
 /* ============================================================
    COOKIE CONSENT
