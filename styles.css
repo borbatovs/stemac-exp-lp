@@ -1171,10 +1171,9 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 .about-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  gap: 8rem;
+  align-items: center;
 }
-.about-text { position: sticky; top: 120px; }
 .about-text .s-title    { color: var(--navy); }
 .about-text .s-desc     { max-width: 100%; margin-bottom: 1.5rem; }
 .about-text p           { font-size: .97rem; font-weight: 400; line-height: 1.9; color: #444; margin-bottom: 1.4rem; }
@@ -1218,44 +1217,24 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
    FAQ
    ============================================================ */
 
-#faq { background: #fff; }
+#faq { background: #F2F5F8; }
 
-.faq-header { max-width: 720px; margin-bottom: 3rem; }
+.faq-header { max-width: 100%; margin-bottom: 3rem; text-align: center; }
 
 .faq-list {
   max-width: 860px;
   margin: 0 auto;
 }
 
-.faq-group { margin-bottom: 2.8rem; }
-
-.faq-group-title {
-  font-family: var(--fd);
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 1rem;
-  padding-bottom: .6rem;
-  border-bottom: 1px solid rgba(2,29,73,.1);
-  display: flex;
-  align-items: center;
-  gap: .55rem;
-}
-.faq-group-title::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: var(--red);
-  flex-shrink: 0;
+@media (min-width: 768px) {
+  .faq-q { padding: 1.6rem 0; }
 }
 
-.faq-item {
-  border-bottom: 1px solid rgba(2,29,73,.08);
+
+
+.faq-item + .faq-item {
+  border-top: 1px solid rgba(2,29,73,.08);
 }
-.faq-item:last-child { border-bottom: none; }
 
 .faq-q {
   width: 100%;
@@ -1269,7 +1248,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
   padding: 1.15rem 0;
   text-align: left;
   font-family: var(--fb);
-  font-size: .97rem;
+  font-size: 1.08rem;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.5;
@@ -1289,11 +1268,10 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
   transition: background .2s, transform .3s;
 }
 .faq-item.open .faq-icon {
-  background: var(--red);
-  transform: rotate(45deg);
+  background: rgba(2,29,73,.14);
+  transform: rotate(180deg);
 }
 .faq-icon svg { pointer-events: none; }
-.faq-item.open .faq-q { color: var(--red); }
 
 .faq-a {
   overflow: hidden;
@@ -1303,7 +1281,7 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 .faq-item.open .faq-a { max-height: 600px; }
 
 .faq-a p {
-  font-size: .93rem;
+  font-size: 1rem;
   line-height: 1.85;
   color: #555;
   padding-bottom: 1.15rem;
@@ -1319,10 +1297,13 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 4.5rem;
-  align-items: start;
+  align-items: center;
 }
+
+.contact-layout .cinfo { order: 2; }
+.contact-layout .cform { order: 1; }
 
 .cinfo .s-desc { margin-bottom: 2rem; }
 
@@ -1549,6 +1530,7 @@ footer {
 }
 
 .f-col--brand { display: flex; flex-direction: column; gap: 1rem; }
+.f-logo-row { display: flex; align-items: center; gap: 1.2rem; }
 .f-logo-link { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
 .f-tagline {
   font-size: .88rem;
@@ -1628,6 +1610,10 @@ footer {
   display: inline-block;
 }
 .f-privacy-link:hover { color: rgba(255,255,255,.7); }
+.f-iso-badge {
+  height: 58px;
+  width: auto;
+}
 
 
 /* ============================================================
@@ -1649,9 +1635,34 @@ footer {
    RESPONSIVE — 1024px
    ============================================================ */
 
+@media (min-width: 1025px) {
+  .about-photos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .about-photo:first-child {
+    transform: translateX(-4%);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 28px rgba(2,29,73,.1);
+  }
+  .about-photo:last-child {
+    margin-top: -7.5%;
+    transform: translateX(4%);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 -4px 28px rgba(2,29,73,.15);
+  }
+}
+
 @media (max-width: 1024px) {
   .prod-layout     { grid-template-columns: 210px 1fr; }
   .contact-layout  { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-layout .cinfo { order: 0; }
+  .contact-layout .cform { order: 0; }
   .hero-img-wrap   { display: none; }
 }
 
