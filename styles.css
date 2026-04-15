@@ -931,13 +931,17 @@ tbody td:nth-child(2) { font-family: var(--fd); font-size: 1rem; font-weight: 70
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: .4rem;
   background: var(--red);
   color: #fff;
   border-radius: 4px;
-  padding: .35rem .5rem;
+  padding: 6px 12px;
   text-decoration: none;
   transition: background .2s, transform .2s;
-  line-height: 0;
+  line-height: 1;
+  font-size: .78rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 .pdf-btn:hover { background: var(--redk); transform: scale(1.07); }
 .no-res { text-align: center; padding: 2.5rem; color: #999; font-style: italic; }

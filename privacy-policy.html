@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="ppHtml">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Política de Privacidade — Stemac SA Grupos Geradores</title>
+<title data-i18n="pp_title">Política de Privacidade — Stemac SA Grupos Geradores</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -215,18 +215,23 @@
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo-link">
-    <img src="assets/logo/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;">
+    <img src="assets/logo/logo-white.svg" alt="STEMAC" style="display:block;height:32px;width:auto;" id="ppNavLogo">
   </a>
-  <a href="index.html" class="btn btn-primary" style="font-size:.83rem;padding:.5rem 1.25rem;">
-    ← Voltar ao Site
-  </a>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="lang-switcher" style="display:flex;gap:.25rem;">
+      <button class="lang-option pp-lang-btn" data-lang="pt" style="font-size:.75rem;padding:.3rem .6rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:rgba(255,255,255,.6);border-radius:4px;cursor:pointer;font-weight:600;letter-spacing:.05em;">PT</button>
+      <button class="lang-option pp-lang-btn" data-lang="en" style="font-size:.75rem;padding:.3rem .6rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:rgba(255,255,255,.6);border-radius:4px;cursor:pointer;font-weight:600;letter-spacing:.05em;">EN</button>
+      <button class="lang-option pp-lang-btn" data-lang="es" style="font-size:.75rem;padding:.3rem .6rem;border:1px solid rgba(255,255,255,.3);background:transparent;color:rgba(255,255,255,.6);border-radius:4px;cursor:pointer;font-weight:600;letter-spacing:.05em;">ES</button>
+    </div>
+    <a href="index.html" class="btn btn-primary" style="font-size:.83rem;padding:.5rem 1.25rem;" data-i18n="pp_back">← Voltar ao Site</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <div class="pp-hero">
-  <div class="pp-hero-label">Legal</div>
-  <h1>Política de Privacidade</h1>
-  <p class="pp-hero-meta">STEMAC S/A Grupos Geradores &nbsp;·&nbsp; LGPD &nbsp;·&nbsp; Última atualização: 2026</p>
+  <div class="pp-hero-label" data-i18n="pp_hero_label">Legal</div>
+  <h1 data-i18n="pp_hero_title">Política de Privacidade</h1>
+  <p class="pp-hero-meta" data-i18n="pp_hero_meta">STEMAC S/A Grupos Geradores &nbsp;·&nbsp; LGPD &nbsp;·&nbsp; Última atualização: 2026</p>
 </div>
 
 <!-- CONTENT -->
@@ -234,23 +239,15 @@
 
   <!-- Intro -->
   <div class="pp-intro">
-    <p>A <strong>STEMAC S/A GRUPOS GERADORES</strong> em suas operações de negócios cotidianas faz uso de uma variedade de dados sobre indivíduos identificáveis, como:</p>
-    <ul>
-      <li>Funcionários atuais, passados e potenciais</li>
-      <li>Clientes</li>
-      <li>Usuários de suas Plataformas</li>
-      <li>Fornecedores e Parceiros</li>
-      <li>Outras partes interessadas</li>
-    </ul>
-    <p>A STEMAC S/A GRUPOS GERADORES entende a importância fundamental da privacidade, proteção de dados e segurança. Nós levamos a sua privacidade a sério e estamos comprometidos em proteger seus dados pessoais.</p>
-    <p>Ao coletar e usar seus dados, a empresa está sujeita a legislações que regulam como tais atividades podem ser realizadas e as salvaguardas que devem ser colocadas em prática para protegê-los. A <strong>Lei Geral de Proteção de Dados Pessoais do Brasil (LGPD)</strong> é uma das legislações mais significativas que afetam a forma como a STEMAC S/A GRUPOS GERADORES realiza suas atividades de tratamento de dados.</p>
-    <p>O objetivo desta política é definir e descrever os passos que a STEMAC S/A GRUPOS GERADORES segue para garantir que os requisitos da LGPD sejam cumpridos. Esse controle se aplica a todos os sistemas, pessoas e processos que constituem os sistemas de informação da organização, incluindo diretores, funcionários, parceiros, fornecedores e outros terceiros que tenham acesso aos sistemas da STEMAC S/A GRUPOS GERADORES.</p>
-    <p>Esta Política poderá ser atualizada a qualquer tempo e, se tratando de modificações atreladas a compartilhamento, finalidade e duração do tratamento dos dados pessoais do Titular, este será informado através do e-mail registrado em nossos serviços com antecedência de <strong>30 (trinta) dias</strong>. A versão atualizada sempre estará publicada no site <a href="https://www.stemac.com.br" target="_blank" rel="noopener">www.stemac.com.br</a>.</p>
+    <p data-i18n="pp_intro_p1">A <strong>STEMAC S/A GRUPOS GERADORES</strong> em suas operações de negócios cotidianas faz uso de uma variedade de dados sobre indivíduos identificáveis, como funcionários atuais, passados e potenciais, clientes, usuários de suas Plataformas, fornecedores, parceiros e outras partes interessadas.</p>
+    <p data-i18n="pp_intro_p2">A STEMAC S/A GRUPOS GERADORES entende a importância fundamental da privacidade, proteção de dados e segurança. Nós levamos a sua privacidade a sério e estamos comprometidos em proteger seus dados pessoais.</p>
+    <p data-i18n="pp_intro_p3">Esta Política poderá ser atualizada a qualquer tempo e, se tratando de modificações atreladas a compartilhamento, finalidade e duração do tratamento dos dados pessoais do Titular, este será informado através do e-mail registrado em nossos serviços com antecedência de <strong>30 (trinta) dias</strong>. A versão atualizada sempre estará publicada no site <a href="https://www.stemac.com.br" target="_blank" rel="noopener">www.stemac.com.br</a>.</p>
   </div>
 
   <!-- 1. Siglas e Definições -->
   <div class="pp-section">
-    <h2>1. Siglas e Definições</h2>
+    <h2 data-i18n="pp_s1_title">1. Siglas e Definições</h2>
+    <p class="pp-legal-note" data-i18n="pp_legal_note" style="display:none;background:#fff8e1;border-left:3px solid #f59e0b;padding:.75rem 1rem;border-radius:0 6px 6px 0;font-size:.88rem;color:#78350f;margin-bottom:1.25rem;"></p>
     <dl class="pp-defs">
       <div class="pp-def">
         <dt>Bases Legais</dt>
@@ -297,46 +294,45 @@
 
   <!-- 2. Fontes de Dados Pessoais -->
   <div class="pp-section">
-    <h2>2. Fontes de Dados Pessoais</h2>
-    <p>Os Dados podem ser coletados diretamente, por meio de formulários que o Titular preenche, por meio de contratos firmados conosco, por meio da utilização e interação com os nossos Produtos, Negócios e Experiências, tanto on-line como off-line, nos eventos, e/ou de forma automática, por meio de Cookies ou tecnologias similares relacionadas às Plataformas.</p>
-    <p>A STEMAC S/A GRUPOS GERADORES coleta dados pessoais:</p>
+    <h2 data-i18n="pp_s2_title">2. Fontes de Dados Pessoais</h2>
+    <p data-i18n="pp_s2_p">Os Dados podem ser coletados diretamente, por meio de formulários que o Titular preenche, por meio de contratos firmados conosco, por meio da utilização e interação com os nossos Produtos, e/ou de forma automática, por meio de Cookies ou tecnologias similares relacionadas às Plataformas.</p>
     <ul>
-      <li>Que o Titular nos fornece por meio de cadastro em Plataformas e outras interações conosco;</li>
-      <li>Quando o Titular entra em contato conosco ativamente, seja presencialmente, por telefone, chat ou e-mail;</li>
-      <li>Automaticamente, por meio de Cookies, relativos à navegação e ao dispositivo utilizado para acessar as Plataformas;</li>
-      <li>De nossos funcionários, fornecedores e parceiros.</li>
+      <li data-i18n="pp_s2_li1">Que o Titular nos fornece por meio de cadastro em Plataformas e outras interações conosco;</li>
+      <li data-i18n="pp_s2_li2">Quando o Titular entra em contato conosco ativamente, seja presencialmente, por telefone, chat ou e-mail;</li>
+      <li data-i18n="pp_s2_li3">Automaticamente, por meio de Cookies, relativos à navegação e ao dispositivo utilizado para acessar as Plataformas;</li>
+      <li data-i18n="pp_s2_li4">De nossos funcionários, fornecedores e parceiros.</li>
     </ul>
   </div>
 
   <!-- 3. Tipos de Dados Pessoais Coletados -->
   <div class="pp-section">
-    <h2>3. Tipos de Dados Pessoais Coletados</h2>
-    <p>Os tipos de Dados Pessoais coletados dependem de como você se relaciona com a gente e por quê. Os dados pessoais que podem ser coletados pela STEMAC S/A GRUPOS GERADORES são:</p>
-    <p><strong>Nome, CPF, RG, endereço, e-mail, data de nascimento, telefone e IP do dispositivo.</strong></p>
+    <h2 data-i18n="pp_s3_title">3. Tipos de Dados Pessoais Coletados</h2>
+    <p data-i18n="pp_s3_p1">Os tipos de Dados Pessoais coletados dependem de como você se relaciona com a gente e por quê. Os dados pessoais que podem ser coletados pela STEMAC S/A GRUPOS GERADORES são:</p>
+    <p data-i18n="pp_s3_data"><strong>Nome, CPF, RG, endereço, e-mail, data de nascimento, telefone e IP do dispositivo.</strong></p>
   </div>
 
   <!-- 4. Utilização dos Dados Pessoais Coletados -->
   <div class="pp-section">
-    <h2>4. Utilização dos Dados Pessoais Coletados</h2>
-    <p>A STEMAC S/A GRUPOS GERADORES utiliza os dados pessoais para:</p>
+    <h2 data-i18n="pp_s4_title">4. Utilização dos Dados Pessoais Coletados</h2>
+    <p data-i18n="pp_s4_p">A STEMAC S/A GRUPOS GERADORES utiliza os dados pessoais para:</p>
     <ul>
-      <li>Execução de contrato;</li>
-      <li>Cadastrar o Titular em diferentes Plataformas;</li>
-      <li>Avaliar candidatura do Titular para vagas e oportunidades na STEMAC S/A GRUPOS GERADORES;</li>
-      <li>Realizar análises ou coletar estatísticas;</li>
-      <li>Manter o cadastro atualizado;</li>
-      <li>Responder perguntas do Titular;</li>
-      <li>Resguardar direitos da STEMAC S/A GRUPOS GERADORES e manter a segurança dos nossos Produtos, Negócios e Experiências;</li>
-      <li>Proteger o Titular e nós mesmos contra fraudes, incluindo a troca de informações com outras empresas e organizações;</li>
-      <li>Investigar fraudes ou alterações indevidas nos sistemas e nos cadastros;</li>
-      <li>Estar em conformidade com as solicitações dos tribunais, autoridades policiais, órgãos normativos e outras instituições públicas;</li>
-      <li>O exercício dos direitos da STEMAC S/A GRUPOS GERADORES e defesa em eventuais ações judiciais, bem como o cumprimento de qualquer legislação ou regulamento aplicável.</li>
+      <li data-i18n="pp_s4_li1">Execução de contrato;</li>
+      <li data-i18n="pp_s4_li2">Cadastrar o Titular em diferentes Plataformas;</li>
+      <li data-i18n="pp_s4_li3">Avaliar candidatura do Titular para vagas e oportunidades na STEMAC S/A GRUPOS GERADORES;</li>
+      <li data-i18n="pp_s4_li4">Realizar análises ou coletar estatísticas;</li>
+      <li data-i18n="pp_s4_li5">Manter o cadastro atualizado;</li>
+      <li data-i18n="pp_s4_li6">Responder perguntas do Titular;</li>
+      <li data-i18n="pp_s4_li7">Resguardar direitos da STEMAC S/A GRUPOS GERADORES e manter a segurança dos nossos Produtos, Negócios e Experiências;</li>
+      <li data-i18n="pp_s4_li8">Proteger o Titular e nós mesmos contra fraudes;</li>
+      <li data-i18n="pp_s4_li9">Estar em conformidade com as solicitações dos tribunais, autoridades policiais, órgãos normativos e outras instituições públicas;</li>
+      <li data-i18n="pp_s4_li10">O exercício dos direitos da STEMAC S/A GRUPOS GERADORES e defesa em eventuais ações judiciais, bem como o cumprimento de qualquer legislação ou regulamento aplicável.</li>
     </ul>
   </div>
 
   <!-- 5. Fundamentos Jurídicos -->
   <div class="pp-section">
-    <h2>5. Fundamentos Jurídicos para o Tratamento dos Dados Pessoais</h2>
+    <h2 data-i18n="pp_s5_title">5. Fundamentos Jurídicos para o Tratamento dos Dados Pessoais</h2>
+    <p class="pp-legal-note" data-i18n="pp_legal_note" style="display:none;background:#fff8e1;border-left:3px solid #f59e0b;padding:.75rem 1rem;border-radius:0 6px 6px 0;font-size:.88rem;color:#78350f;margin-bottom:1.25rem;"></p>
     <p>Ao utilizar os serviços do site, o Titular está consentindo com a presente Política de Privacidade. O Titular tem o direito de retirar seu consentimento a qualquer momento, não comprometendo a licitude do tratamento de seus dados pessoais antes da retirada.</p>
     <p>O consentimento dos relativamente ou absolutamente incapazes, especialmente de crianças menores de <strong>16 (dezesseis) anos</strong>, apenas poderá ser feito se devidamente assistidos ou representados.</p>
     <p>O tratamento de dados pessoais sem o consentimento do Titular apenas será realizado em razão de interesse legítimo ou para as hipóteses previstas em lei, tais como:</p>
@@ -352,7 +348,8 @@
 
   <!-- 6. Compartilhamento -->
   <div class="pp-section">
-    <h2>6. Compartilhamento dos Dados Pessoais com Terceiros</h2>
+    <h2 data-i18n="pp_s6_title">6. Compartilhamento dos Dados Pessoais com Terceiros</h2>
+    <p class="pp-legal-note" data-i18n="pp_legal_note" style="display:none;background:#fff8e1;border-left:3px solid #f59e0b;padding:.75rem 1rem;border-radius:0 6px 6px 0;font-size:.88rem;color:#78350f;margin-bottom:1.25rem;"></p>
     <p>Em algumas situações utilizamos serviços de empresas especializadas e podemos compartilhar seus Dados Pessoais com essas empresas, sempre buscando preservar ao máximo a sua privacidade e, sempre que possível, de forma anonimizada e criptografada.</p>
     <p>Os Dados Pessoais poderão ser compartilhados com:</p>
     <ul>
@@ -365,145 +362,116 @@
 
   <!-- 7. Transferência Internacional -->
   <div class="pp-section">
-    <h2>7. Transferência de Dados Pessoais Internacional</h2>
+    <h2 data-i18n="pp_s7_title">7. Transferência de Dados Pessoais Internacional</h2>
+    <p class="pp-legal-note" data-i18n="pp_legal_note" style="display:none;background:#fff8e1;border-left:3px solid #f59e0b;padding:.75rem 1rem;border-radius:0 6px 6px 0;font-size:.88rem;color:#78350f;margin-bottom:1.25rem;"></p>
     <p>Com sede no Brasil, os Dados Pessoais coletados podem ser transferidos para outros países em razão de fornecedores e distribuidores localizados no exterior. Essas transferências envolvem apenas empresas que demonstrem conformidade com as leis aplicáveis, mantendo nível de compliance semelhante ou mais rigoroso que o previsto na legislação brasileira.</p>
     <p>Em caso de dúvidas sobre essas empresas, entre em contato por meio dos nossos canais de atendimento.</p>
   </div>
 
   <!-- 8. Proteção dos Dados -->
   <div class="pp-section">
-    <h2>8. Proteção dos Dados Pessoais</h2>
-    <p>A STEMAC S/A GRUPOS GERADORES utiliza tecnologias e procedimentos adequados para proteger os dados pessoais (incluindo proteções administrativas, técnicas e físicas), empregando:</p>
+    <h2 data-i18n="pp_s8_title">8. Proteção dos Dados Pessoais</h2>
+    <p data-i18n="pp_s8_p1">A STEMAC S/A GRUPOS GERADORES utiliza tecnologias e procedimentos adequados para proteger os dados pessoais, empregando:</p>
     <ul>
-      <li>Provedores de Internet e servidores de bancos de dados altamente qualificados;</li>
-      <li>Certificados de segurança (SSL);</li>
-      <li>Software de proteção contra acesso não autorizado;</li>
-      <li>Métodos padrões de criptografia, pseudonimização e anonimização;</li>
-      <li>Controle de acesso restrito aos locais de armazenamento de dados.</li>
+      <li data-i18n="pp_s8_li1">Provedores de Internet e servidores de bancos de dados altamente qualificados;</li>
+      <li data-i18n="pp_s8_li2">Certificados de segurança (SSL);</li>
+      <li data-i18n="pp_s8_li3">Software de proteção contra acesso não autorizado;</li>
+      <li data-i18n="pp_s8_li4">Métodos padrões de criptografia, pseudonimização e anonimização;</li>
+      <li data-i18n="pp_s8_li5">Controle de acesso restrito aos locais de armazenamento de dados.</li>
     </ul>
-    <p>Em razão da natureza da Internet, não é possível garantir que terceiros mal-intencionados não logrem acessar indevidamente as informações armazenadas. Caso isso ocorra, a STEMAC S/A GRUPOS GERADORES se responsabilizará nos limites previstos em Lei e comunicará a ANPD e o Titular em prazo razoável.</p>
+    <p data-i18n="pp_s8_p2">Em razão da natureza da Internet, não é possível garantir que terceiros mal-intencionados não logrem acessar indevidamente as informações armazenadas. Caso isso ocorra, a STEMAC S/A GRUPOS GERADORES comunicará a ANPD e o Titular em prazo razoável.</p>
   </div>
 
   <!-- 9. Prazo de Tratamento -->
   <div class="pp-section">
-    <h2>9. Prazo de Tratamento dos Dados Pessoais</h2>
-    <p>A STEMAC S/A GRUPOS GERADORES calcula o período de retenção dos dados pessoais com base nos seguintes critérios:</p>
+    <h2 data-i18n="pp_s9_title">9. Prazo de Tratamento dos Dados Pessoais</h2>
+    <p data-i18n="pp_s9_p">A STEMAC S/A GRUPOS GERADORES calcula o período de retenção dos dados pessoais com base nos seguintes critérios:</p>
     <ul>
-      <li>Período necessário para cumprir o propósito da coleta;</li>
-      <li>Quando o Titular deixar de utilizar os serviços ou solicitar a revogação do consentimento;</li>
-      <li>O tempo necessário para demonstrar o cumprimento de deveres e obrigações da STEMAC S/A GRUPOS GERADORES;</li>
-      <li>O período previsto em Lei, regulamentações e decisões judiciais;</li>
-      <li>Determinação da Autoridade Nacional de Proteção de Dados (ANPD).</li>
+      <li data-i18n="pp_s9_li1">Período necessário para cumprir o propósito da coleta;</li>
+      <li data-i18n="pp_s9_li2">Quando o Titular deixar de utilizar os serviços ou solicitar a revogação do consentimento;</li>
+      <li data-i18n="pp_s9_li3">O tempo necessário para demonstrar o cumprimento de deveres e obrigações da STEMAC S/A GRUPOS GERADORES;</li>
+      <li data-i18n="pp_s9_li4">O período previsto em Lei, regulamentações e decisões judiciais;</li>
+      <li data-i18n="pp_s9_li5">Determinação da Autoridade Nacional de Proteção de Dados (ANPD).</li>
     </ul>
   </div>
 
   <!-- 10. Direitos do Titular -->
   <div class="pp-section">
-    <h2>10. Direitos do Titular de Dados</h2>
-    <p>Conforme a LGPD, o Titular tem os seguintes direitos:</p>
+    <h2 data-i18n="pp_s10_title">10. Direitos do Titular de Dados</h2>
+    <p data-i18n="pp_s10_p">Conforme a LGPD, o Titular tem os seguintes direitos:</p>
     <table class="pp-table">
       <thead>
         <tr>
-          <th>Direito</th>
-          <th>Descrição</th>
+          <th data-i18n="pp_s10_th1">Direito</th>
+          <th data-i18n="pp_s10_th2">Descrição</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Confirmação</td>
-          <td>Confirmar se a STEMAC S/A GRUPOS GERADORES realiza o tratamento de algum dado pessoal seu.</td>
-        </tr>
-        <tr>
-          <td>Acesso</td>
-          <td>Obter detalhes de como suas informações estão sendo utilizadas e uma cópia delas.</td>
-        </tr>
-        <tr>
-          <td>Correção</td>
-          <td>Corrigir dados incompletos, inexatos ou desatualizados.</td>
-        </tr>
-        <tr>
-          <td>Anonimização, Bloqueio ou Eliminação</td>
-          <td>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</td>
-        </tr>
-        <tr>
-          <td>Exclusão</td>
-          <td>Solicitar a exclusão de dados, exceto aqueles cuja conservação é autorizada por lei.</td>
-        </tr>
-        <tr>
-          <td>Informação</td>
-          <td>Solicitar informações sobre entidades com quem os dados foram compartilhados.</td>
-        </tr>
-        <tr>
-          <td>Restrição de Processamento</td>
-          <td>Restringir o uso de determinados dados.</td>
-        </tr>
-        <tr>
-          <td>Recusa de Marketing</td>
-          <td>Cancelar o recebimento de propagandas a qualquer momento.</td>
-        </tr>
-        <tr>
-          <td>Portabilidade</td>
-          <td>Solicitar a transferência de seus dados a si próprio ou a terceiros.</td>
-        </tr>
-        <tr>
-          <td>Revogação do Consentimento</td>
-          <td>Cancelar qualquer consentimento concedido previamente.</td>
-        </tr>
+        <tr><td data-i18n="pp_s10_r1a">Confirmação</td><td data-i18n="pp_s10_r1b">Confirmar se a STEMAC S/A GRUPOS GERADORES realiza o tratamento de algum dado pessoal seu.</td></tr>
+        <tr><td data-i18n="pp_s10_r2a">Acesso</td><td data-i18n="pp_s10_r2b">Obter detalhes de como suas informações estão sendo utilizadas e uma cópia delas.</td></tr>
+        <tr><td data-i18n="pp_s10_r3a">Correção</td><td data-i18n="pp_s10_r3b">Corrigir dados incompletos, inexatos ou desatualizados.</td></tr>
+        <tr><td data-i18n="pp_s10_r4a">Anonimização, Bloqueio ou Eliminação</td><td data-i18n="pp_s10_r4b">Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</td></tr>
+        <tr><td data-i18n="pp_s10_r5a">Exclusão</td><td data-i18n="pp_s10_r5b">Solicitar a exclusão de dados, exceto aqueles cuja conservação é autorizada por lei.</td></tr>
+        <tr><td data-i18n="pp_s10_r6a">Informação</td><td data-i18n="pp_s10_r6b">Solicitar informações sobre entidades com quem os dados foram compartilhados.</td></tr>
+        <tr><td data-i18n="pp_s10_r7a">Restrição de Processamento</td><td data-i18n="pp_s10_r7b">Restringir o uso de determinados dados.</td></tr>
+        <tr><td data-i18n="pp_s10_r8a">Recusa de Marketing</td><td data-i18n="pp_s10_r8b">Cancelar o recebimento de propagandas a qualquer momento.</td></tr>
+        <tr><td data-i18n="pp_s10_r9a">Portabilidade</td><td data-i18n="pp_s10_r9b">Solicitar a transferência de seus dados a si próprio ou a terceiros.</td></tr>
+        <tr><td data-i18n="pp_s10_r10a">Revogação do Consentimento</td><td data-i18n="pp_s10_r10b">Cancelar qualquer consentimento concedido previamente.</td></tr>
       </tbody>
     </table>
-    <p style="margin-top:1rem;">Para exercer qualquer um desses direitos, envie um e-mail para <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>. A STEMAC S/A GRUPOS GERADORES se compromete a atender às solicitações em até <strong>15 (quinze) dias</strong> a contar do recebimento, sem custo para o Titular, salvo casos de maior complexidade.</p>
+    <p style="margin-top:1rem;" data-i18n="pp_s10_contact">Para exercer qualquer um desses direitos, envie um e-mail para <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>. A STEMAC S/A GRUPOS GERADORES se compromete a atender às solicitações em até <strong>15 (quinze) dias</strong> a contar do recebimento, sem custo para o Titular, salvo casos de maior complexidade.</p>
   </div>
 
   <!-- 11. Cookies -->
   <div class="pp-section">
-    <h2>11. Cookies</h2>
-    <p>A STEMAC S/A GRUPOS GERADORES e seus fornecedores terceirizados utilizam cookies e outras tecnologias semelhantes para armazenar preferências e coletar dados analíticos. A tabela abaixo lista os cookies utilizados neste site:</p>
+    <h2 data-i18n="pp_s11_title">11. Cookies</h2>
+    <p data-i18n="pp_s11_p">A STEMAC S/A GRUPOS GERADORES e seus fornecedores terceirizados utilizam cookies e outras tecnologias semelhantes para armazenar preferências e coletar dados analíticos. A tabela abaixo lista os cookies utilizados neste site:</p>
     <table class="pp-table" style="margin-top:1rem;">
       <thead>
-        <tr><th>Cookie</th><th>Finalidade</th><th>Duração</th></tr>
+        <tr><th data-i18n="pp_s11_th1">Cookie</th><th data-i18n="pp_s11_th2">Finalidade</th><th data-i18n="pp_s11_th3">Duração</th></tr>
       </thead>
       <tbody>
         <tr>
           <td><code>stemac_cookie_consent</code></td>
-          <td>Guarda sua preferência de consentimento de cookies</td>
-          <td>1 ano</td>
+          <td data-i18n="pp_s11_c1b">Guarda sua preferência de consentimento de cookies</td>
+          <td data-i18n="pp_s11_c1c">1 ano</td>
         </tr>
         <tr>
           <td><code>_ga</code>, <code>_ga_*</code></td>
-          <td>Google Analytics — análise anônima de tráfego e comportamento de navegação</td>
-          <td>2 anos</td>
+          <td data-i18n="pp_s11_c2b">Google Analytics — análise anônima de tráfego e comportamento de navegação</td>
+          <td data-i18n="pp_s11_c2c">2 anos</td>
         </tr>
         <tr>
           <td><code>_fbp</code></td>
-          <td>Meta Pixel — medição de conversões e desempenho de campanhas</td>
-          <td>3 meses</td>
+          <td data-i18n="pp_s11_c3b">Meta Pixel — medição de conversões e desempenho de campanhas</td>
+          <td data-i18n="pp_s11_c3c">3 meses</td>
         </tr>
       </tbody>
     </table>
-    <p style="margin-top:1.25rem;">Você pode alterar sua preferência a qualquer momento limpando os dados de navegação do seu navegador ou entrando em contato conosco pelo e-mail <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>.</p>
+    <p style="margin-top:1.25rem;" data-i18n="pp_s11_revoke">Você pode alterar sua preferência a qualquer momento limpando os dados de navegação do seu navegador ou entrando em contato conosco pelo e-mail <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>.</p>
   </div>
 
   <!-- 12. Contato -->
   <div class="pp-section">
-    <h2>12. Endereço Físico e Informações de Contato</h2>
-    <p>Em caso de dúvidas, comentários, reclamações ou sugestões relacionadas à Proteção de Dados e a esta Política de Privacidade, entre em contato:</p>
+    <h2 data-i18n="pp_s12_title">12. Endereço Físico e Informações de Contato</h2>
+    <p data-i18n="pp_s12_p">Em caso de dúvidas, comentários, reclamações ou sugestões relacionadas à Proteção de Dados e a esta Política de Privacidade, entre em contato:</p>
     <div class="pp-contact-box">
-      <h3>Canal de Privacidade</h3>
+      <h3 data-i18n="pp_s12_box_title">Canal de Privacidade</h3>
       <div class="pp-contact-rows">
         <div class="pp-contact-row">
-          <strong>Endereço:</strong>
+          <strong data-i18n="pp_s12_address">Endereço:</strong>
           <span>Av. Severo Dullius, 1395 — 11º Andar, Bairro São João, Porto Alegre/RS, CEP 90.200-310</span>
         </div>
         <div class="pp-contact-row">
-          <strong>Telefone:</strong>
+          <strong data-i18n="pp_s12_phone">Telefone:</strong>
           <a href="tel:08007023800">0800 702 3800</a>
         </div>
         <div class="pp-contact-row">
-          <strong>E-mail:</strong>
+          <strong data-i18n="pp_s12_email">E-mail:</strong>
           <a href="mailto:dpo@stemac.com.br">dpo@stemac.com.br</a>
         </div>
         <div class="pp-contact-row">
-          <strong>Encarregado / DPO:</strong>
+          <strong data-i18n="pp_s12_dpo">Encarregado / DPO:</strong>
           <span>André Luiz Marques da Silva</span>
         </div>
       </div>
@@ -512,8 +480,8 @@
 
   <!-- 13. Legislação e Foro -->
   <div class="pp-section">
-    <h2>13. Legislação e Foro</h2>
-    <p>Essa Política será regida, interpretada e executada de acordo com as <strong>leis da República Federativa do Brasil</strong>, sendo competente o <strong>Foro da cidade de Porto Alegre/RS</strong> para dirimir qualquer dúvida decorrente deste instrumento. O Titular consente, expressamente, com a competência desse juízo, e renuncia à competência de qualquer outro foro, por mais privilegiado que seja ou venha a ser.</p>
+    <h2 data-i18n="pp_s13_title">13. Legislação e Foro</h2>
+    <p data-i18n="pp_s13_p">Essa Política será regida, interpretada e executada de acordo com as <strong>leis da República Federativa do Brasil</strong>, sendo competente o <strong>Foro da cidade de Porto Alegre/RS</strong> para dirimir qualquer dúvida decorrente deste instrumento. O Titular consente, expressamente, com a competência desse juízo, e renuncia à competência de qualquer outro foro, por mais privilegiado que seja ou venha a ser.</p>
   </div>
 
 </div><!-- /.pp-content -->
@@ -541,17 +509,17 @@
       </div>
     </div>
     <div class="f-col">
-      <h4 class="f-col-title">Navegação</h4>
+      <h4 class="f-col-title" data-i18n="pp_f_nav">Navegação</h4>
       <ul class="f-nav">
-        <li><a href="index.html#segments">Setores</a></li>
-        <li><a href="index.html#products">Produtos</a></li>
-        <li><a href="index.html#map-section">Global</a></li>
-        <li><a href="index.html#about">Sobre Nós</a></li>
-        <li><a href="index.html#contact">Contato</a></li>
+        <li><a href="index.html#segments" data-i18n="pp_nav_segments">Setores</a></li>
+        <li><a href="index.html#products" data-i18n="pp_nav_products">Produtos</a></li>
+        <li><a href="index.html#map-section" data-i18n="pp_nav_global">Global</a></li>
+        <li><a href="index.html#about" data-i18n="pp_nav_about">Sobre Nós</a></li>
+        <li><a href="index.html#contact" data-i18n="pp_nav_contact">Contato</a></li>
       </ul>
     </div>
     <div class="f-col">
-      <h4 class="f-col-title">Contato</h4>
+      <h4 class="f-col-title" data-i18n="pp_f_contact">Contato</h4>
       <ul class="f-contact">
         <li>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -569,9 +537,301 @@
     </div>
   </div>
   <div class="f-bottom">
-    <div class="f-copy">&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.</div>
+    <div class="f-copy" data-i18n="pp_f_copy">&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.</div>
   </div>
 </footer>
 
+<script>
+(function(){
+  var PP_T = {
+    en: {
+      pp_title: 'Privacy Policy — STEMAC SA Grupos Geradores',
+      pp_back: '← Back to Site',
+      pp_hero_label: 'Legal',
+      pp_hero_title: 'Privacy Policy',
+      pp_hero_meta: 'STEMAC S/A Grupos Geradores\u00a0·\u00a0LGPD\u00a0·\u00a0Last updated: 2026',
+      pp_legal_note: '\u26a0\ufe0f This section references specific Brazilian legislation (LGPD). The full legal text is provided in Portuguese as the binding version.',
+      pp_intro_p1: 'STEMAC S/A GRUPOS GERADORES collects and processes personal data in its day-to-day operations, relating to current, past and prospective employees, customers, website users, suppliers, partners and other stakeholders.',
+      pp_intro_p2: 'We take privacy seriously and are committed to protecting your personal data.',
+      pp_intro_p3: 'This policy may be updated at any time. If changes relate to data sharing, processing purposes or retention periods, you will be notified at the email registered with us at least <strong>30 days</strong> in advance. The updated version will always be published at <a href="https://www.stemac.com.br" target="_blank" rel="noopener">www.stemac.com.br</a>.',
+      pp_s1_title: '1. Definitions',
+      pp_s2_title: '2. Sources of Personal Data',
+      pp_s3_title: '3. Types of Personal Data Collected',
+      pp_s4_title: '4. How We Use Your Data',
+      pp_s5_title: '5. Legal Bases for Processing',
+      pp_s6_title: '6. Sharing with Third Parties',
+      pp_s7_title: '7. International Data Transfers',
+      pp_s8_title: '8. Data Protection',
+      pp_s9_title: '9. Data Retention',
+      pp_s10_title: '10. Your Rights',
+      pp_s11_title: '11. Cookies',
+      pp_s12_title: '12. Contact',
+      pp_s13_title: '13. Governing Law',
+      pp_s2_p: 'We collect personal data directly through forms, contracts and your interaction with our Platforms, as well as automatically through cookies and similar technologies.',
+      pp_s2_li1: 'Data you provide when registering on our Platforms or through other interactions with us;',
+      pp_s2_li2: 'When you contact us proactively — in person, by phone, chat or email;',
+      pp_s2_li3: 'Automatically, through cookies, relating to your browsing and device;',
+      pp_s2_li4: 'From our employees, suppliers and partners.',
+      pp_s3_p1: 'The types of personal data collected depend on how and why you interact with us. Data that may be collected includes:',
+      pp_s3_data: '<strong>Name, national ID numbers, address, email, date of birth, phone number and device IP address.</strong>',
+      pp_s4_p: 'STEMAC S/A GRUPOS GERADORES uses personal data to:',
+      pp_s4_li1: 'Execute contracts;', pp_s4_li2: 'Register you on our Platforms;',
+      pp_s4_li3: 'Evaluate job applications at STEMAC;', pp_s4_li4: 'Conduct analysis or gather statistics;',
+      pp_s4_li5: 'Keep records up to date;', pp_s4_li6: 'Respond to your enquiries;',
+      pp_s4_li7: 'Protect STEMAC\'s rights and the security of our products and services;',
+      pp_s4_li8: 'Detect and prevent fraud;',
+      pp_s4_li9: 'Comply with court orders, law enforcement and regulatory requirements;',
+      pp_s4_li10: 'Exercise legal rights and fulfil applicable legislation or regulations.',
+      pp_s8_p1: 'STEMAC S/A GRUPOS GERADORES uses appropriate technologies and procedures to protect personal data, including:',
+      pp_s8_li1: 'Qualified internet providers and database servers;', pp_s8_li2: 'Security certificates (SSL);',
+      pp_s8_li3: 'Software protecting against unauthorised access;',
+      pp_s8_li4: 'Standard encryption, pseudonymisation and anonymisation methods;',
+      pp_s8_li5: 'Restricted access controls to data storage.',
+      pp_s8_p2: 'Due to the nature of the internet, we cannot guarantee that malicious third parties will never gain unauthorised access. Should this occur, STEMAC will notify the relevant authority and the data subject within a reasonable timeframe.',
+      pp_s9_p: 'STEMAC S/A GRUPOS GERADORES determines data retention periods based on:',
+      pp_s9_li1: 'The period required to fulfil the purpose of collection;',
+      pp_s9_li2: 'When you stop using our services or request withdrawal of consent;',
+      pp_s9_li3: 'The time necessary to demonstrate fulfilment of STEMAC\'s obligations;',
+      pp_s9_li4: 'Periods required by applicable law, regulations and court decisions;',
+      pp_s9_li5: 'Determination by the Brazilian National Data Protection Authority (ANPD).',
+      pp_s10_p: 'Under applicable data protection law, you have the following rights:',
+      pp_s10_th1: 'Right', pp_s10_th2: 'Description',
+      pp_s10_r1a: 'Confirmation', pp_s10_r1b: 'Confirm whether STEMAC processes any of your personal data.',
+      pp_s10_r2a: 'Access', pp_s10_r2b: 'Obtain details of how your information is used and a copy of it.',
+      pp_s10_r3a: 'Correction', pp_s10_r3b: 'Correct incomplete, inaccurate or outdated data.',
+      pp_s10_r4a: 'Anonymisation, Blocking or Erasure', pp_s10_r4b: 'Request anonymisation, blocking or deletion of unnecessary or excessive data.',
+      pp_s10_r5a: 'Deletion', pp_s10_r5b: 'Request deletion of data, except where retention is required by law.',
+      pp_s10_r6a: 'Information', pp_s10_r6b: 'Request information about entities with whom your data has been shared.',
+      pp_s10_r7a: 'Restriction of Processing', pp_s10_r7b: 'Restrict the use of certain data.',
+      pp_s10_r8a: 'Opt-out of Marketing', pp_s10_r8b: 'Unsubscribe from marketing communications at any time.',
+      pp_s10_r9a: 'Portability', pp_s10_r9b: 'Request transfer of your data to yourself or a third party.',
+      pp_s10_r10a: 'Withdrawal of Consent', pp_s10_r10b: 'Withdraw any previously given consent.',
+      pp_s10_contact: 'To exercise any of these rights, email <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>. STEMAC commits to responding within <strong>15 days</strong> of receipt, at no cost to you, except in cases of greater complexity.',
+      pp_s11_p: 'STEMAC S/A GRUPOS GERADORES and its third-party providers use cookies and similar technologies to store preferences and collect analytical data. The table below lists the cookies used on this website:',
+      pp_s11_th1: 'Cookie', pp_s11_th2: 'Purpose', pp_s11_th3: 'Duration',
+      pp_s11_c1b: 'Stores your cookie consent preference', pp_s11_c1c: '1 year',
+      pp_s11_c2b: 'Google Analytics — anonymous traffic and behaviour analysis', pp_s11_c2c: '2 years',
+      pp_s11_c3b: 'Meta Pixel — conversion measurement and campaign performance', pp_s11_c3c: '3 months',
+      pp_s11_revoke: 'You can change your preference at any time by clearing your browser data or contacting us at <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>.',
+      pp_s12_p: 'For questions, comments, complaints or suggestions regarding data protection and this Privacy Policy, please contact us:',
+      pp_s12_box_title: 'Privacy Channel',
+      pp_s12_address: 'Address:', pp_s12_phone: 'Phone:', pp_s12_email: 'Email:', pp_s12_dpo: 'Data Protection Officer:',
+      pp_s13_p: 'This policy is governed by the <strong>laws of the Federative Republic of Brazil</strong>, with the <strong>courts of Porto Alegre/RS</strong> as the competent jurisdiction.',
+      pp_f_nav: 'Navigation', pp_f_contact: 'Contact',
+      pp_f_copy: '&copy; 2026 Stemac SA Grupos Geradores. All rights reserved.',
+      pp_nav_segments: 'Segments', pp_nav_products: 'Products', pp_nav_global: 'Global',
+      pp_nav_about: 'About Us', pp_nav_contact: 'Contact'
+    },
+    es: {
+      pp_title: 'Política de Privacidad — STEMAC SA Grupos Geradores',
+      pp_back: '← Volver al Sitio',
+      pp_hero_label: 'Legal',
+      pp_hero_title: 'Política de Privacidad',
+      pp_hero_meta: 'STEMAC S/A Grupos Geradores\u00a0·\u00a0LGPD\u00a0·\u00a0Última actualización: 2026',
+      pp_legal_note: '\u26a0\ufe0f Esta sección hace referencia a la legislación brasileña específica (LGPD). El texto legal completo se proporciona en portugués como versión vinculante.',
+      pp_intro_p1: 'STEMAC S/A GRUPOS GERADORES recopila y procesa datos personales en sus operaciones diarias, relativos a empleados actuales, anteriores y potenciales, clientes, usuarios del sitio web, proveedores, socios y otras partes interesadas.',
+      pp_intro_p2: 'Tomamos la privacidad en serio y estamos comprometidos con la protección de sus datos personales.',
+      pp_intro_p3: 'Esta política puede actualizarse en cualquier momento. Si los cambios se refieren al intercambio de datos, finalidades del tratamiento o plazos de retención, usted será notificado por correo electrónico con al menos <strong>30 días</strong> de anticipación. La versión actualizada siempre estará disponible en <a href="https://www.stemac.com.br" target="_blank" rel="noopener">www.stemac.com.br</a>.',
+      pp_s1_title: '1. Definiciones',
+      pp_s2_title: '2. Fuentes de Datos Personales',
+      pp_s3_title: '3. Tipos de Datos Personales Recopilados',
+      pp_s4_title: '4. Uso de sus Datos',
+      pp_s5_title: '5. Fundamentos Jurídicos del Tratamiento',
+      pp_s6_title: '6. Compartir con Terceros',
+      pp_s7_title: '7. Transferencias Internacionales de Datos',
+      pp_s8_title: '8. Protección de Datos',
+      pp_s9_title: '9. Retención de Datos',
+      pp_s10_title: '10. Sus Derechos',
+      pp_s11_title: '11. Cookies',
+      pp_s12_title: '12. Contacto',
+      pp_s13_title: '13. Ley Aplicable',
+      pp_s2_p: 'Recopilamos datos personales directamente a través de formularios, contratos y su interacción con nuestras Plataformas, así como de forma automática mediante cookies y tecnologías similares.',
+      pp_s2_li1: 'Datos que usted nos proporciona al registrarse en nuestras Plataformas o en otras interacciones con nosotros;',
+      pp_s2_li2: 'Cuando usted se comunica con nosotros de forma proactiva — en persona, por teléfono, chat o correo electrónico;',
+      pp_s2_li3: 'De forma automática, a través de cookies, relacionados con su navegación y dispositivo;',
+      pp_s2_li4: 'De nuestros empleados, proveedores y socios.',
+      pp_s3_p1: 'Los tipos de datos personales recopilados dependen de cómo y por qué interactúa con nosotros. Los datos que pueden recopilarse incluyen:',
+      pp_s3_data: '<strong>Nombre, documentos de identidad, dirección, correo electrónico, fecha de nacimiento, teléfono y dirección IP del dispositivo.</strong>',
+      pp_s4_p: 'STEMAC S/A GRUPOS GERADORES utiliza los datos personales para:',
+      pp_s4_li1: 'Ejecución de contratos;', pp_s4_li2: 'Registrarlo en nuestras Plataformas;',
+      pp_s4_li3: 'Evaluar candidaturas para puestos en STEMAC;', pp_s4_li4: 'Realizar análisis o recopilar estadísticas;',
+      pp_s4_li5: 'Mantener los registros actualizados;', pp_s4_li6: 'Responder a sus consultas;',
+      pp_s4_li7: 'Proteger los derechos de STEMAC y la seguridad de nuestros productos y servicios;',
+      pp_s4_li8: 'Detectar y prevenir fraudes;',
+      pp_s4_li9: 'Cumplir con órdenes judiciales, autoridades y requisitos regulatorios;',
+      pp_s4_li10: 'Ejercer derechos legales y cumplir con la legislación o reglamentación aplicable.',
+      pp_s8_p1: 'STEMAC S/A GRUPOS GERADORES emplea tecnologías y procedimientos adecuados para proteger los datos personales, incluyendo:',
+      pp_s8_li1: 'Proveedores de internet y servidores de bases de datos de alta calidad;', pp_s8_li2: 'Certificados de seguridad (SSL);',
+      pp_s8_li3: 'Software de protección contra accesos no autorizados;',
+      pp_s8_li4: 'Métodos estándar de cifrado, seudonimización y anonimización;',
+      pp_s8_li5: 'Control de acceso restringido a los lugares de almacenamiento de datos.',
+      pp_s8_p2: 'Debido a la naturaleza de internet, no es posible garantizar que terceros malintencionados no accedan indebidamente a la información almacenada. En tal caso, STEMAC notificará a la autoridad correspondiente y al titular en un plazo razonable.',
+      pp_s9_p: 'STEMAC S/A GRUPOS GERADORES determina los plazos de retención en función de:',
+      pp_s9_li1: 'El período necesario para cumplir el propósito de la recopilación;',
+      pp_s9_li2: 'Cuando usted deje de usar los servicios o solicite la revocación del consentimiento;',
+      pp_s9_li3: 'El tiempo necesario para demostrar el cumplimiento de las obligaciones de STEMAC;',
+      pp_s9_li4: 'Los plazos previstos en la ley, reglamentaciones y decisiones judiciales;',
+      pp_s9_li5: 'Determinación de la Autoridad Nacional de Protección de Datos de Brasil (ANPD).',
+      pp_s10_p: 'Conforme a la legislación de protección de datos aplicable, usted tiene los siguientes derechos:',
+      pp_s10_th1: 'Derecho', pp_s10_th2: 'Descripción',
+      pp_s10_r1a: 'Confirmación', pp_s10_r1b: 'Confirmar si STEMAC trata algún dato personal suyo.',
+      pp_s10_r2a: 'Acceso', pp_s10_r2b: 'Obtener detalles sobre el uso de su información y una copia de ella.',
+      pp_s10_r3a: 'Corrección', pp_s10_r3b: 'Corregir datos incompletos, inexactos o desactualizados.',
+      pp_s10_r4a: 'Anonimización, Bloqueo o Eliminación', pp_s10_r4b: 'Solicitar la anonimización, bloqueo o eliminación de datos innecesarios o excesivos.',
+      pp_s10_r5a: 'Supresión', pp_s10_r5b: 'Solicitar la eliminación de datos, salvo aquellos cuya conservación esté autorizada por ley.',
+      pp_s10_r6a: 'Información', pp_s10_r6b: 'Solicitar información sobre las entidades con quienes se han compartido sus datos.',
+      pp_s10_r7a: 'Restricción del Tratamiento', pp_s10_r7b: 'Restringir el uso de determinados datos.',
+      pp_s10_r8a: 'Rechazo de Marketing', pp_s10_r8b: 'Cancelar la recepción de comunicaciones de marketing en cualquier momento.',
+      pp_s10_r9a: 'Portabilidad', pp_s10_r9b: 'Solicitar la transferencia de sus datos a usted mismo o a un tercero.',
+      pp_s10_r10a: 'Revocación del Consentimiento', pp_s10_r10b: 'Cancelar cualquier consentimiento concedido previamente.',
+      pp_s10_contact: 'Para ejercer cualquiera de estos derechos, envíe un correo a <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>. STEMAC se compromete a responder en un plazo de <strong>15 días</strong> desde la recepción, sin coste para usted, salvo casos de mayor complejidad.',
+      pp_s11_p: 'STEMAC S/A GRUPOS GERADORES y sus proveedores terceros utilizan cookies y tecnologías similares para guardar preferencias y recopilar datos analíticos. La tabla siguiente enumera las cookies utilizadas en este sitio:',
+      pp_s11_th1: 'Cookie', pp_s11_th2: 'Finalidad', pp_s11_th3: 'Duración',
+      pp_s11_c1b: 'Guarda su preferencia de consentimiento de cookies', pp_s11_c1c: '1 año',
+      pp_s11_c2b: 'Google Analytics — análisis anónimo de tráfico y comportamiento de navegación', pp_s11_c2c: '2 años',
+      pp_s11_c3b: 'Meta Pixel — medición de conversiones y rendimiento de campañas', pp_s11_c3c: '3 meses',
+      pp_s11_revoke: 'Puede cambiar su preferencia en cualquier momento borrando los datos de navegación o contactándonos en <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>.',
+      pp_s12_p: 'Para consultas, comentarios, reclamaciones o sugerencias relacionadas con la protección de datos y esta Política de Privacidad, contáctenos:',
+      pp_s12_box_title: 'Canal de Privacidad',
+      pp_s12_address: 'Dirección:', pp_s12_phone: 'Teléfono:', pp_s12_email: 'Correo electrónico:', pp_s12_dpo: 'Responsable de Protección de Datos:',
+      pp_s13_p: 'Esta política se rige por las <strong>leyes de la República Federativa de Brasil</strong>, siendo competente el <strong>Foro de la ciudad de Porto Alegre/RS</strong>.',
+      pp_f_nav: 'Navegación', pp_f_contact: 'Contacto',
+      pp_f_copy: '&copy; 2026 Stemac SA Grupos Geradores. Todos los derechos reservados.',
+      pp_nav_segments: 'Sectores', pp_nav_products: 'Productos', pp_nav_global: 'Global',
+      pp_nav_about: 'Sobre Nosotros', pp_nav_contact: 'Contacto'
+    },
+    pt: {
+      pp_title: 'Política de Privacidade — Stemac SA Grupos Geradores',
+      pp_back: '← Voltar ao Site',
+      pp_hero_label: 'Legal',
+      pp_hero_title: 'Política de Privacidade',
+      pp_hero_meta: 'STEMAC S/A Grupos Geradores\u00a0·\u00a0LGPD\u00a0·\u00a0Última atualização: 2026',
+      pp_legal_note: '',
+      pp_intro_p1: 'A <strong>STEMAC S/A GRUPOS GERADORES</strong> em suas operações de negócios cotidianas faz uso de uma variedade de dados sobre indivíduos identificáveis, como funcionários atuais, passados e potenciais, clientes, usuários de suas Plataformas, fornecedores, parceiros e outras partes interessadas.',
+      pp_intro_p2: 'A STEMAC S/A GRUPOS GERADORES entende a importância fundamental da privacidade, proteção de dados e segurança. Nós levamos a sua privacidade a sério e estamos comprometidos em proteger seus dados pessoais.',
+      pp_intro_p3: 'Esta Política poderá ser atualizada a qualquer tempo e, se tratando de modificações atreladas a compartilhamento, finalidade e duração do tratamento dos dados pessoais do Titular, este será informado através do e-mail registrado em nossos serviços com antecedência de <strong>30 (trinta) dias</strong>. A versão atualizada sempre estará publicada no site <a href="https://www.stemac.com.br" target="_blank" rel="noopener">www.stemac.com.br</a>.',
+      pp_s1_title: '1. Siglas e Definições',
+      pp_s2_title: '2. Fontes de Dados Pessoais',
+      pp_s3_title: '3. Tipos de Dados Pessoais Coletados',
+      pp_s4_title: '4. Utilização dos Dados Pessoais Coletados',
+      pp_s5_title: '5. Fundamentos Jurídicos para o Tratamento dos Dados Pessoais',
+      pp_s6_title: '6. Compartilhamento dos Dados Pessoais com Terceiros',
+      pp_s7_title: '7. Transferência de Dados Pessoais Internacional',
+      pp_s8_title: '8. Proteção dos Dados Pessoais',
+      pp_s9_title: '9. Prazo de Tratamento dos Dados Pessoais',
+      pp_s10_title: '10. Direitos do Titular de Dados',
+      pp_s11_title: '11. Cookies',
+      pp_s12_title: '12. Endereço Físico e Informações de Contato',
+      pp_s13_title: '13. Legislação e Foro',
+      pp_s2_p: 'Os Dados podem ser coletados diretamente, por meio de formulários que o Titular preenche, por meio de contratos firmados conosco, por meio da utilização e interação com os nossos Produtos, e/ou de forma automática, por meio de Cookies ou tecnologias similares relacionadas às Plataformas.',
+      pp_s2_li1: 'Que o Titular nos fornece por meio de cadastro em Plataformas e outras interações conosco;',
+      pp_s2_li2: 'Quando o Titular entra em contato conosco ativamente, seja presencialmente, por telefone, chat ou e-mail;',
+      pp_s2_li3: 'Automaticamente, por meio de Cookies, relativos à navegação e ao dispositivo utilizado para acessar as Plataformas;',
+      pp_s2_li4: 'De nossos funcionários, fornecedores e parceiros.',
+      pp_s3_p1: 'Os tipos de Dados Pessoais coletados dependem de como você se relaciona com a gente e por quê. Os dados pessoais que podem ser coletados pela STEMAC S/A GRUPOS GERADORES são:',
+      pp_s3_data: '<strong>Nome, CPF, RG, endereço, e-mail, data de nascimento, telefone e IP do dispositivo.</strong>',
+      pp_s4_p: 'A STEMAC S/A GRUPOS GERADORES utiliza os dados pessoais para:',
+      pp_s4_li1: 'Execução de contrato;', pp_s4_li2: 'Cadastrar o Titular em diferentes Plataformas;',
+      pp_s4_li3: 'Avaliar candidatura do Titular para vagas e oportunidades na STEMAC S/A GRUPOS GERADORES;',
+      pp_s4_li4: 'Realizar análises ou coletar estatísticas;', pp_s4_li5: 'Manter o cadastro atualizado;',
+      pp_s4_li6: 'Responder perguntas do Titular;',
+      pp_s4_li7: 'Resguardar direitos da STEMAC S/A GRUPOS GERADORES e manter a segurança dos nossos Produtos, Negócios e Experiências;',
+      pp_s4_li8: 'Proteger o Titular e nós mesmos contra fraudes;',
+      pp_s4_li9: 'Estar em conformidade com as solicitações dos tribunais, autoridades policiais, órgãos normativos e outras instituições públicas;',
+      pp_s4_li10: 'O exercício dos direitos da STEMAC S/A GRUPOS GERADORES e defesa em eventuais ações judiciais, bem como o cumprimento de qualquer legislação ou regulamento aplicável.',
+      pp_s8_p1: 'A STEMAC S/A GRUPOS GERADORES utiliza tecnologias e procedimentos adequados para proteger os dados pessoais, empregando:',
+      pp_s8_li1: 'Provedores de Internet e servidores de bancos de dados altamente qualificados;', pp_s8_li2: 'Certificados de segurança (SSL);',
+      pp_s8_li3: 'Software de proteção contra acesso não autorizado;',
+      pp_s8_li4: 'Métodos padrões de criptografia, pseudonimização e anonimização;',
+      pp_s8_li5: 'Controle de acesso restrito aos locais de armazenamento de dados.',
+      pp_s8_p2: 'Em razão da natureza da Internet, não é possível garantir que terceiros mal-intencionados não logrem acessar indevidamente as informações armazenadas. Caso isso ocorra, a STEMAC S/A GRUPOS GERADORES comunicará a ANPD e o Titular em prazo razoável.',
+      pp_s9_p: 'A STEMAC S/A GRUPOS GERADORES calcula o período de retenção dos dados pessoais com base nos seguintes critérios:',
+      pp_s9_li1: 'Período necessário para cumprir o propósito da coleta;',
+      pp_s9_li2: 'Quando o Titular deixar de utilizar os serviços ou solicitar a revogação do consentimento;',
+      pp_s9_li3: 'O tempo necessário para demonstrar o cumprimento de deveres e obrigações da STEMAC S/A GRUPOS GERADORES;',
+      pp_s9_li4: 'O período previsto em Lei, regulamentações e decisões judiciais;',
+      pp_s9_li5: 'Determinação da Autoridade Nacional de Proteção de Dados (ANPD).',
+      pp_s10_p: 'Conforme a LGPD, o Titular tem os seguintes direitos:',
+      pp_s10_th1: 'Direito', pp_s10_th2: 'Descrição',
+      pp_s10_r1a: 'Confirmação', pp_s10_r1b: 'Confirmar se a STEMAC S/A GRUPOS GERADORES realiza o tratamento de algum dado pessoal seu.',
+      pp_s10_r2a: 'Acesso', pp_s10_r2b: 'Obter detalhes de como suas informações estão sendo utilizadas e uma cópia delas.',
+      pp_s10_r3a: 'Correção', pp_s10_r3b: 'Corrigir dados incompletos, inexatos ou desatualizados.',
+      pp_s10_r4a: 'Anonimização, Bloqueio ou Eliminação', pp_s10_r4b: 'Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.',
+      pp_s10_r5a: 'Exclusão', pp_s10_r5b: 'Solicitar a exclusão de dados, exceto aqueles cuja conservação é autorizada por lei.',
+      pp_s10_r6a: 'Informação', pp_s10_r6b: 'Solicitar informações sobre entidades com quem os dados foram compartilhados.',
+      pp_s10_r7a: 'Restrição de Processamento', pp_s10_r7b: 'Restringir o uso de determinados dados.',
+      pp_s10_r8a: 'Recusa de Marketing', pp_s10_r8b: 'Cancelar o recebimento de propagandas a qualquer momento.',
+      pp_s10_r9a: 'Portabilidade', pp_s10_r9b: 'Solicitar a transferência de seus dados a si próprio ou a terceiros.',
+      pp_s10_r10a: 'Revogação do Consentimento', pp_s10_r10b: 'Cancelar qualquer consentimento concedido previamente.',
+      pp_s10_contact: 'Para exercer qualquer um desses direitos, envie um e-mail para <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>. A STEMAC S/A GRUPOS GERADORES se compromete a atender às solicitações em até <strong>15 (quinze) dias</strong> a contar do recebimento, sem custo para o Titular, salvo casos de maior complexidade.',
+      pp_s11_p: 'A STEMAC S/A GRUPOS GERADORES e seus fornecedores terceirizados utilizam cookies e outras tecnologias semelhantes para armazenar preferências e coletar dados analíticos. A tabela abaixo lista os cookies utilizados neste site:',
+      pp_s11_th1: 'Cookie', pp_s11_th2: 'Finalidade', pp_s11_th3: 'Duração',
+      pp_s11_c1b: 'Guarda sua preferência de consentimento de cookies', pp_s11_c1c: '1 ano',
+      pp_s11_c2b: 'Google Analytics — análise anônima de tráfego e comportamento de navegação', pp_s11_c2c: '2 anos',
+      pp_s11_c3b: 'Meta Pixel — medição de conversões e desempenho de campanhas', pp_s11_c3c: '3 meses',
+      pp_s11_revoke: 'Você pode alterar sua preferência a qualquer momento limpando os dados de navegação do seu navegador ou entrando em contato conosco pelo e-mail <a href="mailto:dpo@stemac.com.br"><strong>dpo@stemac.com.br</strong></a>.',
+      pp_s12_p: 'Em caso de dúvidas, comentários, reclamações ou sugestões relacionadas à Proteção de Dados e a esta Política de Privacidade, entre em contato:',
+      pp_s12_box_title: 'Canal de Privacidade',
+      pp_s12_address: 'Endereço:', pp_s12_phone: 'Telefone:', pp_s12_email: 'E-mail:', pp_s12_dpo: 'Encarregado / DPO:',
+      pp_s13_p: 'Essa Política será regida, interpretada e executada de acordo com as <strong>leis da República Federativa do Brasil</strong>, sendo competente o <strong>Foro da cidade de Porto Alegre/RS</strong> para dirimir qualquer dúvida decorrente deste instrumento.',
+      pp_f_nav: 'Navegação', pp_f_contact: 'Contato',
+      pp_f_copy: '&copy; 2026 Stemac SA Grupos Geradores. Todos os direitos reservados.',
+      pp_nav_segments: 'Setores', pp_nav_products: 'Produtos', pp_nav_global: 'Global',
+      pp_nav_about: 'Sobre Nós', pp_nav_contact: 'Contato'
+    }
+  };
+
+  var LANG_ATTR = { en: 'en', es: 'es', pt: 'pt-BR' };
+  var LOGO_PREFIX = { en: 'EN', es: 'ES', pt: 'PT' };
+
+  function ppSetLang(lang) {
+    var T = PP_T[lang] || PP_T.pt;
+    localStorage.setItem('stemac_lang', lang);
+
+    // html lang
+    document.getElementById('ppHtml').lang = LANG_ATTR[lang] || lang;
+
+    // title (special case)
+    document.title = T.pp_title;
+
+    // all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (T[key] !== undefined) {
+        // legal note: show/hide based on content
+        if (key === 'pp_legal_note') {
+          el.innerHTML = T[key];
+          el.style.display = T[key] ? 'block' : 'none';
+        } else {
+          el.innerHTML = T[key];
+        }
+      }
+    });
+
+    // nav logo
+    var logoImg = document.getElementById('ppNavLogo');
+    if (logoImg) logoImg.src = 'assets/logo/' + (LOGO_PREFIX[lang] || 'PT') + '_logo_stemac_white.svg';
+
+    // active button state
+    document.querySelectorAll('.pp-lang-btn').forEach(function(btn) {
+      var isActive = btn.getAttribute('data-lang') === lang;
+      btn.style.background = isActive ? 'rgba(255,255,255,.15)' : 'transparent';
+      btn.style.color = isActive ? '#fff' : 'rgba(255,255,255,.6)';
+      btn.style.borderColor = isActive ? 'rgba(255,255,255,.6)' : 'rgba(255,255,255,.3)';
+    });
+  }
+
+  // Wire up buttons
+  document.querySelectorAll('.pp-lang-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      ppSetLang(btn.getAttribute('data-lang'));
+    });
+  });
+
+  // Init from localStorage (same key as main page)
+  var saved = localStorage.getItem('stemac_lang') || 'pt';
+  ppSetLang(saved);
+})();
+</script>
 </body>
 </html>

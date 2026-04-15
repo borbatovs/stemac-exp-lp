@@ -1,4 +1,4 @@
-var LANG_CURR='es';
+var LANG_CURR = localStorage.getItem('stemac_lang') || 'es';
 var TRANSLATIONS={
   en:{
     nav_markets:'Industries',
@@ -32,8 +32,8 @@ var TRANSLATIONS={
     th_specs:'Technical Specifications',
     th_brand:'Brand',
     th_model:'Model',
-    th_open:'Open Frame',
-    th_enclosed:'Enclosed',
+    th_datasheet:'Data Sheets',
+    btn_datasheet:'Data Sheets',
     map_label:'Global Footprint',
     map_title:'Companies from every continent trust Stemac generator sets.',
     map_desc:'From the Americas to Europe, Africa, Asia and Oceania. Our generator sets power businesses in more than 30 countries.',
@@ -50,7 +50,7 @@ var TRANSLATIONS={
     contact_title:'Export Contacts',
     contact_desc:'Tell us about your project. Our export team will respond within 24 business hours with a tailored proposal for your power requirements.',
     contact_expo:'Export',
-    contact_tech:'Technical Support, Services &amp; Parts',
+    contact_tech:'Technical Support, Services &amp; Spare Parts',
     form_title:'Get in Touch',
     form_name:'Full Name *',
     form_email:'E-mail *',
@@ -158,8 +158,8 @@ var TRANSLATIONS={
     th_specs:'Especificaciones Técnicas',
     th_brand:'Marca',
     th_model:'Modelo',
-    th_open:'Abierto',
-    th_enclosed:'Insonorizado',
+    th_datasheet:'Fichas Técnicas',
+    btn_datasheet:'Fichas Técnicas',
     map_label:'Presencia Global',
     map_title:'Empresas de todos los continentes confían en los grupos electrógenos Stemac.',
     map_desc:'De las Américas a Europa, de África hasta Asia y Oceanía. Nuestros grupos electrógenos impulsan empresas en más de 30 países.',
@@ -288,8 +288,8 @@ var TRANSLATIONS={
     th_specs:'Especificações Técnicas',
     th_brand:'Marca',
     th_model:'Modelo',
-    th_open:'Aberto',
-    th_enclosed:'Carenado',
+    th_datasheet:'Fichas Técnicas',
+    btn_datasheet:'Fichas Técnicas',
     map_label:'Presença Global',
     map_title:'Empresas de todos os continentes confiam nos grupos geradores Stemac.',
     map_desc:'Das Américas à Europa, da África até a Ásia e Oceania. Nossos grupos geradores impulsionam empresas em mais de 30 países.',
@@ -656,11 +656,10 @@ function renderTable(){
   var T=TRANSLATIONS[LANG_CURR]||TRANSLATIONS.en;
   document.getElementById('resCnt').innerHTML='<strong>'+rows.length+'</strong> '+(rows.length!==1?T.results_found:T.results_found_s);
   var body=document.getElementById('tBody');
-  if(!rows.length){body.innerHTML='<tr><td colspan="6" style="text-align:center;padding:2rem;color:#999">'+T.no_match+'</td></tr>';return;}
+  if(!rows.length){body.innerHTML='<tr><td colspan="5" style="text-align:center;padding:2rem;color:#999">'+T.no_match+'</td></tr>';return;}
   body.innerHTML=rows.map(function(p){
     return '<tr><td>'+p.s+'</td><td>'+p.p+'</td><td>'+p.b+'</td><td>'+p.m+'</td>'
-      +'<td class="col-specs"><a href="#" class="pdf-btn" onclick="return false" title="Download PDF"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 256 256\"><path d=\"M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z\"></path></svg></a></td>'
-      +'<td class="col-specs"><a href="#" class="pdf-btn" onclick="return false" title="Download PDF"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 256 256\"><path d=\"M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z\"></path></svg></a></td></tr>';
+      +'<td class="col-specs"><a href="#" class="pdf-btn" onclick="return false" title="Download PDF"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" viewBox=\"0 0 256 256\"><path d=\"M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z\"></path></svg><span>'+T.btn_datasheet+'</span></a></td></tr>';
   }).join('');
 }
 var slider=document.getElementById('kvaS');
@@ -1273,6 +1272,7 @@ var CONT_LABELS_PT={Americas:'Américas',Africa:'África','Europe/UK':'Europa/RU
 
 function setLang(lang){
   LANG_CURR=lang;
+  localStorage.setItem('stemac_lang', lang);
   document.querySelectorAll('.lang-option').forEach(function(btn){
     btn.classList.toggle('active',btn.getAttribute('data-lang')===lang);
   });
@@ -1321,6 +1321,23 @@ function setLang(lang){
 
   // Update map hint and button titles
   if(window._updateMapControls) window._updateMapControls();
+
+  // Re-format stat numbers with locale-correct thousand separator
+  document.querySelectorAll('.stat-n[data-count]').forEach(function(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var valEl  = el.querySelector('.stat-val');
+    if (valEl && !isNaN(target) && target >= 1000) {
+      var locale = { en: 'en-US', es: 'es-419', pt: 'pt-BR' }[lang] || 'en-US';
+      valEl.textContent = target.toLocaleString(locale);
+    }
+  });
+
+  // Swap language-specific logos
+  var logoPrefix=lang==='en'?'EN':lang==='es'?'ES':'PT';
+  document.querySelectorAll('img[data-lang-logo]').forEach(function(img){
+    var variant=img.getAttribute('data-lang-logo'); // 'white' or 'blue'
+    img.src='assets/logo/'+logoPrefix+'_logo_stemac_'+variant+'.svg';
+  });
 }
 
 /* ============================================================
@@ -1357,8 +1374,13 @@ function setLang(lang){
 
   function easeOutQuart(t){ return 1 - Math.pow(1 - t, 4); }
 
+  var LOCALE_MAP = { en: 'en-US', es: 'es-419', pt: 'pt-BR' };
+
   function formatNum(n, target){
-    if (target >= 1000) return n.toLocaleString('pt-BR').replace(/\u00a0/g, '.');
+    if (target >= 1000) {
+      var locale = LOCALE_MAP[LANG_CURR] || 'en-US';
+      return n.toLocaleString(locale);
+    }
     return String(n);
   }
 
